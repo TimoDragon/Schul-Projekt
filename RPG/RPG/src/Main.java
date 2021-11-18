@@ -14,13 +14,12 @@ public class Main {
     public static void startGame() {
         System.out.println("Willkommen in unserem Spiel\n"
                             + "Gebe 0 ein um das Inventar aufzurufen");
-        Player.addItem("Schwert", 1);
     }
 
     //on Console input
     public static void onInput(int input) {
         switch(input) {
-            case 0: System.out.println(Player.getInventory());
+            case 0: System.out.println("Inventar: " + Player.getInventory());
         }
     }
 

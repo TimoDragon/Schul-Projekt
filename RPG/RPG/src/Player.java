@@ -2,7 +2,7 @@ import java.util.HashMap;
 
 public  class Player {
     public static HashMap<String, Integer> inventory = new HashMap<String, Integer>();
-    static short health = 100;
+    static int health = 100;
 
     //get the Player Inventory
     public static HashMap<String, Integer> getInventory() {
@@ -39,12 +39,12 @@ public  class Player {
     }
 
     //get the Player Heatlh
-    public static short getHealth() {
+    public static int getHealth() {
         return health;
     }
 
     //set the Player Health
-    public static void setHealth(short newHealth) {
-        health = newHealth;
+    public static void setHealth(int i) {
+        health = i;
     }
 }
