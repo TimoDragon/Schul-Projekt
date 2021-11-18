@@ -38,6 +38,30 @@ switch() {
 ```
 
 ### 4. Schleifen
+for schleife:
+```
+for (int i = 0; i < 10; i++) {
+    System.out.println(i);
+}
+```
+In diesem Beispiel zur for schleife kann man sehen das wir einen int "i" haben, der 0 ist. Als nächstes
+kann man erkennen das dort "i < 10" steht was bedeutet das die schleife solange wiederholt wird bis, i nicht mehr kleiner als 10 ist. Währenddessen wird i ausgegeben.
+
+
+while schleife:
+```
+int i = 0;
+while (i < 10) {
+    System.out.println(i);
+    i = i + 1;
+}
+```
+Die while schleife wird so lange wiederholt wie der eingegebene Inhalt true (wahr) ist. In diesem fall
+so lange wie i unter 10 ist. Nach jeder wiederholung wird i um 1 größer in diesem Beispiel.
+
+
+do while schleife:
+
 ## Einführung in die Objektorientiere Programmierung
 
 ```markdown
