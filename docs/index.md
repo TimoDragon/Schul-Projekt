@@ -28,9 +28,13 @@ Falls dies true (wahr) ist dann wird in der Konsole "Die Zahl ist 1" ausgegeben,
 aber false (falsch) ist erscheint in der Konsole "Die Zahl ist nicht 1". Da der Integer 0 und
 nicht 1 ist, erscheint "Die Zahl ist nicht 1".
 
+
 switch case:
 ```
-
+switch() {
+    case() {
+    }
+}
 ```
 
 ### 4. Schleifen
