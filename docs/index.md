@@ -1,12 +1,40 @@
-## Welcome to GitHub Pages
+# Java Tutorial
 
-You can use the [editor on GitHub](https://github.com/TimoDragon/Schul-Projekt/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+## Allgemein
+### - EVA Prinzip
+### - Was ist ein Algorithmus
+### - Compiler und Interpreter
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Einführung in die Programmierung
+### 1. Inkrementoperator
 
-### Markdown
+### 2. Typecasting
+    
+###  3. Bedingungen
+if Bedingung:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+```
+int i = 0;
+if (i == 1) {
+    System.out.println("Die Zahl ist 1");
+}
+else {
+    System.out.println("Die Zahl ist nicht 1");
+}
+```
+In diesem Beispiel geht es darum, dass wir einen Integer "i" mit dem Wert 0 haben
+und dann durch eine if-Abfrage geschaut wird ob "i", 1 ist.
+Falls dies true (wahr) ist dann wird in der Konsole "Die Zahl ist 1" ausgegeben, wenn dies
+aber false (falsch) ist erscheint in der Konsole "Die Zahl ist nicht 1". Da der Integer 0 und
+nicht 1 ist, erscheint "Die Zahl ist nicht 1".
+
+switch case:
+```
+
+```
+
+### 4. Schleifen
+## Einführung in die Objektorientiere Programmierung
 
 ```markdown
 Syntax highlighted code block
@@ -27,10 +55,6 @@ Syntax highlighted code block
 ```
 
 For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/TimoDragon/Schul-Projekt/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
 ### Support or Contact
 
