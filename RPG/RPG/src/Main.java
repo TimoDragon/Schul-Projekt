@@ -34,8 +34,6 @@ public class Main {
     //print the Inventory in the Console
     public static void printInv() {
         if (!Player.getInventory().isEmpty()) {
-            //add more here
-
             String inv = "Inventar: ";
             if (!Player.getInventory().isEmpty()) {
                 for (int i = 0; i < Player.getInventory().size(); i++) {
