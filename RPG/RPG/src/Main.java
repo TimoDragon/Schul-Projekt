@@ -4,20 +4,22 @@ public class Main {
     public static void main(String[] args) {
         startGame();
 
-        Player.addItem("Schwert", 1);
-        Player.addItem("Axt", 1);
-        Player.addItem("Messer", 1);
-
-        //for Console input
-        Scanner sc = new Scanner(System.in);
-        int input = sc.nextInt();
-        onInput(input);
+        requestInput();
     }
 
     //starts the game
     public static void startGame() {
-        System.out.println("Willkommen in unserem Spiel\n"
-                            + "Gebe 0 ein um das Inventar aufzurufen");
+        animation("#########################\n", 25);
+        animation("Willkommen in unserem Spiel\n"
+        + "Gebe 0 ein um das Inventar aufzurufen\n", 25);
+        animation("#########################\n", 25);
+    }
+
+    //to request User Input
+    public static void requestInput() {
+        Scanner sc = new Scanner(System.in);
+        int input = sc.nextInt();
+        onInput(input);
     }
 
     //on Console input
@@ -25,6 +27,8 @@ public class Main {
         switch(input) {
             case 0: printInv();
         }
+
+        requestInput();
     }
 
     //print the Inventory in the Console
@@ -59,11 +63,20 @@ public class Main {
     }
 
     //let the programm sleep
-    public static void sleep(int time) {
-        try {
-            Thread.sleep(time);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+    public static void sleep(int time) throws InterruptedException {
+        Thread.sleep(time);
+    }
+
+    //for a very fancy animation
+    public static void animation(String text, int time) {
+        for (char c : text.toCharArray()) {
+            System.out.print(c);
+
+            try {
+                sleep(time);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
     }
 }
