@@ -22,7 +22,7 @@ public  class Player {
     //add an Item in the Inventory
     public static void addItem(String item, int amount) {
         if (!getInventory().containsKey(item)) {
-            getInventory().put(item, 1);
+            getInventory().put(item, amount);
         }
         else {
             int oldAmount = getInventory().get(item);
@@ -34,9 +34,9 @@ public  class Player {
     public static void removeItem(String item, int amount) {
         if (getInventory().containsKey(item)) {
             int oldAmount = getInventory().get(item);
+            int newAmount = oldAmount - amount;
 
-            if (oldAmount > 0) {
-                int newAmount = oldAmount - amount;
+            if (newAmount > 0) {
                 getInventory().replace(item, oldAmount, newAmount);
             }
             else {

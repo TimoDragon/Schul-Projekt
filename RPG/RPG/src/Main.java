@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         startGame();
-
         requestInput();
     }
 
@@ -11,7 +10,7 @@ public class Main {
     public static void startGame() {
         animation("#########################\n", 25);
         animation("Willkommen in unserem Spiel\n"
-        + "Gebe 0 ein um das Inventar aufzurufen\n", 25);
+        + "Gebe 0 ein um das Inventar aufzurufen\n", 20);
         animation("#########################\n", 25);
     }
 
@@ -20,12 +19,15 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int input = sc.nextInt();
         onInput(input);
+        sc.close();
     }
 
     //on Console input
     public static void onInput(int input) {
         switch(input) {
-            case 0: printInv();
+            case 0: {
+                printInv();
+            }
         }
 
         requestInput();
@@ -35,7 +37,6 @@ public class Main {
     public static void printInv() {
         if (!Player.getInventory().isEmpty()) {
             String inv = "Inventar: ";
-            if (!Player.getInventory().isEmpty()) {
                 for (int i = 0; i < Player.getInventory().size(); i++) {
                     Object object = Player.getInventorySlot(i).keySet().toArray()[0];
                     String item = object.toString();
@@ -46,16 +47,15 @@ public class Main {
                     if (i < Player.getInventory().size()-1) {
                         inv = inv + ", ";
                     }
+                    else {
+                        inv = inv + "\n";
+                    }
                 }
-            }
-            else {
-                inv = "Dein Invetar ist leer";
-            }
 
-            System.out.println(inv);
+                animation(inv, 25);
         }
         else {
-            System.out.println("Dein Inventar ist leer");
+            animation("Dein Inventar ist leer\n", 25);
             return;
         }
     }

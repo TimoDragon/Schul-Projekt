@@ -13,7 +13,7 @@
 ###  3. Bedingungen
 if Bedingung:
 
-```
+```java
 int i = 0;
 if (i == 1) {
     System.out.println("Die Zahl ist 1");
@@ -30,16 +30,21 @@ nicht 1 ist, erscheint "Die Zahl ist nicht 1".
 
 
 switch case:
-```
-switch() {
-    case() {
+```java
+int number = 0;
+switch(number) {
+    case 0: {
+        System.out.println("Die Zahl ist 0");
+    }
+    case 1: {
+        System.out.println("Die Zahl ist 1");
     }
 }
 ```
 
 ### 4. Schleifen
 for schleife:
-```
+```java
 for (int i = 0; i < 10; i++) {
     System.out.println(i);
 }
@@ -49,7 +54,7 @@ kann man erkennen das dort "i < 10" steht was bedeutet das die schleife solange 
 
 
 while schleife:
-```
+```java
 int i = 0;
 while (i < 10) {
     System.out.println(i);
@@ -61,6 +66,8 @@ so lange wie i unter 10 ist. Nach jeder wiederholung wird i um 1 größer in die
 
 
 do while schleife:
+```java
+```
 
 ## Einführung in die Objektorientiere Programmierung
 
