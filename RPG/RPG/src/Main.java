@@ -2,49 +2,42 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        startGame();
-        requestInput();
-    }
-
-    //starts the game
-    public static void startGame() {
-        animation("#########################\n", 25);
-        animation("Willkommen in unserem Spiel\n"
-        + "Gebe 0 ein um das Inventar aufzurufen\n", 20);
-        animation("#########################\n", 25);
+        Player player = new Player();
+        Game game = new Game();
+        game.startGame();
+        requestInput(player);
     }
 
     //to request User Input
-    public static void requestInput() {
+    public static void requestInput(Player player) {
         Scanner sc = new Scanner(System.in);
         int input = sc.nextInt();
-        onInput(input);
+        onInput(input, player);
         sc.close();
     }
 
     //on Console input
-    public static void onInput(int input) {
+    public static void onInput(int input, Player player) {
         switch(input) {
             case 0: {
-                printInv();
+                Main.printInv(player);
             }
         }
-
-        requestInput();
+        requestInput(player);
     }
 
     //print the Inventory in the Console
-    public static void printInv() {
-        if (!Player.getInventory().isEmpty()) {
+    public static void printInv(Player pPlayer) {
+        if (!pPlayer.getInventory().isEmpty()) {
             String inv = "Inventar: ";
-                for (int i = 0; i < Player.getInventory().size(); i++) {
-                    Object object = Player.getInventorySlot(i).keySet().toArray()[0];
+                for (int i = 0; i < pPlayer.getInventory().size(); i++) {
+                    Object object = pPlayer.getInventorySlot(i).keySet().toArray()[0];
                     String item = object.toString();
-                    int amount = Player.getInventory().get(item);
+                    int amount = pPlayer.getInventory().get(item);
 
                     inv = inv + amount + "x " + item;
 
-                    if (i < Player.getInventory().size()-1) {
+                    if (i < pPlayer.getInventory().size()-1) {
                         inv = inv + ", ";
                     }
                     else {
