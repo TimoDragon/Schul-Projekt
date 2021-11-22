@@ -1,9 +1,21 @@
 # Java Tutorial
 
 ## Allgemein
+
+
 ### - EVA Prinzip
+Das EVA-Prinzip beschreibt die Grundprinzipien der Datenverarbeitung. Das Akronym leitet sich aus den Initialen der Begriffe Input, Processing und Output ab (englisches IPO-Modell: Input-Process-Output). Diese drei Begriffe beschreiben den Ablauf der Datenverarbeitung. Dieses Prinzip wird aus der Perspektive der Verarbeitungseinheit (die auch ein Mensch sein kann) betrachtet und ist somit unabhängig von elektronischen Maschinen. Daher ist sie allgemein auf den Prozess der Datenverarbeitung anwendbar.
+
+<html>
+
+<iframe width="600" hight="400" src="https://www.youtube.com/watch?v=bRHJd8_afn0"></iframe>
+
+</html>
+
 ### - Was ist ein Algorithmus
-### - Compiler und Interpreter
+Im Allgemeinen ist ein Algorithmus eine Reihe von Anweisungen, die Schritt für Schritt ausgeführt werden, um ein Problem zu lösen oder eine Aufgabe zu erledigen. Der Algorithmus von Google bestimmt beispielsweise, welche Website an welcher Position in den Google-Suchergebnissen angezeigt wird.
+
+### -Compiler und Interpreter
 
 ## Einführung in die Programmierung
 ### 1. Inkrementoperator
