@@ -8,7 +8,7 @@ Das EVA-Prinzip beschreibt die Grundprinzipien der Datenverarbeitung. Das Akrony
 
 <html>
 
-<iframe width="600" hight="400" src="https://www.youtube.com/watch?v=bRHJd8_afn0"></iframe>
+<iframe width="720" hight="1080" src="https://www.youtube.com/watch?v=bRHJd8_afn0"></iframe>
 
 </html>
 
