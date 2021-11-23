@@ -1,46 +1,51 @@
-import java.util.HashMap;
-import java.util.LinkedHashMap;
+import java.util.ArrayList;
 
 public  class Player {
-    private LinkedHashMap<String, Integer> inventory = new LinkedHashMap<String, Integer>();
+    private ArrayList<Item> inventory = new ArrayList<Item>();
     private int health = 100;
+    private int food = 100;
 
     //get the Player Inventory
-    public LinkedHashMap<String, Integer> getInventory() {
+    public ArrayList<Item> getInventory() {
         return inventory;
     }
 
     //get the Item from a specific slot
-    public HashMap<String, Integer> getInventorySlot(int position) {
-        HashMap<String, Integer> invSlot = new HashMap<String, Integer>();
-        Object object = inventory.keySet().toArray()[position];
-        invSlot.put(object.toString(), inventory.get(object.toString()));
+    public Item getInventorySlot(int position) {
+        Item invSlot = inventory.get(position);
 
         return invSlot;
     }
 
     //add an Item in the Inventory
-    public void addItem(String item, int amount) {
-        if (!getInventory().containsKey(item)) {
-            getInventory().put(item, amount);
-        }
-        else {
-            int oldAmount = getInventory().get(item);
-            getInventory().replace(item, oldAmount, oldAmount + amount);
+    public void addItem(Item item, int amount) {
+        for (int i = 0; i < amount; i++) {
+            inventory.add(item);
         }
     }
 
     //removes an Item from the Inventory
-    public void removeItem(String item, int amount) {
-        if (getInventory().containsKey(item)) {
-            int oldAmount = getInventory().get(item);
-            int newAmount = oldAmount - amount;
+    public void removeItem(Item item, int amount) {
+        if (getInventory().contains(item)) {
+            int oldAmount = 0;
+            for (int i = 0; i < inventory.size(); i++) {
+                if (inventory.get(i).equals(item)) {
+                    oldAmount = oldAmount + 1;
+                }
+            }
 
+            int newAmount = oldAmount - amount;
             if (newAmount > 0) {
-                getInventory().replace(item, oldAmount, newAmount);
+                int removed = 0;
+                for (int i = 0; i < inventory.size(); i++) {
+                    if (inventory.get(i).equals(item) && removed <= newAmount) {
+                        removed = removed + 1;
+                        inventory.remove(i);
+                    }
+                }
             }
             else {
-                getInventory().remove(item);
+                inventory.remove(item);
             }
         }
         else {
@@ -56,5 +61,15 @@ public  class Player {
     //set the Player Health
     public void setHealth(int i) {
         health = i;
+    }
+
+    //get the Player food
+    public int getFood() {
+        return food;
+    }
+
+    //set the Player food
+    public void setFood(int i) {
+        food = i;
     }
 }
