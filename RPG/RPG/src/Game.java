@@ -25,6 +25,7 @@ public class Game {
         switch(input) {
             case 0: {
                 Main.printInv(player);
+                break;
             }
         }
         requestInput(player);

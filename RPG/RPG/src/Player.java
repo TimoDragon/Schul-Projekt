@@ -3,6 +3,7 @@ import java.util.ArrayList;
 public  class Player {
     private ArrayList<Item> inventory = new ArrayList<Item>();
     private int health = 100;
+    private int food = 100;
 
     //get the Player Inventory
     public ArrayList<Item> getInventory() {
@@ -44,7 +45,7 @@ public  class Player {
                 }
             }
             else {
-                getInventory().remove(item);
+                inventory.remove(item);
             }
         }
         else {
@@ -60,5 +61,15 @@ public  class Player {
     //set the Player Health
     public void setHealth(int i) {
         health = i;
+    }
+
+    //get the Player food
+    public int getFood() {
+        return food;
+    }
+
+    //set the Player food
+    public void setFood(int i) {
+        food = i;
     }
 }
