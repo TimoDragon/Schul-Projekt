@@ -5,12 +5,15 @@ public class Fight {
     Enemy enemy;
     boolean hasSword, hasAxe, hasShield;
     private HashMap<Integer, String> equip = new HashMap<Integer, String>();
+    private Game game;
 
     //start the fight
-    public void startFight(Player player) {
+    public void startFight(Player player, Game runninGame) {
         Main.animation("~~~~~~~~~~~~~~~~~~~~~~~~~\n", 25);
         Main.animation("Du kommt in einen Kampf mit " + enemy.getName() + "\n", 20);
         Main.animation("~~~~~~~~~~~~~~~~~~~~~~~~~\n", 25);
+
+        game = runninGame;
 
         for (int i = 0; i < player.getInventory().size(); i++) {
             if (player.getInventory().get(i).getType().equals("Sword")) {
@@ -61,8 +64,8 @@ public class Fight {
 
             switch (itemName) {
                 case "Sword": {
-                    enemy.setHealth(enemy.getHealth() - 10);
                     Main.animation("Du hast " + enemy.getName() + " 10 Schaden hinzugefügt\n", 25);
+                    enemy.setHealth(enemy.getHealth() - 10);
                     break;
                 }
                 case "Axe": {
@@ -72,15 +75,8 @@ public class Fight {
                     break;
                 }
             }
-
-            if (player.getHealth() > 0 && enemy.getHealth() > 0) {
-                Main.animation("----\n", 25);
-                Main.animation("Deine Leben: " + player.getHealth() + "\n", 20);
-                Main.animation(enemy.getName() + " Leben: " + enemy.getHealth() + "\n", 20);
-                Main.animation("----\n", 25);
-
-                requestFightInput(player);
-            }
+            boolean wasEnemy = false;
+            checkHealth(player, enemy, wasEnemy);
         }
         else {
             requestFightInput(player);
@@ -89,15 +85,24 @@ public class Fight {
 
     //enemy attack back
     public void enemyAttack(Player player, Enemy enemy) {
-        
+        boolean wasEnemy = true;
+        int random = (int) Math.random()*(enemy.getWeapons().size()-1)+1;
+        Item weapon = enemy.getWeapons().get(random-1);
+
+        Main.animation(enemy.getName() + " greift dich mit " + weapon.getType()+ " an\nDu erleidest "
+                        + enemy.getDamage() + " Schaden\n", 25);
+        player.setHealth(player.getHealth() - enemy.getDamage());
+
+        checkHealth(player, enemy, wasEnemy);
+        requestFightInput(player);
     }
 
     //to request fight input
     public void requestFightInput(Player player) {
         Scanner sc = new Scanner(System.in);
         int input = sc.nextInt();
+        //sc.close();
         onFightInput(input, player);
-        sc.close();
     }
 
     //for fight input
@@ -124,6 +129,31 @@ public class Fight {
             case 5: {
                 break;
             }
+        }
+    }
+
+    //checks player and enemy health and outputs it
+    public void checkHealth (Player player, Enemy enemy, boolean wasEnemy) {
+        if (player.getHealth() > 0 && enemy.getHealth() > 0) {
+            Main.animation("----\n", 25);
+            Main.animation("Deine Leben: " + player.getHealth() + "\n", 20);
+            Main.animation(enemy.getName() + " Leben: " + enemy.getHealth() + "\n", 20);
+            Main.animation("----\n", 25);
+
+            if (wasEnemy == false) {
+                enemyAttack(player, enemy);
+            }
+        }
+        else if (player.getHealth() <= 0) {
+            //if the Player dies maxbe add something
+        }
+        else if (enemy.getHealth() <= 0) {
+            Main.animation("*************************\n", 25);
+            Main.animation(enemy.getName() + " ist besiegt. Du hast gewonnen!\n", 25);
+            Main.animation("*************************\n", 25);
+
+            game.fighting = false;
+            game.startGame(game);
         }
     }
 }

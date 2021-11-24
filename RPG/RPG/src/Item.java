@@ -1,5 +1,5 @@
 public class Item {
-    String type;
+    private String type;
 
     //set the Item Type
     public void setType(String string) {

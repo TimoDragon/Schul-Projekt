@@ -53,7 +53,14 @@ public class Enemy {
     }
 
     //add a weapon
-    public void addWeapon() {
-        
+    public void addWeapon(Item item) {
+        weapons.add(item);
+    }
+
+    //remove a weapon
+    public void removeWeapon(Item item) {
+        if (weapons.contains(item)) {
+            weapons.remove(item);
+        }
     }
 }
