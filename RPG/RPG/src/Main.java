@@ -1,58 +1,45 @@
-import java.util.Scanner;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
 
 public class Main {
     public static void main(String[] args) {
-        startGame();
-        requestInput();
-    }
-
-    //starts the game
-    public static void startGame() {
-        animation("#########################\n", 25);
-        animation("Willkommen in unserem Spiel\n"
-        + "Gebe 0 ein um das Inventar aufzurufen\n", 20);
-        animation("#########################\n", 25);
-    }
-
-    //to request User Input
-    public static void requestInput() {
-        Scanner sc = new Scanner(System.in);
-        int input = sc.nextInt();
-        onInput(input);
-        sc.close();
-    }
-
-    //on Console input
-    public static void onInput(int input) {
-        switch(input) {
-            case 0: {
-                printInv();
-            }
-        }
-
-        requestInput();
+        Game game = new Game();
+        game.startGame();
     }
 
     //print the Inventory in the Console
-    public static void printInv() {
-        if (!Player.getInventory().isEmpty()) {
+    public static void printInv(Player player) {
+        if (!player.getInventory().isEmpty()) {
             String inv = "Inventar: ";
-                for (int i = 0; i < Player.getInventory().size(); i++) {
-                    Object object = Player.getInventorySlot(i).keySet().toArray()[0];
-                    String item = object.toString();
-                    int amount = Player.getInventory().get(item);
+            HashMap<Item, Integer> inventory = new LinkedHashMap<Item, Integer>();
 
-                    inv = inv + amount + "x " + item;
+            //add code to get the Inventory
 
-                    if (i < Player.getInventory().size()-1) {
-                        inv = inv + ", ";
-                    }
-                    else {
-                        inv = inv + "\n";
-                    }
+            for (int i = 0; i < player.getInventory().size(); i++) {
+                Item item = player.getInventorySlot(i);
+
+                if (inventory.containsKey(item)) {
+                    int oldAmount = inventory.get(item);
+                    inventory.replace(item, oldAmount, oldAmount + 1);
                 }
+                else {
+                    inventory.put(item, 1);
+                }
+            }
 
-                animation(inv, 25);
+            for (int i = 0; i < inventory.size(); i++) {
+                Item item = (Item) inventory.keySet().toArray()[i];
+                inv = inv + inventory.get(item) + "x " + item.getType();
+
+                if (i < inventory.size()-1) {
+                    inv = inv + ", ";
+                }
+                else {
+                    inv = inv + "\n";
+                }
+            }
+            
+            animation(inv, 25);
         }
         else {
             animation("Dein Inventar ist leer\n", 25);
