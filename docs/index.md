@@ -110,7 +110,7 @@ Attribute (was das Objekt hat)
 
 Operationen (was das Objekt kann)
 
-## Objekte
+
 
 
 
