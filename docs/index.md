@@ -66,7 +66,7 @@ for (int i = 0; i < 10; i++) {
 }
 ```
 In diesem Beispiel zur for schleife kann man sehen das wir einen int "i" haben, der 0 ist. Als nächstes
-kann man erkennen das dort "i < 10" steht was bedeutet das die schleife solange wiederholt wird bis, i nicht mehr kleiner als 10 ist. Währenddessen wird i ausgegeben.
+kann man erkennen, dass dort "i < 10" steht. Was bedeutet das die schleife solange wiederholt wird, bis i nicht mehr kleiner als 10 ist. Währenddessen wird i ausgegeben.
 
 
 while schleife:
