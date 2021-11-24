@@ -87,4 +87,60 @@ do while schleife:
 ```java
 ```
 
+<<<<<<< HEAD
 ## Einführung in die Objektorientiere Programmierung
+=======
+# Einführung in die Objektorientiere Programmierung zusammenfassung
+
+## Objektorientierte Programmierung
+
+In einem Buch über Java-Programmierung müssen mehrere Teile vereinigt werden,
+
+die grundsätzliche Programmierung nach dem imperativen Prinzip (Variablen, Operatoren Fallunterscheidung, Schleifen, einfache statische Methoden) in einer neuen Grammatik für Java, dann die Objektorientierung (Objekte, Klassen, Vererbung, Schnittstellen), erweiterte Möglichkeiten der Java-Sprache (Ausnahmen, Generics, Closures) und zum Schluss die Bibliotheken (String-Verarbeitung, Ein-/Ausgabe …).
+Dieses Kapitel stellt das Paradigma der Objektorientierung in den Mittelpunkt und zeigt die Syntax, wie etwa in Java Vererbung realisiert wird.
+
+## Objekte
+Bei der Objektorientierten Modellierung (OOM) spielen Objekte eine fundamentale Rolle. Der klassische Ansatz im Unterricht arbeitet mit rein virtuellen Objekten - sämtliche Interaktion und auch die Objektkommunikation spielt sich im Rechner ab. Nicht selten kommt es dabei vor, dass man Objekte im wahrsten Sinne des Wortes gar nicht "sieht".
+Ziel dieses Projektes ist es, Objekte begreifbar zu machen und Objektkommunikation zu visualisieren. Dafür stehen für den Unterricht Bauteile bereit, mit denen sich verschiedene Szenarien modellieren lassen. Die Schülerinnen und Schüler bekommen so die Möglichkeit, Objekte tatsächlich anzufassen und ihren aktuellen State (Zustand) nicht nur über Methoden zu erfragen, sondern auch zu sehen (Bauteil: RGB-LED) oder zu hören (Bauteil: Summer).
+
+## Klassen
+
+Klassen sind das wichtigste Merkmal objektorientierter Programmiersprachen. Eine Klasse definiert einen neuen Typ, beschreibt die Eigenschaften der Objekte und gibt somit den Bauplan an. Jedes Objekt ist ein Exemplar (auch Instanz[ 104 ](Ich vermeide das Wort Instanz und verwende dafür durchgängig das Wort Exemplar. An die Stelle von instanziieren tritt das einfache Wort erzeugen. Instanz ist eine irreführende Übersetzung des englischen Ausdrucks »instance«. ) oder Ausprägung genannt) einer Klasse.
+
+Eine Klasse deklariert im Wesentlichen zwei Dinge:
+
+Attribute (was das Objekt hat)
+
+Operationen (was das Objekt kann)
+
+
+
+
+
+
+
+
+```markdown
+Syntax highlighted code block
+
+# Header 1
+## Header 2
+### Header 3
+
+- Bulleted
+- List
+
+1. Numbered
+2. List
+
+**Bold** and _Italic_ and `Code` text
+
+[Link](url) and ![Image](src)
+```
+
+For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+
+### Support or Contact
+
+Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+>>>>>>> b5d5b130680092fa8a5fe3097f98155236d64d58
