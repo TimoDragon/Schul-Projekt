@@ -43,9 +43,11 @@ int number = 0;
 switch(number) {
     case 0: {
         System.out.println("Die Zahl ist 0");
+        break;
     }
     case 1: {
         System.out.println("Die Zahl ist 1");
+        break;
     }
 }
 ```

@@ -1,6 +1,9 @@
 import java.util.Scanner;
 
 public class Game {
+    Fight fight;
+    boolean fighting = false;
+
     //starts the game
     public void startGame() {
         Player player = new Player();
@@ -9,6 +12,19 @@ public class Game {
         Main.animation("Willkommen in unserem Spiel\n"
         + "Gebe 0 ein um das Inventar aufzurufen\n", 20);
         Main.animation("#########################\n", 25);
+
+        //Zum testen von Kämpfen
+        /*Fight fight = new Fight();
+        Enemy enemy = new Enemy();
+        Item sword = new Item();
+        enemy.setName("Drache");
+        sword.setType("Sword");
+        player.addItem(sword, 1);
+        fighting = true;
+
+        fight.setEnemy(enemy);
+        fight.startFight(player);*/
+
         requestInput(player);
     }
 
@@ -20,9 +36,14 @@ public class Game {
         sc.close();
     }
 
+    //check if the player is fighting
+    public boolean isFighting() {
+        return fighting;
+    }
+
     //on Console input
-    public void onInput(int input, Player player) {
-        switch(input) {
+    public void onInput(int in, Player player) {
+        switch(in) {
             case 0: {
                 Main.printInv(player);
                 break;
