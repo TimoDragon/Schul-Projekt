@@ -4,7 +4,7 @@ import java.util.LinkedHashMap;
 public class Main {
     public static void main(String[] args) {
         Game game = new Game();
-        game.startGame();
+        game.startGame(game);
     }
 
     //print the Inventory in the Console

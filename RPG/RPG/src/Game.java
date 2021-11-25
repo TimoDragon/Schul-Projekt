@@ -5,7 +5,7 @@ public class Game {
     boolean fighting = false;
 
     //starts the game
-    public void startGame() {
+    public void startGame(Game game) {
         Player player = new Player();
         
         Main.animation("#########################\n", 25);
@@ -14,7 +14,7 @@ public class Game {
         Main.animation("#########################\n", 25);
 
         //Zum testen von Kämpfen
-        /*Fight fight = new Fight();
+        Fight fight = new Fight();
         Enemy enemy = new Enemy();
         Item sword = new Item();
         enemy.setName("Drache");
@@ -22,8 +22,12 @@ public class Game {
         player.addItem(sword, 1);
         fighting = true;
 
+        Item enemyWeapon = new Item();
+        enemyWeapon.setType("Kralle");
+        enemy.addWeapon(enemyWeapon);
+
         fight.setEnemy(enemy);
-        fight.startFight(player);*/
+        fight.startFight(player, game);
 
         requestInput(player);
     }
@@ -32,8 +36,8 @@ public class Game {
     public void requestInput(Player player) {
         Scanner sc = new Scanner(System.in);
         int input = sc.nextInt();
-        onInput(input, player);
         sc.close();
+        onInput(input, player);
     }
 
     //check if the player is fighting

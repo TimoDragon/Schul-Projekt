@@ -87,6 +87,9 @@ do while schleife:
 ```java
 ```
 
+<<<<<<< HEAD
+## Einführung in die Objektorientiere Programmierung
+=======
 # Einführung in die Objektorientiere Programmierung zusammenfassung
 
 ## Objektorientierte Programmierung
@@ -108,6 +111,7 @@ Eine Klasse deklariert im Wesentlichen zwei Dinge:
 
 Attribute (was das Objekt hat)
 
+<<<<<<< HEAD
 Operationen (was das Objekt kann)
 
 ## Klassendiagramme
@@ -178,3 +182,6 @@ For more details see [Basic writing and formatting syntax](https://docs.github.c
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+=======
+Operationen (was das Objekt kann)
+>>>>>>> 891db91997ecdb859cfe3c1412cfaa32554d266d
