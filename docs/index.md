@@ -111,10 +111,77 @@ Attribute (was das Objekt hat)
 
 Operationen (was das Objekt kann)
 
+## Implemation 
+
+Das Interface gibt vor, welche Methoden Du in den konkreten Klassen programmieren musst. In den Interfaces selbst steht überhaupt kein Code, sondern es werden nur die Methodennamen mit Rückgabewert und Parametern angegeben.
+
+Zu Deinem Beispiel mit Shape (Form) und Rectangle (Rechteck).
+
+In einer Firma arbeiten 3 Mitarbeiter, die gemeinsam an einem Programm entwickeln. Mit diesem Programm sollen verschiedene mathematische Berechnungen und die Darstellung von Formen möglich sein.
+
+Der 1 Mitarbeiter schreibt das Hauptprogramm, welches die verschiedene Formen benutzt, d.h. diese anzeigt und mit ihnen Berechnungen ausführt. Da er allerdings nicht auch noch die konkreten Klassen für die Formen Kreis, Rechteck, Quadrat, Raute, Dreieck programmieren kann (aus Zeitmangel), er aber bereits weiß, welche Funktionen/Methoden alle diese Klassen gemeinsam haben müssen, schreibt er für die beiden anderen Mitarbeiter eine Vereinbarung/Interface.
+
+Code:
+```java
+interface Form {
+
+public double berechneUmfang(); 
+public double berechneFlaeche();
+public void formAnzeigen();
+public void formAusmalen(Color color);
+usw.
+}
+``` 
+
+Anschließend gibt er dieses Interface an die beiden anderen weiter, mit der Bitte die noch fehlenden Klassen Kreis, Rechteck, Quadrat, Raute, Dreieck zu programmieren. Durch das Interface wissen jetzt beide Mitarbeiter, welche Methoden die konkreten Klassen unbedingt haben müssen. Und so programmieren sie die konkreten Klassen.
+
+Code:
+```java
+public class Kreis implements Form {
+
+//Konstruktor
+public Kreis(){}
+
+public double berechneUmfang() {
+
+    //Hier steht der Code zur Berechnung des Umfanges
+   return umfang;
+
+} 
+
+public double berechneFlaeche() {
+
+    //Hier steht der Code zur Berechnung der Fläche
+   return flaeche;
+
+}
+
+public void formAnzeigen() {
+
+    //Hier steht der Code zum Anzeigen
+   return umfang;
+
+}
+
+public void formAusmalen(Color color) {
+
+    //Hier steht der Code zum Ausmalen
+   return umfang;
+
+}
+
+... entsprechend die weiteren Klassen
+```
+
+Interfaces helfen außerdem Deinen Code von konkreten Implementierungen zu entkoppeln. D.h. Der Mitarbeiter, der das Hauptprogramm schreibt, verwendet in seinem Programm einfach das Interface und lässt sich eine konkrete Klasse z.B. durch eine Factory erzeugen bzw. injezieren (Stichpunkte Dependency Injection und Spring).
+
+Code:
+  ```Java
+  //irgendwo im Programm
+  Form meineForm = Factory.erzeugekonkreteForm();
+  ```
+
 ## Klassendiagramme
-
-### Die lose Beziehung
-
 ### Typ 1 «instanziiert»
 
 Wenn wir ein Objekt erstellen, welches ein anderes Objekt verwendet, ohne dessen Referenz als Membervariable zu speichern, handelt es sich um eine lose «inszanziiert» Beziehung.
@@ -150,4 +217,35 @@ Aggregation (Spezialfall der Assoziation)
 
 Komposition (Spezialfall der Aggregation)
 
+
+
+
+
+
+
+```markdown
+Syntax highlighted code block
+
+# Header 1
+## Header 2
+### Header 3
+
+- Bulleted
+- List
+
+1. Numbered
+2. List
+
+**Bold** and _Italic_ and `Code` text
+
+[Link](url) and ![Image](src)
+```
+
+For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+
+### Support or Contact
+
+Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+=======
 Operationen (was das Objekt kann)
+>>>>>>> 891db91997ecdb859cfe3c1412cfaa32554d266d
