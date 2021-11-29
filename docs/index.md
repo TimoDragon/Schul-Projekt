@@ -87,7 +87,6 @@ do while schleife:
 ```java
 ```
 
-<<<<<<< HEAD
 ## Einführung in die Objektorientiere Programmierung
 =======
 # Einführung in die Objektorientiere Programmierung zusammenfassung
@@ -111,7 +110,6 @@ Eine Klasse deklariert im Wesentlichen zwei Dinge:
 
 Attribute (was das Objekt hat)
 
-<<<<<<< HEAD
 Operationen (was das Objekt kann)
 
 ## Klassendiagramme
@@ -152,3 +150,5 @@ Assoziation
 Aggregation (Spezialfall der Assoziation)
 
 Komposition (Spezialfall der Aggregation)
+
+Operationen (was das Objekt kann)
