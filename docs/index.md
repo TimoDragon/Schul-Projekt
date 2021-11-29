@@ -59,6 +59,7 @@ switch(number) {
     }
 }
 ```
+Bei dem switch gibt man einen Datentypen ein den man mit den cases vergleichen will. Zum beispiel gibt man den Datentypen "number" ein, welcher ein Integer ist und vergleicht ihn mit 0 und 1. Falls die Zahl 0 ist wird in der Konsole "Die Zahl ist 0" ausgeben, falls dieser 1 ist erscheint "Die Zahl ist 1". "break" sorgt dafür, dass das vergleichen beendet wird.
 
 ### 4. Schleifen
 for schleife:
