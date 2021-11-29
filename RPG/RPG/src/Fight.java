@@ -8,12 +8,12 @@ public class Fight {
     private Game game;
 
     //start the fight
-    public void startFight(Player player, Game runninGame) {
+    public void startFight(Player player, Game runningGame) {
         Main.animation("~~~~~~~~~~~~~~~~~~~~~~~~~\n", 25);
         Main.animation("Du kommt in einen Kampf mit " + enemy.getName() + "\n", 20);
         Main.animation("~~~~~~~~~~~~~~~~~~~~~~~~~\n", 25);
 
-        game = runninGame;
+        game = runningGame;
 
         for (int i = 0; i < player.getInventory().size(); i++) {
             if (player.getInventory().get(i).getType().equals("Sword")) {
@@ -86,10 +86,14 @@ public class Fight {
     //enemy attack back
     public void enemyAttack(Player player, Enemy enemy) {
         boolean wasEnemy = true;
-        int random = (int) Math.random()*(enemy.getWeapons().size()-1)+1;
-        Item weapon = enemy.getWeapons().get(random-1);
+        int max = enemy.getWeapons().size();
+        int min = 1;
 
-        Main.animation(enemy.getName() + " greift dich mit " + weapon.getType()+ " an\nDu erleidest "
+        int random = (int) Math.floor(Math.random()*(max-min+1));
+
+        Item weapon = enemy.getWeapons().get(random);
+
+        Main.animation(enemy.getName() + " greift dich mit " + weapon.getType() + " an\nDu erleidest "
                         + enemy.getDamage() + " Schaden\n", 25);
         player.setHealth(player.getHealth() - enemy.getDamage());
 

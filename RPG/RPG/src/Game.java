@@ -12,23 +12,7 @@ public class Game {
         Main.animation("Willkommen in unserem Spiel\n"
         + "Gebe 0 ein um das Inventar aufzurufen\n", 20);
         Main.animation("#########################\n", 25);
-
-        //Zum testen von Kämpfen
-        Fight fight = new Fight();
-        Enemy enemy = new Enemy();
-        Item sword = new Item();
-        enemy.setName("Drache");
-        sword.setType("Sword");
-        player.addItem(sword, 1);
-        fighting = true;
-
-        Item enemyWeapon = new Item();
-        enemyWeapon.setType("Kralle");
-        enemy.addWeapon(enemyWeapon);
-
-        fight.setEnemy(enemy);
-        fight.startFight(player, game);
-
+        
         requestInput(player);
     }
 
