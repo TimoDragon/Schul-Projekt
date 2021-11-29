@@ -88,8 +88,6 @@ do while schleife:
 ```
 
 ## Einführung in die Objektorientiere Programmierung
-=======
-# Einführung in die Objektorientiere Programmierung zusammenfassung
 
 ## Objektorientierte Programmierung
 
@@ -116,7 +114,7 @@ Operationen (was das Objekt kann)
 
 ### Die lose Beziehung
 
-###Typ 1 «instanziiert»
+### Typ 1 «instanziiert»
 
 Wenn wir ein Objekt erstellen, welches ein anderes Objekt verwendet, ohne dessen Referenz als Membervariable zu speichern, handelt es sich um eine lose «inszanziiert» Beziehung.
 
