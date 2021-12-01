@@ -28,7 +28,11 @@ Ein Interpreter ist ein Computerprogramm, das den Quellcode eines Softwareprojek
 ### 1. Inkrementoperator
 
 ### 2. Typecasting
-    
+Beim Typecasting geht es darum, einen größeren Datentypen in einen kleineren oder einen kleineren Datentypen in einen größeren umzuwandeln.
+Die Reihenfolge von klein zu groß ist z.B.
+```byte -> short -> char -> int -> long -> float -> double```
+und von groß zu klein z.B.
+```double -> float -> long -> int -> char -> short -> byte```
 ###  3. Bedingungen
 if Bedingung:
 
@@ -89,7 +93,11 @@ so lange wie i unter 10 ist. Nach jeder wiederholung wird i um 1 größer in die
 
 do while schleife:
 ```java
+do {
+
+} while();
 ```
+Es wird erst der Code ausgeführt der in "do {}" steht und dann wird geschaut ob der wert in "while" true ist. Falls dieser wahr ist wird der Code nochmal ausgeführt solange bis der wert false ist.
 
 ## Einführung in die Objektorientiere Programmierung
 
@@ -220,35 +228,4 @@ Aggregation (Spezialfall der Assoziation)
 
 Komposition (Spezialfall der Aggregation)
 
-
-
-
-
-
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
-=======
 Operationen (was das Objekt kann)
->>>>>>> 891db91997ecdb859cfe3c1412cfaa32554d266d
