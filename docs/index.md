@@ -25,7 +25,11 @@ Ein Compiler ist ein Computerprogramm, das den gesamten Quellcode eines Software
 ### 1. Inkrementoperator
 
 ### 2. Typecasting
-    
+Beim Typecasting geht es darum, einen größeren Datentypen in einen kleineren oder einen kleineren Datentypen in einen größeren umzuwandeln.
+Die Reihenfolge von klein zu groß ist z.B.
+```byte -> short -> char -> int -> long -> float -> double```
+und von groß zu klein z.B.
+```double -> float -> long -> int -> char -> short -> byte```
 ###  3. Bedingungen
 if Bedingung:
 
@@ -86,7 +90,11 @@ so lange wie i unter 10 ist. Nach jeder wiederholung wird i um 1 größer in die
 
 do while schleife:
 ```java
+do {
+
+} while();
 ```
+Es wird erst der Code ausgeführt der in "do {}" steht und dann wird geschaut ob der wert in "while" true ist. Falls dieser wahr ist wird der Code nochmal ausgeführt solange bis der wert false ist.
 
 ## Einführung in die Objektorientiere Programmierung
 
