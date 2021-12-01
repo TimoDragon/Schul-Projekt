@@ -232,36 +232,36 @@ Operationen (was das Objekt kann)
 
 ## Klassendiagramme 
 
-	- Klasse fasst alle Gemeinsamkeiten von Objekten zusammen 
-	- Objekt ist eine Ausprägung einer Klasse und stellt ein Objekt aus der realen Welt da
-	- Klassendiagramm dient zur Verständlichkeit von Programm bevor man dieser überhaupt programmiert 
-	- Klassendiagramme werden mit Hilfe von UML(Unified Modeling Language- graphische Modellierungssprache) 
-	- Werden immer als Rechtecke dargestellt 
-	- Dieses teilt man in Namen, Attributen und Methoden 
-- 
-	1. Klassenname (Z.B. NeueKlasse)
+- Klasse fasst alle Gemeinsamkeiten von Objekten zusammen 
+- Objekt ist eine Ausprägung einer Klasse und stellt ein Objekt aus der realen Welt da
+- Klassendiagramm dient zur Verständlichkeit von Programm bevor man dieser überhaupt programmiert 
+- Klassendiagramme werden mit Hilfe von UML(Unified Modeling Language- graphische Modellierungssprache) 
+- Werden immer als Rechtecke dargestellt 
+- Dieses teilt man in Namen, Attributen und Methoden 
+  
+1. Klassenname (Z.B. NeueKlasse)
    
-	2. Attribute
-	3. Methoden
+2. Attribute
+3. Methoden
    
-    -= Datenkapselung (vor Attributen/ Methoden)
-    += public        
-	-= private    
-	~ = package  
-	#= protected 
+ -= Datenkapselung (vor Attributen/ Methoden)
+ += public        
+-= private    
+~ = package  
+#= protected 
 	
-	Unterstreichen von Attributen definiert man als Klassenatribute 
-    Unterstreichen von Methoden definiert man als Klassenmethoden
+Unterstreichen von Attributen definiert man als Klassenatribute 
+Unterstreichen von Methoden definiert man als Klassenmethoden
 
-    [![Klassendiagramme](https://img.youtube.com/vi/zzwUH3vbNkc/0.jpg)](https://www.youtube.com/watch?v=zzwUH3vbNkc)
+[![Klassendiagramme](https://img.youtube.com/vi/zzwUH3vbNkc/0.jpg)](https://www.youtube.com/watch?v=zzwUH3vbNkc)
 
-    ## Objektdiagramm 
+## Objektdiagramm 
 
-	- Objekt= Ausprägung einer Klasse 
-	- Objektdiagramm ist ähnlich wie Klassendiagramm aufgebaut und orientiert sich immer auf dessen Struktur 
-	- Objektdiagramm wird als Rechteck dargestellt 
-	1. Objektname: Klassenname (muss unterstreichen)
-	2. Attributname = Attributwert  
-       ( Attributname muss gleich wie in der Klassenname sein)
+- Objekt= Ausprägung einer Klasse 
+- Objektdiagramm ist ähnlich wie Klassendiagramm aufgebaut und orientiert sich immer auf dessen Struktur 
+- Objektdiagramm wird als Rechteck dargestellt 
+1. Objektname: Klassenname (muss unterstreichen)
+2. Attributname = Attributwert  
+ ( Attributname muss gleich wie in der Klassenname sein)
 
-       [![Objektdiagramme](https://img.youtube.com/vi/oaykwg2_TG8/0.jpg)](https://www.youtube.com/watch?v=oaykwg2_TG8)
+ [![Objektdiagramme](https://img.youtube.com/vi/oaykwg2_TG8/0.jpg)](https://www.youtube.com/watch?v=oaykwg2_TG8)
