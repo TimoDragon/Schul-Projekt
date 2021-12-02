@@ -22,15 +22,38 @@ Ein Interpreter ist ein Computerprogramm, das den Quellcode eines Softwareprojek
 Ein Compiler ist ein Computerprogramm, das den gesamten Quellcode eines Softwareprojekts vor der Ausführung in Maschinensprache übersetzt. Erst dann wird das Projekt vom Prozessor ausgeführt, sodass ihm von Anfang an alle Anweisungen im Maschinencode zur Verfügung stehen. Auf diese Weise ist der Prozessor bereit, alle Komponenten auszuführen, die zum Ausführen der entsprechenden Software, zur Verarbeitung von Eingaben und zur Erzeugung von Ausgaben erforderlich sind. In vielen Fällen erfolgt jedoch ein entscheidender Zwischenschritt im Kompilierungsprozess: Vor der endgültigen Übersetzung in Maschinensprache wandeln die meisten Compiler in der Regel zunächst den Quellcode in Zwischencode (auch „Objektcode“ genannt). Plattformen und kann auch von einem Dolmetscher verwendet werden.
 
 ## Einführung in die Programmierung
-### 1. Inkrementoperator
 
-### 2. Typecasting
+### 1. Variablen
+Variablen sind Speicherzuweisungen, mit denen man z.B. Zahlen oder Text abspeichern kann. Um Zahlen abzuspeichern gib es byte, short, char, int, long und double. Um Text abzuspeichern nutzt man String.
+Die Maximalen/Minimalen werte für die jeweiligen Zahlen Speicherzuweisungen sind:
+```
+boolean: false, true
+bye: -128 bis 127
+short: -32768 bis 32767
+char: ein Buchstabe
+int: -2.147.483.648 bis 2.147.483.647
+long: -9.223.372.036.854.775.808 bis 9.223.372.036.854.775.807
+float: 1,40239846 x 10^-45 bis 3,40282347 x 10^38
+double: 4,9406564584124654 x 10^-324 bis 1,7976931348623157 x 10^308
+```
+### 2. Inkrementoperator
+
+```java
+int number = 10;
+
+System.out.println(number++); //In der Konsole erscheint 10
+System.out.println(numer); //In der Konsole erscheint 11
+System.out.println(++number); //In der Konsole erscheint 12
+```
+Wenn man einen Konsolen output von number haben will und man "number++" geschrieben hat, dann wird die jeweilige Zahl von number ausgegeben und dann erst eins Höher gerechnet. Wenn man jedoch ++ davor schreibt wird erst ein hoch gerechnet und dann number in der Konsole ausgegeben. Um eins runter zu gehen ersetzt man "++" mit "--".
+
+### 3. Typecasting
 Beim Typecasting geht es darum, einen größeren Datentypen in einen kleineren oder einen kleineren Datentypen in einen größeren umzuwandeln.
 Die Reihenfolge von klein zu groß ist z.B.
 ```byte -> short -> char -> int -> long -> float -> double```
 und von groß zu klein z.B.
 ```double -> float -> long -> int -> char -> short -> byte```
-###  3. Bedingungen
+###  4. Bedingungen
 if Bedingung:
 
 ```java
@@ -65,7 +88,7 @@ switch(number) {
 ```
 Bei dem switch gibt man einen Datentypen ein den man mit den cases vergleichen will. Zum beispiel gibt man den Datentypen "number" ein, welcher ein Integer ist und vergleicht ihn mit 0 und 1. Falls die Zahl 0 ist wird in der Konsole "Die Zahl ist 0" ausgeben, falls dieser 1 ist erscheint "Die Zahl ist 1". "break" sorgt dafür, dass das vergleichen beendet wird.
 
-### 4. Schleifen
+### 5. Schleifen
 for schleife:
 ```java
 for (int i = 0; i < 10; i++) {
