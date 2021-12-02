@@ -138,7 +138,7 @@ Das heißt diese werden deklariert.
 Schau dir den folgenden Code dazu an.
 Uns interessiert jetzt erst einmal nur die Klassenvariable x.
 
-```Java
+```java
 public class KlassenInitialisierung {
     public static int x=5; //statische Variable vom Datentyp Integer
     int y; //Instanzvariable vom Datentyp Integer
@@ -157,7 +157,7 @@ Und das war es dann auch schon mit Phase eins.
 In Phase zwei wird der Variablen dann ein Wert zugewiesen und es werden Methoden gepackt.
 Jetzt, in Phase zwei, wird der Klassenvariablen der entsprechende Wert zugewiesen.
 
-```Java
+```java
 public class KlassenInitialisierung {
     public static int x=5; //Zuweisung des Wertes 5 in Phase zwei der Java Klassen Initialisierung
     int y; //Instanzvariable vom Datentyp Integer
@@ -173,7 +173,7 @@ Erst in Phase zwei bekommt die Variable den Wert 5 zugewiesen.
 Außerdem werden jetzt die Instanzmethoden angelegt.
 In diesem Beispiel siehst du die Instanzmethode zunehmenWerte(), welche den Wert der Instanzvariable erhöht.
 
-```Java
+```java
 public class KlassenInitialisierung {
     public static int x=5; //statische Variable vom Datentyp Integer
     int y; //Instanzvariable vom Datentyp Integer
@@ -193,7 +193,7 @@ Diese würde dann als Argument ein Objekt der Klasse erwarten und die Instanzvar
 In diesem Fall heißt das Argument bzw. Variable ganz einfach „wert“.
 Und diese Variable ist vom Datentyp „KlassenInititialsierung“.
 
-```Java
+```java
 public class KlassenInitialisierung {
     public static int x=5; //statische Variable vom Datentyp Integer
     int y; //Instanzvariable vom Datentyp Integer
