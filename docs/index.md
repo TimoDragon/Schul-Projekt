@@ -140,12 +140,12 @@ Uns interessiert jetzt erst einmal nur die Klassenvariable x.
 
 ```Java
 public class KlassenInitialisierung {
-public static int x=5; //statische Variable vom Datentyp Integer
-int y; //Instanzvariable vom Datentyp Integer
- 
-public static void main (String [] args){
- 
-}
+    public static int x=5; //statische Variable vom Datentyp Integer
+    int y; //Instanzvariable vom Datentyp Integer
+    
+    public static void main (String [] args){
+    
+    }
 }
 ```
 Es wird also java intern ein Speicherplatz für die Variable x reserviert.
@@ -159,12 +159,12 @@ Jetzt, in Phase zwei, wird der Klassenvariablen der entsprechende Wert zugewiese
 
 ```Java
 public class KlassenInitialisierung {
-public static int x=5; //Zuweisung des Wertes 5 in Phase zwei der Java Klassen Initialisierung
-int y; //Instanzvariable vom Datentyp Integer
- 
-public static void main (String [] args){
- 
-}
+    public static int x=5; //Zuweisung des Wertes 5 in Phase zwei der Java Klassen Initialisierung
+    int y; //Instanzvariable vom Datentyp Integer
+    
+    public static void main (String [] args){
+    
+    }
 }
 ```
 Das bedeutet:
@@ -175,16 +175,17 @@ In diesem Beispiel siehst du die Instanzmethode zunehmenWerte(), welche den Wert
 
 ```Java
 public class KlassenInitialisierung {
-public static int x=5; //statische Variable vom Datentyp Integer
-int y; //Instanzvariable vom Datentyp Integer
- 
-public void zunehmenWerte(){ //Instanzmethode erhöht den Wert der Instanzvariablen
-y=y+22;
-System.out.println(y);
-}
-public static void main (String [] args){
- 
-}
+    public static int x=5; //statische Variable vom Datentyp Integer
+    int y; //Instanzvariable vom Datentyp Integer
+    
+    public void zunehmenWerte(){ //Instanzmethode erhöht den Wert der Instanzvariablen
+        y=y+22;
+        System.out.println(y);
+    }
+
+    public static void main (String [] args){
+    
+    }
 }
 ```
 Diese Methode wird jetzt java-intern als statische Methode gewandelt.
@@ -194,22 +195,24 @@ Und diese Variable ist vom Datentyp „KlassenInititialsierung“.
 
 ```Java
 public class KlassenInitialisierung {
-public static int x=5; //statische Variable vom Datentyp Integer
-int y; //Instanzvariable vom Datentyp Integer
- 
-public void zunehmenWerte(){ //Instanzmethode
-y=y+22; //Erhöhung der Instanzvariablen
-System.out.println(y); //Rückgabe von y
-}
-public static void zunehmenWerte(KlassenInitialisierung wert){ //abgewandelte Klassenmethode
-wert.y=wert.y+22; //Erhöhung der Instanzvariablen
-System.out.println(wert.y); //Rückgabe von y
-}
-public static void main (String [] args){
-KlassenInitialisierung objektEins = new KlassenInitialisierung(); //Objekt erzeugen
-objektEins.zunehmenWerte(); //Aufruf der Instanzmethode
-zunehmenWerte(objektEins); //Aufruf der Java Klassen Methode
-}
+    public static int x=5; //statische Variable vom Datentyp Integer
+    int y; //Instanzvariable vom Datentyp Integer
+    
+    public void zunehmenWerte(){ //Instanzmethode
+        y=y+22; //Erhöhung der Instanzvariablen
+        System.out.println(y); //Rückgabe von y
+    }
+
+    public static void zunehmenWerte(KlassenInitialisierung wert){ //abgewandelte Klassenmethode
+        wert.y=wert.y+22; //Erhöhung der Instanzvariablen
+        System.out.println(wert.y); //Rückgabe von y
+    }
+
+    public static void main (String [] args){
+        KlassenInitialisierung objektEins = new KlassenInitialisierung(); //Objekt erzeugen
+        objektEins.zunehmenWerte(); //Aufruf der Instanzmethode
+        zunehmenWerte(objektEins); //Aufruf der Java Klassen Methode
+    }
 }
 ```
 Klar ist, dass beide Methoden genau das Gleiche machen.
