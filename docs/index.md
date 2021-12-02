@@ -2,24 +2,27 @@
 
 ## Allgemein
 
-
-### - EVA Prinzip
+### 1. EVA Prinzip
 Das EVA-Prinzip beschreibt die Grundprinzipien der Datenverarbeitung. Das Akronym leitet sich aus den Initialen der Begriffe Input, Processing und Output ab (englisches IPO-Modell: Input-Process-Output). Diese drei Begriffe beschreiben den Ablauf der Datenverarbeitung. Dieses Prinzip wird aus der Perspektive der Verarbeitungseinheit (die auch ein Mensch sein kann) betrachtet und ist somit unabhängig von elektronischen Maschinen. Daher ist sie allgemein auf den Prozess der Datenverarbeitung anwendbar.
 
-[![Eva.Prinzip](https://img.youtube.com/vi/bRHJd8_afn0/0.jpg)](https://www.youtube.com/watch?v=bRHJd8_afn0)
+[![Eva.Prinp](https://img.youtube.com/vi/bRHJd8_afn0/0.jpg)](https://www.youtube.com/watch?v=bRHJd8_afn0)
 
-### - Was ist ein Algorithmus
+### 2. Was ist ein Algorithmus
 Im Allgemeinen ist ein Algorithmus eine Reihe von Anweisungen, die Schritt für Schritt ausgeführt werden, um ein Problem zu lösen oder eine Aufgabe zu erledigen. Der Algorithmus von Google bestimmt beispielsweise, welche Website an welcher Position in den Google-Suchergebnissen angezeigt wird.
 
-### -Compiler und Interpreter
+### 3.Compiler und Interpreter
 
-#### -Interpreter 
+#### 3.1 Compiler
+
+Ein Compiler ist ein Computerprogramm, das den gesamten Quellcode eines Softwareprojekts vor der Ausführung in Maschinensprache übersetzt. Erst dann wird das Projekt vom Prozessor ausgeführt, sodass ihm von Anfang an alle Anweisungen im Maschinencode zur Verfügung stehen. Auf diese Weise ist der Prozessor bereit, alle Komponenten auszuführen, die zum Ausführen der entsprechenden Software, zur Verarbeitung von Eingaben und zur Erzeugung von Ausgaben erforderlich sind. In vielen Fällen erfolgt jedoch ein entscheidender Zwischenschritt im Kompilierungsprozess: Vor der endgültigen Übersetzung in Maschinensprache wandeln die meisten Compiler in der Regel zunächst den Quellcode in Zwischencode (auch „Objektcode“ genannt). Plattformen und kann auch von einem Dolmetscher verwendet werden.
+
+[![Compiler](https://img.youtube.com/vi/Uuyf3wrGOYM/0.jpg)](https://www.youtube.com/watch?v=Uuyf3wrGOYM)
+
+#### 3.2 Interpreter 
 
 Ein Interpreter ist ein Computerprogramm, das den Quellcode eines Softwareprojekts zur Laufzeit (also bei seiner Ausführung) verarbeitet und als Schnittstelle zwischen dem Projekt und dem Prozessor fungiert. Der Interpreter verarbeitet den Code immer Zeile für Zeile, um nacheinander einzelne Anweisungen für den Prozessor zu lesen, zu analysieren und aufzubereiten. Dieses Prinzip gilt auch für Schleifenanweisungen, die wieder ausgeführt werden, sobald sie an der Reihe sind. Interpreter verwenden eine eigene interne Bibliothek, um Softwarecode zu verarbeiten: Sobald eine Zeile Quellcode in einen entsprechenden maschinenlesbaren Befehl umgewandelt ist, wird sie direkt an den Prozessor weitergeleitet.
 
-#### -Compiler
-
-Ein Compiler ist ein Computerprogramm, das den gesamten Quellcode eines Softwareprojekts vor der Ausführung in Maschinensprache übersetzt. Erst dann wird das Projekt vom Prozessor ausgeführt, sodass ihm von Anfang an alle Anweisungen im Maschinencode zur Verfügung stehen. Auf diese Weise ist der Prozessor bereit, alle Komponenten auszuführen, die zum Ausführen der entsprechenden Software, zur Verarbeitung von Eingaben und zur Erzeugung von Ausgaben erforderlich sind. In vielen Fällen erfolgt jedoch ein entscheidender Zwischenschritt im Kompilierungsprozess: Vor der endgültigen Übersetzung in Maschinensprache wandeln die meisten Compiler in der Regel zunächst den Quellcode in Zwischencode (auch „Objektcode“ genannt). Plattformen und kann auch von einem Dolmetscher verwendet werden.
+[![Interpreter](https://img.youtube.com/vi/d1oGGY1Tlb0/0.jpg)](https://www.youtube.com/watch?v=d1oGGY1Tlb0)
 
 ## Einführung in die Programmierung
 
@@ -142,75 +145,111 @@ Attribute (was das Objekt hat)
 
 Operationen (was das Objekt kann)
 
-## Implemation 
+## Initialisierung von Klassen
 
-Das Interface gibt vor, welche Methoden Du in den konkreten Klassen programmieren musst. In den Interfaces selbst steht überhaupt kein Code, sondern es werden nur die Methodennamen mit Rückgabewert und Parametern angegeben.
+### Die 2 Phasen um Java Klassen zu initialisieren
 
-Zu Deinem Beispiel mit Shape (Form) und Rectangle (Rechteck).
+Kategorie(n): Java klassen, Java Programmierung
 
-In einer Firma arbeiten 3 Mitarbeiter, die gemeinsam an einem Programm entwickeln. Mit diesem Programm sollen verschiedene mathematische Berechnungen und die Darstellung von Formen möglich sein.
+Die Java Klassen Initialisierung durchläuft zwei Phasen.
 
-Der 1 Mitarbeiter schreibt das Hauptprogramm, welches die verschiedene Formen benutzt, d.h. diese anzeigt und mit ihnen Berechnungen ausführt. Da er allerdings nicht auch noch die konkreten Klassen für die Formen Kreis, Rechteck, Quadrat, Raute, Dreieck programmieren kann (aus Zeitmangel), er aber bereits weiß, welche Funktionen/Methoden alle diese Klassen gemeinsam haben müssen, schreibt er für die beiden anderen Mitarbeiter eine Vereinbarung/Interface.
+Diese beiden Phasen sind im Grunde genommen, wie die Phasen 2 und 3 bei der Instanz-Initialisierung.
 
-Code:
+In Phase eins werden die Klassenvariablen der entsprechenden Java Klassen angelegt
+Das heißt diese werden deklariert.
+
+Schau dir den folgenden Code dazu an.
+Uns interessiert jetzt erst einmal nur die Klassenvariable x.
+
 ```java
-interface Form {
-
-public double berechneUmfang(); 
-public double berechneFlaeche();
-public void formAnzeigen();
-public void formAusmalen(Color color);
-usw.
+public class KlassenInitialisierung {
+    public static int x=5; //statische Variable vom Datentyp Integer
+    int y; //Instanzvariable vom Datentyp Integer
+    
+    public static void main (String [] args){
+    
+    }
 }
-``` 
-
-Anschließend gibt er dieses Interface an die beiden anderen weiter, mit der Bitte die noch fehlenden Klassen Kreis, Rechteck, Quadrat, Raute, Dreieck zu programmieren. Durch das Interface wissen jetzt beide Mitarbeiter, welche Methoden die konkreten Klassen unbedingt haben müssen. Und so programmieren sie die konkreten Klassen.
-
-Code:
-```java
-public class Kreis implements Form {
-
-//Konstruktor
-public Kreis(){}
-
-public double berechneUmfang() {
-
-    //Hier steht der Code zur Berechnung des Umfanges
-   return umfang;
-
-} 
-
-public double berechneFlaeche() {
-
-    //Hier steht der Code zur Berechnung der Fläche
-   return flaeche;
-
-}
-
-public void formAnzeigen() {
-
-    //Hier steht der Code zum Anzeigen
-   return umfang;
-
-}
-
-public void formAusmalen(Color color) {
-
-    //Hier steht der Code zum Ausmalen
-   return umfang;
-
-}
-
-... entsprechend die weiteren Klassen
 ```
+Es wird also java intern ein Speicherplatz für die Variable x reserviert.
+Die Größe des reservierten Speicherplatzes ist wieder abhängig vom jeweiligen Datentyp.
+Und das war es dann auch schon mit Phase eins.
 
-Interfaces helfen außerdem Deinen Code von konkreten Implementierungen zu entkoppeln. D.h. Der Mitarbeiter, der das Hauptprogramm schreibt, verwendet in seinem Programm einfach das Interface und lässt sich eine konkrete Klasse z.B. durch eine Factory erzeugen bzw. injezieren (Stichpunkte Dependency Injection und Spring).
+## Phase 2
 
-Code:
-  ```Java
-  //irgendwo im Programm
-  Form meineForm = Factory.erzeugekonkreteForm();
-  ```
+In Phase zwei wird der Variablen dann ein Wert zugewiesen und es werden Methoden gepackt.
+Jetzt, in Phase zwei, wird der Klassenvariablen der entsprechende Wert zugewiesen.
+
+```java
+public class KlassenInitialisierung {
+    public static int x=5; //Zuweisung des Wertes 5 in Phase zwei der Java Klassen Initialisierung
+    int y; //Instanzvariable vom Datentyp Integer
+    
+    public static void main (String [] args){
+    
+    }
+}
+```
+Das bedeutet:
+Erst in Phase zwei bekommt die Variable den Wert 5 zugewiesen.
+
+Außerdem werden jetzt die Instanzmethoden angelegt.
+In diesem Beispiel siehst du die Instanzmethode zunehmenWerte(), welche den Wert der Instanzvariable erhöht.
+
+```java
+public class KlassenInitialisierung {
+    public static int x=5; //statische Variable vom Datentyp Integer
+    int y; //Instanzvariable vom Datentyp Integer
+    
+    public void zunehmenWerte(){ //Instanzmethode erhöht den Wert der Instanzvariablen
+        y=y+22;
+        System.out.println(y);
+    }
+
+    public static void main (String [] args){
+    
+    }
+}
+```
+Diese Methode wird jetzt java-intern als statische Methode gewandelt.
+Diese würde dann als Argument ein Objekt der Klasse erwarten und die Instanzvariablen des Objektes erhöhen.
+In diesem Fall heißt das Argument bzw. Variable ganz einfach „wert“.
+Und diese Variable ist vom Datentyp „KlassenInititialsierung“.
+
+```java
+public class KlassenInitialisierung {
+    public static int x=5; //statische Variable vom Datentyp Integer
+    int y; //Instanzvariable vom Datentyp Integer
+    
+    public void zunehmenWerte(){ //Instanzmethode
+        y=y+22; //Erhöhung der Instanzvariablen
+        System.out.println(y); //Rückgabe von y
+    }
+
+    public static void zunehmenWerte(KlassenInitialisierung wert){ //abgewandelte Klassenmethode
+        wert.y=wert.y+22; //Erhöhung der Instanzvariablen
+        System.out.println(wert.y); //Rückgabe von y
+    }
+
+    public static void main (String [] args){
+        KlassenInitialisierung objektEins = new KlassenInitialisierung(); //Objekt erzeugen
+        objektEins.zunehmenWerte(); //Aufruf der Instanzmethode
+        zunehmenWerte(objektEins); //Aufruf der Java Klassen Methode
+    }
+}
+```
+Klar ist, dass beide Methoden genau das Gleiche machen.
+Rufe doch, so wie ich auch, beide Methoden einmal in der main-Methode auf und klicke auf „Run“.
+
+Die Instanzvariable y wurde genau zweimal um 22 erhöht.
+Nicht schlecht, oder? 🙂
+
+Und genau das macht Java mit Instanzmethoden.
+Intern werden diese bei der Klassen Initialisierung als statische Methoden gewandelt und geführt.
+
+Das ganze spielt für dich erst einmal keine Rolle.
+Was aber durchaus wichtig ist, ist der Unterschied zwischen der Instanz-Initialisierung und der Klassen-Initialisierung.
+
 
 ## Klassendiagramme
 ### Typ 1 «instanziiert»
@@ -249,3 +288,39 @@ Aggregation (Spezialfall der Assoziation)
 Komposition (Spezialfall der Aggregation)
 
 Operationen (was das Objekt kann)
+
+## Klassendiagramme 
+
+- Klasse fasst alle Gemeinsamkeiten von Objekten zusammen 
+- Objekt ist eine Ausprägung einer Klasse und stellt ein Objekt aus der realen Welt da
+- Klassendiagramm dient zur Verständlichkeit von Programm bevor man dieser überhaupt programmiert 
+- Klassendiagramme werden mit Hilfe von UML(Unified Modeling Language- graphische Modellierungssprache) 
+- Werden immer als Rechtecke dargestellt 
+- Dieses teilt man in Namen, Attributen und Methoden 
+  
+1. Klassenname (Z.B. NeueKlasse)
+   
+2. Attribute
+3. Methoden
+   
+ -= Datenkapselung (vor Attributen/ Methoden)
+ += public        
+-= private    
+~ = package  
+#= protected 
+	
+Unterstreichen von Attributen definiert man als Klassenatribute 
+Unterstreichen von Methoden definiert man als Klassenmethoden
+
+[![Klassendiagramme](https://img.youtube.com/vi/zzwUH3vbNkc/0.jpg)](https://www.youtube.com/watch?v=zzwUH3vbNkc)
+
+## Objektdiagramm 
+
+- Objekt= Ausprägung einer Klasse 
+- Objektdiagramm ist ähnlich wie Klassendiagramm aufgebaut und orientiert sich immer auf dessen Struktur 
+- Objektdiagramm wird als Rechteck dargestellt 
+1. Objektname: Klassenname (muss unterstreichen)
+2. Attributname = Attributwert  
+ ( Attributname muss gleich wie in der Klassenname sein)
+
+ [![Objektdiagramme](https://img.youtube.com/vi/oaykwg2_TG8/0.jpg)](https://www.youtube.com/watch?v=oaykwg2_TG8)
