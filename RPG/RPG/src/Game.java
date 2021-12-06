@@ -2,41 +2,41 @@ import java.util.Scanner;
 
 public class Game {
     Fight fight;
-    boolean fighting = false;
+    boolean fighting, started = false;
 
     //starts the game
     public void startGame(Game game) {
         Player player = new Player();
         
-        Main.animation("#########################\n", 25);
-        Main.animation("Willkommen in unserem Spiel\n"
-        + "Gebe 0 ein um das Inventar aufzurufen\n", 20);
-        Main.animation("#########################\n", 25);
-        
+        Main.animation(Texte.start1, 25);
+        Main.animation(Texte.start2, 20);
+        Main.animation(Texte.start1, 25);
         requestInput(player);
+
+        Main.animation(Texte.prologue1, 25);
+        Main.animation(Texte.prologue2, 20);
+        Main.animation(Texte.prologue1, 25);
+        Main.animation(Texte.randomNumber, 10);
+        requestInput(player);
+
+        Main.animation(Texte.prologue3, 20);
+        boolean test1 = false;
+        do {
+            if (requestInput(player) == 1) {
+                test1 = true;
+                Main.animation(Texte.prologue4, 25);
+            }
+        } while(test1 == false);
     }
 
-    //to request Input
-    public void requestInput(Player player) {
+    public int requestInput(Player player) {
         Scanner sc = new Scanner(System.in);
         int input = sc.nextInt();
-        sc.close();
-        onInput(input, player);
+        return input;
     }
 
     //check if the player is fighting
     public boolean isFighting() {
         return fighting;
-    }
-
-    //on Console input
-    public void onInput(int in, Player player) {
-        switch(in) {
-            case 0: {
-                Main.printInv(player);
-                break;
-            }
-        }
-        requestInput(player);
     }
 }

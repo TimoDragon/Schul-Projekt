@@ -45,7 +45,7 @@ double: 4,9406564584124654 x 10^-324 bis 1,7976931348623157 x 10^308
 int number = 10;
 
 System.out.println(number++); //In der Konsole erscheint 10
-System.out.println(numer); //In der Konsole erscheint 11
+System.out.println(number); //In der Konsole erscheint 11
 System.out.println(++number); //In der Konsole erscheint 12
 ```
 Wenn man einen Konsolen output von number haben will und man "number++" geschrieben hat, dann wird die jeweilige Zahl von number ausgegeben und dann erst eins Höher gerechnet. Wenn man jedoch ++ davor schreibt wird erst ein hoch gerechnet und dann number in der Konsole ausgegeben. Um eins runter zu gehen ersetzt man "++" mit "--".
