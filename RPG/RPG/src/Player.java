@@ -13,7 +13,6 @@ public  class Player {
     //get the Item from a specific slot
     public Item getInventorySlot(int position) {
         Item invSlot = inventory.get(position);
-
         return invSlot;
     }
 
