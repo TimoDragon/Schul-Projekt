@@ -229,11 +229,35 @@ Was aber durchaus wichtig ist, ist der Unterschied zwischen der Instanz-Initiali
 
 
 ## Klassendiagramme
-### Typ 1 «instanziiert»
+## Infos
+
+- Klasse fasst alle Gemeinsamkeiten von Objekten zusammen 
+- Objekt ist eine Ausprägung einer Klasse und stellt ein Objekt aus der realen Welt da
+- Klassendiagramm dient zur Verständlichkeit von Programm bevor man dieser überhaupt programmiert 
+- Klassendiagramme werden mit Hilfe von UML(Unified Modeling Language- graphische Modellierungssprache) 
+- Werden immer als Rechtecke dargestellt 
+- Dieses teilt man in Namen, Attributen und Methoden 
+  
+1. Klassenname (Z.B. NeueKlasse)
+   
+2. Attribute
+3. Methoden
+   
+ -= Datenkapselung (vor Attributen/ Methoden)
+ += public        
+-= private    
+~ = package  
+#= protected 
+	
+Unterstreichen von Attributen definiert man als Klassenatribute 
+Unterstreichen von Methoden definiert man als Klassenmethoden
+
+[![Klassendiagramme](https://img.youtube.com/vi/zzwUH3vbNkc/0.jpg)](https://www.youtube.com/watch?v=zzwUH3vbNkc)
+### Typ 1 "instanziiert"
 
 Wenn wir ein Objekt erstellen, welches ein anderes Objekt verwendet, ohne dessen Referenz als Membervariable zu speichern, handelt es sich um eine lose «inszanziiert» Beziehung.
 
-### Typ 2 «use»
+### Typ 2 "use"
 
 Wenn wir auf ein statisches Element einer anderen Klasse zugreifen, handelt es sich um eine lose «use» Beziehung.
 
@@ -265,31 +289,6 @@ Aggregation (Spezialfall der Assoziation)
 Komposition (Spezialfall der Aggregation)
 
 Operationen (was das Objekt kann)
-
-## Klassendiagramme 
-
-- Klasse fasst alle Gemeinsamkeiten von Objekten zusammen 
-- Objekt ist eine Ausprägung einer Klasse und stellt ein Objekt aus der realen Welt da
-- Klassendiagramm dient zur Verständlichkeit von Programm bevor man dieser überhaupt programmiert 
-- Klassendiagramme werden mit Hilfe von UML(Unified Modeling Language- graphische Modellierungssprache) 
-- Werden immer als Rechtecke dargestellt 
-- Dieses teilt man in Namen, Attributen und Methoden 
-  
-1. Klassenname (Z.B. NeueKlasse)
-   
-2. Attribute
-3. Methoden
-   
- -= Datenkapselung (vor Attributen/ Methoden)
- += public        
--= private    
-~ = package  
-#= protected 
-	
-Unterstreichen von Attributen definiert man als Klassenatribute 
-Unterstreichen von Methoden definiert man als Klassenmethoden
-
-[![Klassendiagramme](https://img.youtube.com/vi/zzwUH3vbNkc/0.jpg)](https://www.youtube.com/watch?v=zzwUH3vbNkc)
 
 ## Objektdiagramm 
 
