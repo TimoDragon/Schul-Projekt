@@ -324,3 +324,8 @@ Unterstreichen von Methoden definiert man als Klassenmethoden
  ( Attributname muss gleich wie in der Klassenname sein)
 
  [![Objektdiagramme](https://img.youtube.com/vi/oaykwg2_TG8/0.jpg)](https://www.youtube.com/watch?v=oaykwg2_TG8)
+ 
+ # Aufgaben Java Toturail 
+
+ 
+ 
