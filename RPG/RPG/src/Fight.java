@@ -2,8 +2,8 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class Fight {
-    Enemy enemy;
-    boolean hasSword, hasAxe, hasShield;
+    private Enemy enemy;
+    private boolean hasSword, hasAxe, hasShield;
     private HashMap<Integer, String> equip = new HashMap<Integer, String>();
     private Game game;
 
@@ -60,9 +60,9 @@ public class Fight {
     //input during a fight
     public void input(int in, Player player) {
         if (equip.containsKey(in)) {
-            String itemName = equip.get(in);
+            String weaponName = equip.get(in);
 
-            switch (itemName) {
+            switch (weaponName) {
                 case "Sword": {
                     Main.animation("Du hast " + enemy.getName() + " 10 Schaden hinzugefügt\n", 25);
                     enemy.setHealth(enemy.getHealth() - 10);
@@ -91,11 +91,11 @@ public class Fight {
 
         int random = (int) Math.floor(Math.random()*(max-min+1));
 
-        Item weapon = enemy.getWeapons().get(random);
+        Weapon weapon = enemy.getWeapons().get(random);
 
-        Main.animation(enemy.getName() + " greift dich mit " + weapon.getType() + " an\nDu erleidest "
-                        + enemy.getDamage() + " Schaden\n", 25);
-        player.setHealth(player.getHealth() - enemy.getDamage());
+        Main.animation(enemy.getName() + " greift dich mit " + weapon.getName() + " an\nDu erleidest "
+                        + weapon.getDamage() + " Schaden\n", 25);
+        player.setHealth(player.getHealth() - weapon.getDamage());
 
         checkHealth(player, enemy, wasEnemy);
         requestFightInput(player);

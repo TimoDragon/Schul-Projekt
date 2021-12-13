@@ -57,11 +57,11 @@ public class Main {
         for (char c : text.toCharArray()) {
             System.out.print(c);
 
-            try {
+            /*try {
                 sleep(time);
             } catch (InterruptedException e) {
                 e.printStackTrace();
-            }
+            }*/
         }
     }
 }

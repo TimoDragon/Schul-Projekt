@@ -2,10 +2,9 @@ import java.util.ArrayList;
 
 public class Enemy {
     private String name;
-    private ArrayList<Item> weapons = new ArrayList<Item>();
+    private ArrayList<Weapon> weapons = new ArrayList<Weapon>();
     private int health = 100;
     private int resistance = 10;
-    private int damage = 10;
 
     //set the enemy Name
     public void setName(String in) {
@@ -36,31 +35,21 @@ public class Enemy {
     public void setResistance(int i) {
         resistance = i;
     }
- 
-    //get the enemy Damage
-    public int getDamage() {
-        return damage;
-    }
- 
-    //set the enemy Damage
-    public void setDamage(int i) {
-        damage = i;
-    }
 
     //get the weapon ArrayList
-    public ArrayList<Item> getWeapons() {
+    public ArrayList<Weapon> getWeapons() {
         return weapons;
     }
 
     //add a weapon
-    public void addWeapon(Item item) {
-        weapons.add(item);
+    public void addWeapon(Weapon weapon) {
+        weapons.add(weapon);
     }
 
     //remove a weapon
-    public void removeWeapon(Item item) {
-        if (weapons.contains(item)) {
-            weapons.remove(item);
+    public void removeWeapon(Weapon weapon) {
+        if (weapons.contains(weapon)) {
+            weapons.remove(weapon);
         }
     }
 }
