@@ -323,8 +323,14 @@ Operationen (was das Objekt kann)
  ( Attributname muss gleich wie in der Klassenname sein)
 
  [![Objektdiagramme](https://img.youtube.com/vi/oaykwg2_TG8/0.jpg)](https://www.youtube.com/watch?v=oaykwg2_TG8)
- 
+  
  # Aufgaben Java Toturail 
 
- 
+ Es ist Black Friday, alle Firmen haben hohe Rabatte. Aber da die Firmen die Preise vorher ansteigen lassen haben, um den größt möglichsten Gewinn zu erwirtschaften, weißt du nicht welche Rabatte sich Lohnen. 
+ Um dies ausrechen zu können schreibst du ein Programm welches die Rabatte aufgrund ihrer Preise Analysiert. Davor schreibst du ein Struktorprogramm auf um das Programm gernauer zu Verstehen. Hier zu hast du ein Rabatt t
+ Tabelle aus dem Internet runtergeladen. 
+
+ Gebe folgende Struktorporgramm  als Code wieder.
+
+
  
