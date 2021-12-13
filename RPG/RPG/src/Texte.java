@@ -24,5 +24,19 @@ public class Texte {
     static String story4 = "(1) Frage ihn wer ihn beobachtet\n";
     static String story4A = "Du: Wer beobachtet Sie?";
     static String story5 = "Akdov: Ich erkläre dir gleich alles. Aber nicht hier. Kennst du ein Platz, wo es sicher ist?\n";
-    static String story6 = "(1) Sage ich er soll dir folgen";
+    static String story6 = "(1) Sage ihm er soll dir folgen\n";
+    static String story7 = "Du: Ja, kommen Sie mit.\n*Ihr geht zu dem sicheren Ort*\nDu: Jetzt können wir reden.\nAkdov: Wo soll ich anfangen?\n       Mhhh....\n       Weißt du wer deine Eltern waren?\n";
+    static String story8 = "(1) Sag ihm das du dich nicht an sie erinnerst.\n";
+    static String story9 = "Du: Ich schätze normale Menschen. Ich kann mich aber nicht so gut an die erinnern\n";
+    static String story10 = "Akdov: Vor langer Zeit kannte ich dein Vater. Wir waren befreundet. Brandon war der beste\n       Bogenschütze in dem ganze Lande. Ich weiß, dass er dir Bogenschießen beigebracht hat. Ich hoffe,\n       dass du nach seinem Tod weiter übtest.\n"
+                            + "       Er hat mir viel über dich erzählt.\n       Und deine Mutter. Sie war die liebste Person, die ich je kannte. Es tut mir so leid.\n"
+                            + "       ...\n       Aa, ja ich wollte dir noch über die Prophezeiung erzählen.\n*Akdov hört schritte*\nAkdov: Los!\n       Hier, es hilft dir alle Antworten zu finden!\n       Jetzt lauf!\n"
+                            + "*Toni nimmt die Karte, rennt weg und Akdov sagt einen Zauberspruch und verschwindet. Als Toni zuhause ankommt öffnet sie die Karte und schaut sich diese an.\n";
+    static String story11 = "(1) Gehe zum Makierten berreich auf der karte\n(2) Erzähle Gertrude von dem Gespräch\n";
+
+    static String storyA1 = "*Toni packt die nötigsten Sachen ein und wartet bis es dunkel ist. Auf dem Weg nach draußen nimmt sie noch ein Messer und eine Laterne mit*\n";
+    static String storyA2 = "*Toni hört schritte. Sie läuft weg und hört Gertrude schreien.*\n";
+
+    static String storyB1 = "Du: Gertrude, ich muss mit dir reden.\nGertrude: Warte einen Moment liebe. Ich bin gleich da.\n*Toni packt die nötigsten Sachen ein und hört aufeinmal ein Klopfen.*\n"
+                            + "";
 }
