@@ -412,10 +412,9 @@ class Parlament
 
  # Aufgaben Java Toturail 
 
- Es ist Black Friday, alle Firmen haben hohe Rabatte. Aber da die Firmen die Preise vorher ansteigen lassen haben, um den größt möglichsten Gewinn zu erwirtschaften, weißt du nicht welche Rabatte sich Lohnen. 
- Um dies ausrechen zu können programmierst du ein Programm welches die Rabatte aufgrund ihrer Preise Analysiert. Davor schreibst du ein Struktorprogramm auf um das Programm gernauer zu Verstehen. Hier zu hast du ein Rabatt Tabelle aus dem Internet runtergeladen. 
-
  Gebe folgende Struktorporgramm  als Code wieder.
 
 
+![Test](/docs/images/structorprogramm.PNG)
 
+[Lösung](/docs/Lösung/LoesungAufabe1.java)
