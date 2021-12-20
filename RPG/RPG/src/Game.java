@@ -8,7 +8,9 @@ public class Game {
     public void startGame(Game game) {
         Player player = new Player();
 
-        Main.animation(Texte.start1, 25);
+        story();
+
+        /*Main.animation(Texte.start1, 25);
         Main.animation(Texte.start2, 20);
         Main.animation(Texte.start1, 25);
         requestInput();
@@ -54,40 +56,7 @@ public class Game {
                                     if (requestInput() == 1) {
                                         checker4 = true;
 
-                                        Main.animation(Texte.story9, 25);
-                                        Main.animation(Texte.story10, 25);
-                                        Main.animation(Texte.choose, 25);
-                                        Main.animation(Texte.story11, 25);
-
-                                        boolean checker5 = true;
-                                        do {
-                                            int number = requestInput();
-
-                                            switch(number) {
-                                                case 1 :{
-                                                    checker5 = true;
-                                                    Main.animation(Texte.storyA1, 25);
-                                                    
-                                                    Item lantern = new Item();
-                                                    lantern.setType("Laterne");
-                                                    Weapon knife = new Weapon();
-                                                    knife.setType("Messer");
-                                                    knife.setDamage(5);
-                                                    knife.setName("Messer");
-
-                                                    Main.animation(Texte.storyA2, 25);
-
-                                                    break;
-                                                }
-                                                case 2: {
-                                                    checker5 = true;
-                                                    Main.animation(Texte.storyB1, 25);
-
-
-                                                    break;
-                                                }
-                                            }
-                                        } while(checker5 == false);
+                                        //INSERT THE STUFF FROM STORY HERE
                                     }
                                 } while(checker4 == false);
                             }
@@ -95,9 +64,109 @@ public class Game {
                     }
                 } while(checker2 == false);
             }
-        } while(checker1 == false);
+        } while(checker1 == false);*/
     }
 
+    public void story() {
+        Main.animation(Texte.story9, 25);
+        Main.animation(Texte.story10, 25);
+        Main.animation(Texte.choose, 25);
+        Main.animation(Texte.story11, 25);
+
+        boolean checker5 = true;
+        do {
+            int number = requestInput();
+
+            switch(number) {
+                case 1 :{
+                    checker5 = true;
+                    Main.animation(Texte.storyA1, 25);
+                    
+                    Item lantern = new Item();
+                    lantern.setType("Laterne");
+                    Weapon knife = new Weapon();
+                    knife.setType("Messer");
+                    knife.setDamage(5);
+                    knife.setName("Messer");
+
+                    Main.animation(Texte.storyA2, 25);
+
+                    break;
+                }
+                case 2: {
+                    checker5 = true;
+                    Main.animation(Texte.storyB1, 25);
+                    Main.animation(Texte.choose, 25);
+                    Main.animation(Texte.storyB2, 25);
+            
+                    boolean checker6 = false;
+                    do {
+                        if (requestInput() == 1) {
+                            checker6 = true;
+                            Main.animation(Texte.storyB3, 25);
+                            Main.animation(Texte.choose, 25);
+                            Main.animation(Texte.storyB4, 25);
+
+                            boolean checker7 = false;
+                            do {
+                                if (requestInput() == 1) {
+                                    checker7 = true;
+                                    Main.animation(Texte.storyB5, 25);
+                                    Main.animation(Texte.choose, 25);
+                                    Main.animation(Texte.storyB6, 25);
+
+                                    boolean checker8 = false;
+                                    do {
+                                        if (requestInput() == 1) {
+                                            checker8 = true;
+
+                                            Main.animation(Texte.storyB7, 25);
+                                            Main.animation(Texte.choose, 25);
+                                            Main.animation(Texte.storyB8, 25);
+
+                                            boolean checker9 = false;
+                                            
+                                            do {
+                                                if (requestInput() == 1) {
+                                                    checker9 = true;
+                                                    Main.animation(Texte.storyB9, 25);
+                                                    Main.animation(Texte.choose, 25);
+                                                    Main.animation(Texte.storyB10, 25);
+
+                                                    boolean checker10 = false;
+
+                                                    do {
+                                                        if (requestInput() == 1) {
+                                                            checker10 = true;
+
+                                                            Main.animation(Texte.storyB11, 25);
+                                                            
+                                                            Item lantern = new Item();
+                                                            lantern.setType("Laterne");
+                                                            Weapon knife = new Weapon();
+                                                            knife.setType("Messer");
+                                                            knife.setDamage(5);
+                                                            knife.setName("Messer");
+                                                            
+                                                            
+                                                        }
+                                                    } while(checker10 == false);
+                                                }
+                                            } while(checker9 == false);
+                                        }
+                                    } while(checker8 == false);
+                                }
+                            } while(checker7 == false);
+                        }
+                    } while(checker6 == false);
+
+                    break;
+                }
+            }
+        } while(checker5 == false);
+    }
+
+    //to get input from the player
     public int requestInput() {
         Scanner sc = new Scanner(System.in);
         int input = sc.nextInt();
