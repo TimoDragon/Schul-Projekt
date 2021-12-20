@@ -323,14 +323,99 @@ Operationen (was das Objekt kann)
  ( Attributname muss gleich wie in der Klassenname sein)
 
  [![Objektdiagramme](https://img.youtube.com/vi/oaykwg2_TG8/0.jpg)](https://www.youtube.com/watch?v=oaykwg2_TG8)
-  
+
+ ## Konstruktoren
+ 
+ Konstruktoren sind spezielle Methoden zur Erzeugung und Initialisierung neuer Objekte.
+ Die Initialisierung erfolgt normalerweise mit Werten, die dem Konstruktor als Parameter übergeben werden.
+ Im Gegensatz zu einfachen Methoden, die über eine Objektreferenz aufgerufen werden müssen, können Konstruktoren sowohl über Klassen- als auch über Objektreferenzen aktiviert werden.
+ 
+Um ein neues Objekt zu erzeugen, muss ein Konstruktor über eine Klassenreferenz aufgerufen werden:
+
+```java
+Person := TPerson.Create;   oder
+Person := TPerson.Init('Otto', 'Meier');
+```
+
+Als einfacher Methodenaufruf für ein schon existierendes Objekt :
+
+```java
+Person.Init('Otto', 'Meier');
+```
+Benutzt man den vom System bereitgestellten Konstruktor Create, dann werden dem erzeugten Exemplar keine Werte zugewiesen. (s. Delphi Hilfe)
+
+
+Wegen der Polymorphie kann eine Klasse mehrere Konstruktoren haben, die sich im Bezeichner unterscheiden müssen.
+
+Welcher Konstruktor aufgerufen wird, entscheidet sich beim Erzeugen eines neuen Exemplars.
+(Einige Programmiersprachen erlauben auch die Benutzung desselben Bezeichners mit unterschiedlichen Parametern. Dann ist eventuell eine spezielle Compiler-Direktive zu verwenden).
+
+## Methoden
+
+Das Kernstück jeder objektorientierten Programmierung bildet das Objekt. Allgemein kann man sagen, dass Objekte Attribute und Methoden enthalten. Dabei sind Attribute nur Variablen und Konstanten, die Werte aufnehmen können, und beschreiben damit das statische Wesen des Objektes. Im Gegensatz dazu gibt es die Methoden, die das gesamte dynamische Verhalten des Objektes oder einer Klasse charakterisieren. Sie enthalten die algorithmische Essenz des Objektes. In der objektorientierten Programmierung sind Methoden Teil der Definition einer Klasse.
+
+Das folgende Beispiel in der Programmiersprache C# zeigt die Methoden berechneEinnahmen(...), gibPartei(), wähleVorsitzender(...) und gibAnzahlDerAbgeordneten(...), die von den Klassen Partei, Abgeordneter und Parlament definiert werden. Die Parameter werden in den Klammern hinter dem Namen der Methode deklariert. Der Datentyp steht jeweils vor dem Namen der Variablen. Der Rückgabetyp steht vor dem Namen der Methode. Bei Methoden ohne Rückgabewert wird der Rückgabetyp void angegeben.
+
+```java
+class Partei
+{
+    List<Person> mitglieder;
+    double mitgliedsbeitrag;
+    
+    // Methode mit zwei Parametern und mit Rückgabewert
+    double berechneEinnahmen(double spenden, double sonstigeEinnahmen)
+    {
+        return mitglieder.Count * mitgliedsbeitrag + spenden + sonstigeEinnahmen;
+    }
+}
+
+class Abgeordneter
+{
+    Partei partei;
+    
+    // Methode ohne Parameter und mit Rückgabewert
+    Partei gibPartei()
+    {
+        return partei;
+    }
+}
+
+class Parlament
+{
+    List<Abgeordneter> abgeordnete = new List<Abgeordneter>();
+    Abgeordneter vorsitzender;
+    int maximalGroesse;
+    
+    // Methode mit einem Parameter und ohne Rückgabewert
+    void wähleVorsitzender(Abgeordneter abgeordneter)
+    {
+        vorsitzender = abgeordneter;
+    }
+    
+    // Methode mit einem Parameter und mit Rückgabewert
+    int gibAnzahlDerAbgeordneten(Partei partei)
+    {
+        int anzahl = 0;
+        foreach (Abgeordneter abgeordneter in abgeordnete)
+        {
+            if (abgeordneter.gibPartei() == partei)
+            {
+                anzahl++;
+            }
+        }
+        return anzahl;
+    }
+}
+```
+
+
+
  # Aufgaben Java Toturail 
 
  Es ist Black Friday, alle Firmen haben hohe Rabatte. Aber da die Firmen die Preise vorher ansteigen lassen haben, um den größt möglichsten Gewinn zu erwirtschaften, weißt du nicht welche Rabatte sich Lohnen. 
- Um dies ausrechen zu können schreibst du ein Programm welches die Rabatte aufgrund ihrer Preise Analysiert. Davor schreibst du ein Struktorprogramm auf um das Programm gernauer zu Verstehen. Hier zu hast du ein Rabatt t
- Tabelle aus dem Internet runtergeladen. 
+ Um dies ausrechen zu können programmierst du ein Programm welches die Rabatte aufgrund ihrer Preise Analysiert. Davor schreibst du ein Struktorprogramm auf um das Programm gernauer zu Verstehen. Hier zu hast du ein Rabatt Tabelle aus dem Internet runtergeladen. 
 
  Gebe folgende Struktorporgramm  als Code wieder.
 
 
- 
+
