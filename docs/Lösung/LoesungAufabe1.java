@@ -1,7 +1,7 @@
 public class LoesungAufabe1 {
     public static void main(String[] args) {
         double rabatt; 
-         int preis = 421;
+         int preis = 421; //Varibale 
         if(preis>100){
             if(preis>500){
                 rabatt=0.50;
