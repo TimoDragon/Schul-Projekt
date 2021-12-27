@@ -11,7 +11,7 @@ public class Texte {
     //prologue
     static String prologue1 = "************************* Vorgeschichte *************************\n";
     static String prologue2 = "Schon seit mehreren hundert Jahren kämpfen die Menschen gegen eine bösartige\n"
-                            + "Macht, welche mit Orks, Trollen, Goblins und vielen adneren Schreklichen Kreaturen\n"
+                            + "Macht, welche mit Orks, Trollen, Goblins und vielen anderen Schreklichen Kreaturen\n"
                             + "zusammen Arbeitet. Als du 7 Jahre alt warst wurde dein Dorf durch Orks angegriffen und\n"
                             + "deine Eltern starben bei diesem Angriff. Mit den restlichen Überlebenden bist du in den\n"
                             + "Süden in das nahe gelegene Königreich gezogen und wurdest von einer alten Frau aufgenommen.\n";
@@ -34,11 +34,13 @@ public class Texte {
                             + "*Du nimmst die Karte, rennst weg und Akdov sagt einen Zauberspruch und verschwindet. Als du zuhause ankommst öffnest du die Karte und schaust sie dir an.*\n";
     static String story11 = "(1) Gehe zum Makierten berreich auf der Karte\n(2) Erzähle Gertrude von dem Gespräch\n";
 
-    static String storyA1 = "*Du packst die nötigsten Sachen ein und wartest bis es dunkel ist. Auf dem Weg nach draußen nimmst du noch ein Messer und eine Laterne mit*\n";
-    static String storyA2 = "*Du hörst schritte und läufst weg, Gertrude schreit.*\n";
 
-    static String storyB1 = "Du: Gertrude, ich muss mit dir reden.\nGertrude: Warte einen Moment liebe. Ich bin gleich da.\n*Toni packt die nötigsten Sachen ein und hört aufeinmal ein Klopfen.*\n"
-                            + "Gertrude: Ich bin jetzt da. Was wolltest du mir erzählen?.\n";
+    static String storyA1 = "*Du packst die nötigsten Sachen ein und wartest bis es dunkel ist. Auf dem Weg nach draußen nimmst du noch ein Messer und eine Laterne mit*\n";
+    static String storyA2 = "*Du hörst schritte und läufst weg, Gertrude schreit.*\nGertrude: Wer ist da?\n*Du läufst weiter*\n";
+    
+
+    static String storyB1 = "Du: Gertrude, ich muss mit dir reden.\nGertrude: Warte einen Moment liebe. Ich bin gleich da.\n*Du packst die nötigsten Sachen ein und hörst aufeinmal ein Klopfen.*\n"
+                            + "Gertrude: Ich bin jetzt da. Was wolltest du mir erzählen?\n";
     static String storyB2 = "(1) Erzähle Gertrude von der Begegnung\n";
     static String storyB3 = "Du: Wo soll ich anfangen... Als ich auf dem Marktplatz war begegnete ich einen Mann.\n    Er erzählte mir, dass "
                             + "er meine Eltern kannte. Der Mann wollte mit auch etwas über meine Prophezeiung sagen aber das hat er\n    nicht mehr geschafft, da er von jemanden verfolgt wurde. Er hat mir aber eine "
@@ -47,14 +49,16 @@ public class Texte {
     static String storyB4 = "(1) Sag ihr, dass auf der Karte ein Punkt ist\n";
     static String storyB5 = "Du: Nein, schau doch mal hier. Da ist ein Punkt makiert.\n"
                             + "Gertrude: Ich sehe nichts auf der Karte aber ich glaube dir. Was willst jetzt damit machen?\n";
-    static String storyB6 = "(1) Sag ihr, dass du zum Punkt gehen wirst.\n";
+    static String storyB6 = "(1) Sag ihr, dass du zum Punkt gehen wirst\n";
     static String storyB7 = "Gertrude: Du weißt aber das es Gefährlich sein kann. Hast du keine Angst?\n";
     static String storyB8 = "(1) Sag ihr, dass du trotzdem hingehen wirst\n";
     static String storyB9 = "Du: Ich habe nichts zu verlieren. Laut der Karte ist der makierte Berreich auch nicht weit weg. Ich kann Troy\n    und dahin reiten.\n"
                             + "Gertude: Okay, mach das. Brauchst du noch was?\n";
-    static String storyB10 = "(1) Sage ihr, dass du eine Laterne und ein Messer brauchst.\n";
-    static String storyB11 = "Du: Ich könnte noch eine Laterne und ein Messer brauchen.\n";
+    static String storyB10 = "(1) Sage ihr, dass du eine Laterne und ein Messer brauchst\n";
+    static String storyB11 = "Du: Ich könnte noch eine Laterne und ein Messer brauchen.\n"
                                 + "Gertrude: Hier nimm die Laterne und das Messer. Sicher ist sicher.\n*Gertrude gibt dir eine Laterne und ein Messer*\n";
-    
+    static String storyB12 = "(1) Verabschiede dich\n ";
+    static String storyB13 = "Du: Danke und auf wiedersehen!\nGertrude: Auf wiedersehen und pass auf dich auf.\n";
+
 
 }

@@ -57,10 +57,19 @@ public class Main {
         for (char c : text.toCharArray()) {
             System.out.print(c);
 
-            /*try {
-                sleep(time);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
+            /*if (c == '.' || c == '!' || c == '?') {
+                try {
+                    sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+            else {
+                try {
+                    sleep(time);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }*/
         }
     }
