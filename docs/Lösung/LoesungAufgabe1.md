@@ -1,3 +1,5 @@
+# Lösung zur ersten Aufgabe
+```java
 public class LoesungAufabe1 {
     public static void main(String[] args) {
         double rabatt; 
@@ -33,3 +35,4 @@ public class LoesungAufabe1 {
         System.out.println(neuPreis);      
      }
 }
+```

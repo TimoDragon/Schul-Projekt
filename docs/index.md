@@ -417,4 +417,4 @@ class Parlament
 
 ![Test](/docs/images/structorprogramm.PNG)
 
-[Lösung](/docs/Lösung/LoesungAufabe1.java)
+[Lösung](/docs/Lösung/LoesungAufgabe1.md)
