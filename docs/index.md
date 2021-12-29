@@ -31,13 +31,13 @@ Variablen sind Speicherzuweisungen, mit denen man z.B. Zahlen oder Text abspeich
 Die Maximalen/Minimalen werte für die jeweiligen Zahlen Speicherzuweisungen sind:
 ```
 boolean: false, true
-bye: -128 bis 127
+byte: -128 bis 127
 short: -32768 bis 32767
 char: ein Buchstabe
 int: -2.147.483.648 bis 2.147.483.647
 long: -9.223.372.036.854.775.808 bis 9.223.372.036.854.775.807
-float: 1,40239846 x 10^-45 bis 3,40282347 x 10^38
-double: 4,9406564584124654 x 10^-324 bis 1,7976931348623157 x 10^308
+float: 1,40239846 * 10^-45 bis 3,40282347 * 10^38
+double: 4,9406564584124654 * 10^-324 bis 1,7976931348623157 * 10^308
 ```
 ### 2. Inkrementoperator
 
