@@ -4,6 +4,7 @@ public  class Player {
     private ArrayList<Item> inventory = new ArrayList<Item>();
     private int health = 100;
     private int food = 100;
+    private int money = 0;
 
     //get the Player Inventory
     public ArrayList<Item> getInventory() {
@@ -21,6 +22,16 @@ public  class Player {
         for (int i = 0; i < amount; i++) {
             inventory.add(item);
         }
+    }
+
+    //get money
+    public int getMoney() {
+        return money;
+    }
+
+    //set the money
+    public void setMoney(int amount) {
+        money = amount;
     }
 
     //removes an Item from the Inventory

@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class Game {
@@ -9,7 +10,10 @@ public class Game {
     public void startGame(Game game) {
         player = new Player();  
 
+        continue2();
+
         //story begins here
+        /*
         Main.animation(Texte.start1, 25);
         Main.animation(Texte.start2, 20);
         Main.animation(Texte.start1, 25);
@@ -170,17 +174,89 @@ public class Game {
                     }
                 } while(checker2 == false);
             }
-        } while(checker1 == false);
+        } while(checker1 == false)
+        */
     }
 
     public void continue1() {
-        
+        Main.animation(Texte.storyC1, 25);
+        Main.animation(Texte.storyC2, 25);
+
+        boolean checker1 = false;
+        do {
+            if (requestInput() == 1) {
+                Main.animation(Texte.storyC3, 25);
+                Main.animation(Texte.choose, 25);
+                Main.animation(Texte.storyC4, 25);
+
+                boolean checker2 = false;
+
+                do {
+                    int number = requestInput();
+                    switch(number) {
+                        case 1: {
+                            Random random = new Random();
+                            int randomNumber = random.nextInt(2);
+                            checker2 = true;
+
+                            if (randomNumber == 0) {
+                                Main.animation(Texte.storyD1, 25);
+                            }
+                            else if (randomNumber == 1) {
+                                Main.animation(Texte.storyD2, 25);
+                                player.setHealth(player.getHealth() - 5);
+                            }
+
+                            continue2();
+
+                            break;
+                        }
+                        case 2: {
+                            checker2 = true;
+                            Main.animation(Texte.storyE1, 25);
+
+                            break;
+                        }
+                    }
+                } while(checker2 == false);
+            }
+        } while(checker1 == false);
+    }
+
+    public void continue2() {
+        Main.animation(Texte.storyF1, 25);
+        Main.animation(Texte.choose, 25);
+        Main.animation(Texte.storyF2, 25);
+
+        boolean checker1 = false;
+        do {
+            int number = requestInput();
+
+            switch(number) {
+                case 1: {
+                    checker1 = true;
+                    
+
+                    break;
+                }
+                case 2: {
+                    checker1 = true;
+
+                    break;
+                }
+            }
+        } while(checker1 == false);
     }
 
     //to get input from the player
     public int requestInput() {
         Scanner sc = new Scanner(System.in);
         int input = sc.nextInt();
+
+        if (input == 69) {
+            Main.animation("Nice\n", 69);
+        }
+
         return input;
     }
 

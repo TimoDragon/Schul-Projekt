@@ -35,10 +35,12 @@ public class Texte {
     static String story11 = "(1) Gehe zum Makierten berreich auf der Karte\n(2) Erzähle Gertrude von dem Gespräch\n";
 
 
+    //hau ab ohne Gertrude bescheid zu sagen
     static String storyA1 = "*Du packst die nötigsten Sachen ein und wartest bis es dunkel ist. Auf dem Weg nach draußen nimmst du noch ein Messer und eine Laterne mit*\n";
-    static String storyA2 = "*Du hörst schritte und läufst weg, Gertrude schreit.*\nGertrude: Wer ist da?\n*Du läufst weiter*\n";
+    static String storyA2 = "*Du hörst schritte und läufst weg, Gertrude schreit.*\nGertrude: Wer ist da?\n*Du läufst weiter. Du kommst an einem Pferdestall an*\n";
     
 
+    //Rede mit Gertrude über die Begegnung
     static String storyB1 = "Du: Gertrude, ich muss mit dir reden.\nGertrude: Warte einen Moment liebe. Ich bin gleich da.\n*Du packst die nötigsten Sachen ein und hörst aufeinmal ein Klopfen.*\n"
                             + "Gertrude: Ich bin jetzt da. Was wolltest du mir erzählen?\n";
     static String storyB2 = "(1) Erzähle Gertrude von der Begegnung\n";
@@ -60,5 +62,28 @@ public class Texte {
     static String storyB12 = "(1) Verabschiede dich\n ";
     static String storyB13 = "Du: Danke und auf wiedersehen!\nGertrude: Auf wiedersehen und pass auf dich auf.\n";
 
+    //hier gehts nach dem Abhaueb/dem Gespräch weiter
+    static String storyC1 = "*Du kommst an einenem Pferdestall an, wo dein Pferd namens Troy auf dich wartet.*\n";
+    static String storyC2 = "(1) Begrüße Troy\n";
+    static String storyC3 = "Du: Hi, großer, hast du Lust auf ein Abenteuer?\n*Du schreichelst Troy und steigst auf ihn drauf, du schaust auf die Karte und reitest los.\n"
+                            + "Nach einer Welie errreichst du einen kleinen Wald. Plötzlich hörst du ein komisches Geräusch in den Büschen*\n";
+    static String storyC4 = "(1) Du schaust nach was in dem Busch ist.\n(2) Du reitest weiter.\n";
 
+    //Nachdem Toni los geritten ist und schaut was im Busch ist
+    static String storyD1 = "*Du siehst einen Hund, welcher sich erschrickt und wegrent. Du reitest weiter.*\n";
+    static String storyD2 = "*Ein Hund springt auf dich zu und beißt dich. Du verlierst 5 HP. Du reitest weiter.*\n";
+
+    //Nachdem Toni los geritten ist und NICHT schaut was im Busch ist
+    static String storyE1 = "*Du reitest weiter.*\n";
+
+    //nach dem Busch
+    static String storyF1 = "Du zu Troy: Ich glaube wir sind bald da.\n"
+                            + "*Auf einmal siehst du einen Mann mit einem Messer*\n"
+                            + "Mann: Wieso ist eine Junge Dame so spät noch unterwegs?\n"
+                            + "*Du antwortest nicht*\n"
+                            + "Mann: Was versteckst du da?\n"
+                            + "*Der Mann reißt dir deinen Rucksack von deinem Rücken und schmeißt alle Sachen auf den Boden\n"
+                            + "Er sammelt heruntergefallene Gold Stücke auf*\n";
+    static String storyF2 = "(1) Greife den Mann mit deinem Messer an\n"
+                            + "(2) Greife den Mann mit deiner Laterne an\n";
 }
