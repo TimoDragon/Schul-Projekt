@@ -16,7 +16,7 @@ public class Main {
             //add code to get the Inventory
 
             for (int i = 0; i < player.getInventory().size(); i++) {
-                Item item = player.getInventorySlot(i);
+                Item item = player.getInventory().get(i);
 
                 if (inventory.containsKey(item)) {
                     int oldAmount = inventory.get(item);
