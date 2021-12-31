@@ -10,4 +10,10 @@ public class Item {
     public String getType() {
         return type;
     }
+
+    public Weapon toWeapon() {
+        Weapon weapon = (Weapon) this;
+        
+        return weapon;
+    }
 }
