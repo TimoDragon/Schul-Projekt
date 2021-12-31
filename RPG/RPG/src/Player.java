@@ -11,12 +11,6 @@ public  class Player {
         return inventory;
     }
 
-    //get the Item from a specific slot
-    public Item getInventorySlot(int position) {
-        Item invSlot = inventory.get(position);
-        return invSlot;
-    }
-
     //add an Item in the Inventory
     public void addItem(Item item, int amount) {
         for (int i = 0; i < amount; i++) {
