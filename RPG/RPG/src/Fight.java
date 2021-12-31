@@ -51,8 +51,6 @@ public class Fight {
         if (in < weapons.size()) {
             Weapon weapon = weapons.get(in);
 
-            System.out.println(weapon.toString());
-
             enemy.setHealth(enemy.getHealth() - weapon.getDamage());
 
             boolean wasEnemy = false;
@@ -112,7 +110,7 @@ public class Fight {
         }
     }
 
-    //change 
+    //change pronouns
     public void setPronouns(String first, String second) {
         firstPronoun = first;
         secondPronoun = second;
