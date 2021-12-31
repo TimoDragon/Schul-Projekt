@@ -1,47 +1,36 @@
-import java.util.HashMap;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Fight {
     private Enemy enemy;
-    private boolean hasSword, hasAxe, hasShield;
-    private HashMap<Integer, String> equip = new HashMap<Integer, String>();
     private Game game;
+    private List<Weapon> weapons = new ArrayList<Weapon>();
+    private String firstPronoun, secondPronoun = "";
 
     //start the fight
     public void startFight(Player player, Game runningGame) {
-        Main.animation("~~~~~~~~~~~~~~~~~~~~~~~~~\n", 25);
-        Main.animation("Du kommt in einen Kampf mit " + enemy.getName() + "\n", 20);
-        Main.animation("~~~~~~~~~~~~~~~~~~~~~~~~~\n", 25);
+        String fightStartMessage = "Du kommt in einen Kampf mit " + firstPronoun + " " + enemy.getName() + "\n";
+        String fightStartMessage2 = "";
+
+        for (char ch : fightStartMessage.toCharArray()) {
+            fightStartMessage2 = fightStartMessage2 + "~";
+        }
+
+        Main.animation(fightStartMessage2 + "\n", 25);
+        Main.animation(fightStartMessage, 25);
+        Main.animation(fightStartMessage2 + "\n", 25);
 
         game = runningGame;
 
         for (int i = 0; i < player.getInventory().size(); i++) {
-            if (player.getInventory().get(i).getType().equals("Sword")) {
-                hasSword = true;
-            }
-            else if (player.getInventory().get(i).getType().equals("Axe")) {
-                hasAxe = true;
-            }
-            else if (player.getInventory().get(i).getType().equals("Shield")) {
-                hasShield = true;
+            if (player.getInventory().get(i).getClass().getName().equals("Weapon")) {
+                weapons.add(player.getInventory().get(i).toWeapon());
             }
         }
 
-        int inputNum = 1;
-        if (hasSword == true) {
-            Main.animation(inputNum + " um mit dem Schwert zu schlagen\n", 25);
-            equip.put(inputNum, "Sword");
-            inputNum = inputNum + 1;
-        }
-        if (hasAxe == true) {
-            Main.animation(inputNum + " um mit der Axt zu schlagen\n", 25);
-            equip.put(inputNum, "Axe");
-            inputNum = inputNum + 1;
-        }
-        if (hasShield == true) {
-            Main.animation(inputNum + " um mit dem Schild zu blocken\n", 25);
-            equip.put(inputNum, "Shield");
-            inputNum = inputNum + 1;
+        for (int i = 0; i < weapons.size(); i++) {
+            Main.animation("("+ i +") " + weapons.get(i).getName() + "\n", 10);
         }
 
         requestFightInput(player);
@@ -58,23 +47,14 @@ public class Fight {
     }
 
     //input during a fight
-    public void input(int in, Player player) {
-        if (equip.containsKey(in)) {
-            String weaponName = equip.get(in);
+    public void onInput(int in, Player player) {
+        if (in < weapons.size()) {
+            Weapon weapon = weapons.get(in);
 
-            switch (weaponName) {
-                case "Sword": {
-                    Main.animation("Du hast " + enemy.getName() + " 10 Schaden hinzugefügt\n", 25);
-                    enemy.setHealth(enemy.getHealth() - 10);
-                    break;
-                }
-                case "Axe": {
-                    break;
-                }
-                case "Shield": {
-                    break;
-                }
-            }
+            System.out.println(weapon.toString());
+
+            enemy.setHealth(enemy.getHealth() - weapon.getDamage());
+
             boolean wasEnemy = false;
             checkHealth(player, enemy, wasEnemy);
         }
@@ -88,12 +68,10 @@ public class Fight {
         boolean wasEnemy = true;
         int max = enemy.getWeapons().size();
         int min = 1;
-
         int random = (int) Math.floor(Math.random()*(max-min+1));
-
         Weapon weapon = enemy.getWeapons().get(random);
 
-        Main.animation(enemy.getName() + " greift dich mit " + weapon.getName() + " an\nDu erleidest "
+        Main.animation(secondPronoun + " " + enemy.getName() + " greift dich mit " + weapon.getName() + " an\nDu erleidest "
                         + weapon.getDamage() + " Schaden\n", 25);
         player.setHealth(player.getHealth() - weapon.getDamage());
 
@@ -106,34 +84,7 @@ public class Fight {
         Scanner sc = new Scanner(System.in);
         int input = sc.nextInt();
         //sc.close();
-        onFightInput(input, player);
-    }
-
-    //for fight input
-    public void onFightInput(int in, Player player) {
-        switch(in) {
-            case 0: {
-                Main.printInv(player);
-                requestFightInput(player);
-                break;
-            }
-            case 1: {
-                input(in, player);
-                break;
-            }
-            case 2: {
-                break;
-            }
-            case 3: {
-                break;
-            }
-            case 4: {
-                break;
-            }
-            case 5: {
-                break;
-            }
-        }
+        onInput(input, player);
     }
 
     //checks player and enemy health and outputs it
@@ -159,5 +110,11 @@ public class Fight {
             game.fighting = false;
             game.startGame(game);
         }
+    }
+
+    //change 
+    public void setPronouns(String first, String second) {
+        firstPronoun = first;
+        secondPronoun = second;
     }
 }
