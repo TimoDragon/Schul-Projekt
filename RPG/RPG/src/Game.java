@@ -1,20 +1,41 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 
 public class Game {
     Fight fight;
     Player player;
-    boolean fighting, started = false;
+    boolean started = false;
+    private List<Integer> fightsDone = new ArrayList<Integer>();
+
+    //to get input from the player
+    public int requestInput() {
+        Scanner sc = new Scanner(System.in);
+        int input = sc.nextInt();
+
+        if (input == 69) {
+            Main.animation("Nice\n", 69);
+        }
+
+        return input;
+    }
 
     //starts the game
     public void startGame(Game game) {
         player = new Player();  
 
+        Weapon weapon = new Weapon();
+        weapon.setDamage(5);
+        weapon.setName("Messer");
+        weapon.setType("knife");
+        player.addItem(weapon, 1);
+
         continue2();
 
         //story begins here
-        /*
-        Main.animation(Texte.start1, 25);
+        
+        /*Main.animation(Texte.start1, 25);
         Main.animation(Texte.start2, 20);
         Main.animation(Texte.start1, 25);
         requestInput();
@@ -77,7 +98,7 @@ public class Game {
                                                     Item lantern = new Item();
                                                     lantern.setType("Laterne");
                                                     Weapon knife = new Weapon();
-                                                    knife.setType("Messer");
+                                                    knife.setType("knife");
                                                     knife.setDamage(5);
                                                     knife.setName("Messer");
                                 
@@ -137,7 +158,7 @@ public class Game {
                                                                                             Item lantern = new Item();
                                                                                             lantern.setType("Laterne");
                                                                                             Weapon knife = new Weapon();
-                                                                                            knife.setType("Messer");
+                                                                                            knife.setType("knfie");
                                                                                             knife.setDamage(5);
                                                                                             knife.setName("Messer");
                                 
@@ -174,12 +195,13 @@ public class Game {
                     }
                 } while(checker2 == false);
             }
-        } while(checker1 == false)
+        } while(checker1 == false);
         */
     }
 
     public void continue1() {
         Main.animation(Texte.storyC1, 25);
+        Main.animation(Texte.choose, 25);
         Main.animation(Texte.storyC2, 25);
 
         boolean checker1 = false;
@@ -215,6 +237,8 @@ public class Game {
                             checker2 = true;
                             Main.animation(Texte.storyE1, 25);
 
+                            continue2();
+
                             break;
                         }
                     }
@@ -224,44 +248,39 @@ public class Game {
     }
 
     public void continue2() {
-        Main.animation(Texte.storyF1, 25);
-        Main.animation(Texte.choose, 25);
-        Main.animation(Texte.storyF2, 25);
-
-        boolean checker1 = false;
-        do {
-            int number = requestInput();
-
-            switch(number) {
-                case 1: {
+        if (!fightsDone.contains(0)) {
+            Main.animation(Texte.storyF1, 25);
+            Main.animation(Texte.choose, 25);
+            Main.animation(Texte.storyF2, 25);
+    
+            boolean checker1 = false;
+    
+            do {
+                if (requestInput() == 1) {
                     checker1 = true;
-                    
+                    fightsDone.add(0);
 
-                    break;
+                    Main.animation(Texte.storyG1, 25);
+
+                    Fight fight = new Fight();
+                    Enemy mann = new Enemy();
+                    mann.setHealth(25);
+                    mann.setName("Mann");
+                    fight.setPronouns("dem", "der");
+        
+                    Weapon knife = new Weapon();
+                    knife.setType("knife");
+                    knife.setName("Messer");
+                    knife.setDamage(5);
+                    mann.addWeapon(knife);
+        
+                    fight.setEnemy(mann);
+                    fight.startFight(player, this);
                 }
-                case 2: {
-                    checker1 = true;
-
-                    break;
-                }
-            }
-        } while(checker1 == false);
-    }
-
-    //to get input from the player
-    public int requestInput() {
-        Scanner sc = new Scanner(System.in);
-        int input = sc.nextInt();
-
-        if (input == 69) {
-            Main.animation("Nice\n", 69);
+            } while(checker1 == false);
         }
-
-        return input;
-    }
-
-    //check if the player is fighting
-    public boolean isFighting() {
-        return fighting;
+        else {
+            Main.animation(Texte.storyG2, 25);
+        }
     }
 }
