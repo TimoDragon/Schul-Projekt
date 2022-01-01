@@ -69,8 +69,8 @@ public class Fight {
         int random = (int) Math.floor(Math.random()*(max-min+1));
         Weapon weapon = enemy.getWeapons().get(random);
 
-        Main.animation(secondPronoun + " " + enemy.getName() + " greift dich mit " + weapon.getName() + " an\nDu erleidest "
-                        + weapon.getDamage() + " Schaden\n", 25);
+        Main.animation(secondPronoun + " " + enemy.getName() + " greift dich mit " + weapon.getName() + " an.\nDu erleidest "
+                        + weapon.getDamage() + " Schaden.\n", 25);
         player.setHealth(player.getHealth() - weapon.getDamage());
 
         checkHealth(player, enemy, wasEnemy);
@@ -88,10 +88,10 @@ public class Fight {
     //checks player and enemy health and outputs it
     public void checkHealth (Player player, Enemy enemy, boolean wasEnemy) {
         if (player.getHealth() > 0 && enemy.getHealth() > 0) {
-            Main.animation("----\n", 25);
+            Main.animation("--------------------\n", 25);
             Main.animation("Deine Leben: " + player.getHealth() + "\n", 20);
             Main.animation(enemy.getName() + " Leben: " + enemy.getHealth() + "\n", 20);
-            Main.animation("----\n", 25);
+            Main.animation("--------------------\n", 25);
 
             if (wasEnemy == false) {
                 enemyAttack(player, enemy);
@@ -101,11 +101,14 @@ public class Fight {
             //if the Player dies maxbe add something
         }
         else if (enemy.getHealth() <= 0) {
+            String test = String.valueOf(secondPronoun.toCharArray()[0]).toUpperCase();
+            secondPronoun = secondPronoun.substring(1);
+            secondPronoun = test + secondPronoun;
+
             Main.animation("*************************\n", 25);
-            Main.animation(enemy.getName() + " ist besiegt. Du hast gewonnen!\n", 25);
+            Main.animation(secondPronoun + " " + enemy.getName() + " wurde besiegt. Du hast gewonnen!\n", 25);
             Main.animation("*************************\n", 25);
 
-            game.fighting = false;
             game.startGame(game);
         }
     }
