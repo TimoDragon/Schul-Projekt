@@ -19,25 +19,26 @@ public class Texte {
                             + "Akdov: Eyyyy… Warte… Du bist doch Antoinette, oder?\n" + choose
                             + "(1) Frage ihn wer er ist\n";
     static String story2 = "Du: Ja? Woher wissen Sie wie ich Heiße? Und wer sind Sie überhaupt?\n";
-    static String story3 = "Akdov: Ach ja. Entschuldige mich. Ich bin Akdov. Ich komme aus Teya. \n"
-                             + "Wir können aber nicht hier stehen bleiben und reden. Die beobachten mich.\n";
+    static String story3 = "Akdov: Ach ja. Entschuldige mich. Ich bin Akdov. Ich komme aus Teya.\n"
+                             + "       Wir können aber nicht hier stehen bleiben und reden. Die beobachten mich.\n";
     static String story4 = "(1) Frage ihn wer ihn beobachtet\n";
     static String story4A = "Du: Wer beobachtet Sie?";
-    static String story5 = "Akdov: Ich erkläre dir gleich alles. Aber nicht hier. Kennst du ein Platz, wo es sicher ist?\n";
+    static String story5 = "Du: Wer beobachtet dich?"
+                            + "Akdov: Ich erkläre dir gleich alles. Aber nicht hier. Kennst du ein Platz, wo es sicher ist?\n";
     static String story6 = "(1) Sage ihm er soll dir folgen\n";
     static String story7 = "Du: Ja, kommen Sie mit.\n*Ihr geht zu dem sicheren Ort*\nDu: Jetzt können wir reden.\nAkdov: Wo soll ich anfangen?\n       Mhhh....\n       Weißt du wer deine Eltern waren?\n";
     static String story8 = "(1) Sag ihm, dass du dich nicht an sie erinnerst.\n";
-    static String story9 = "Du: Ich schätze normale Menschen. Ich kann mich aber nicht so gut an die erinnern\n";
+    static String story9 = "Du: Ich schätze normale Menschen. Ich kann mich aber nicht so gut an die erinnern.\n";
     static String story10 = "Akdov: Vor langer Zeit kannte ich dein Vater. Wir waren befreundet. Brandon war der beste\n       Bogenschütze in dem ganze Lande. Ich weiß, dass er dir Bogenschießen beigebracht hat. Ich hoffe,\n       dass du nach seinem Tod weiter übtest.\n"
-                            + "       Er hat mir viel über dich erzählt.\n       Und deine Mutter. Sie war die liebste Person, die ich je kannte. Es tut mir so leid.\n"
+                            + "Er hat mir viel über dich erzählt.\n       Und deine Mutter. Sie war die liebste Person, die ich je kannte. Es tut mir so leid. "
                             + "       ...\n       Aa, ja ich wollte dir noch über die Prophezeiung erzählen.\n*Akdov hört schritte*\nAkdov: Los!\n       Hier, es hilft dir alle Antworten zu finden!\n       Jetzt lauf!\n"
-                            + "*Du nimmst die Karte, rennst weg und Akdov sagt einen Zauberspruch und verschwindet. Als du zuhause ankommst öffnest du die Karte und schaust sie dir an.*\n";
+                            + "*Du nimmst die Karte, rennst weg und Akdov sagt einen Zauberspruch und verschwindet. Als du Zuhause ankommst öffnest du die Karte und schaust sie dir an.*\n";
     static String story11 = "(1) Gehe zum Makierten berreich auf der Karte\n(2) Erzähle Gertrude von dem Gespräch\n";
 
 
     //hau ab ohne Gertrude bescheid zu sagen
     static String storyA1 = "*Du packst die nötigsten Sachen ein und wartest bis es dunkel ist. Auf dem Weg nach draußen nimmst du noch ein Messer und eine Laterne mit*\n";
-    static String storyA2 = "*Du hörst schritte und läufst weg, Gertrude schreit.*\nGertrude: Wer ist da?\n*Du läufst weiter. Du kommst an einem Pferdestall an*\n";
+    static String storyA2 = "*Du hörst schritte und läufst weg, Gertrude schreit.*\nGertrude: Wer ist da?\n*Du läufst weiter.*\n";
     
 
     //Rede mit Gertrude über die Begegnung
@@ -84,6 +85,9 @@ public class Texte {
                             + "Mann: Was versteckst du da?\n"
                             + "*Der Mann reißt dir deinen Rucksack von deinem Rücken und schmeißt alle Sachen auf den Boden\n"
                             + "Er sammelt heruntergefallene Gold Stücke auf*\n";
-    static String storyF2 = "(1) Greife den Mann mit deinem Messer an\n"
-                            + "(2) Greife den Mann mit deiner Laterne an\n";
+    static String storyF2 = "(1) Greife den Mann an\n";
+
+    //der Kampf gegen den Mann
+    static String storyG1 = "*Du nimmst ein Messer in die Hand und sprintest auf den Mann zu*\n";
+    static String storyG2 = "";
 }
