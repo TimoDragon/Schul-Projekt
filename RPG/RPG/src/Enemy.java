@@ -6,6 +6,11 @@ public class Enemy {
     private int health = 100;
     private int resistance = 10;
 
+    public Enemy(String name, int health) {
+        this.name = name;
+        this.health = health;
+    }
+
     //set the enemy Name
     public void setName(String in) {
         name = in;
