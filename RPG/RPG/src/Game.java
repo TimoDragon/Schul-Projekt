@@ -262,20 +262,17 @@ public class Game {
 
                     Main.animation(Texte.storyG1, 25);
 
-                    Fight fight = new Fight();
-                    Enemy mann = new Enemy();
+                    Enemy mann = new Enemy("Mann", 25);
+                    Fight fight = new Fight(player, mann, "dem", "der");
                     mann.setHealth(25);
-                    mann.setName("Mann");
-                    fight.setPronouns("dem", "der");
         
                     Weapon knife = new Weapon();
                     knife.setType("knife");
                     knife.setName("Messer");
                     knife.setDamage(5);
                     mann.addWeapon(knife);
-        
-                    fight.setEnemy(mann);
-                    fight.startFight(player, this);
+
+                    fight.startFight(this);
                 }
             } while(checker1 == false);
         }
