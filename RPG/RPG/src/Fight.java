@@ -7,9 +7,17 @@ public class Fight {
     private Game game;
     private List<Weapon> weapons = new ArrayList<Weapon>();
     private String firstPronoun, secondPronoun = "";
+    Player player;
+
+    public Fight(Player player, Enemy enemy, String firstPronoun, String secondPronoun) {
+        this.enemy = enemy;
+        this.firstPronoun = firstPronoun;
+        this.secondPronoun = secondPronoun;
+        this.player = player;
+    }
 
     //start the fight
-    public void startFight(Player player, Game runningGame) {
+    public void startFight(Game runningGame) {
         String fightStartMessage = "Du kommt in einen Kampf mit " + firstPronoun + " " + enemy.getName() + "\n";
         String fightStartMessage2 = "";
 
@@ -33,7 +41,7 @@ public class Fight {
             Main.animation("("+ i +") " + weapons.get(i).getName() + "\n", 10);
         }
 
-        requestFightInput(player);
+        requestFightInput();
     }
 
     //set the enemy
@@ -47,22 +55,22 @@ public class Fight {
     }
 
     //input during a fight
-    public void onInput(int in, Player player) {
+    private void onInput(int in) {
         if (in < weapons.size()) {
             Weapon weapon = weapons.get(in);
 
             enemy.setHealth(enemy.getHealth() - weapon.getDamage());
 
             boolean wasEnemy = false;
-            checkHealth(player, enemy, wasEnemy);
+            checkHealth(enemy, wasEnemy);
         }
         else {
-            requestFightInput(player);
+            requestFightInput();
         }
     }
 
     //enemy attack back
-    public void enemyAttack(Player player, Enemy enemy) {
+    private void enemyAttack(Enemy enemy) {
         boolean wasEnemy = true;
         int max = enemy.getWeapons().size();
         int min = 1;
@@ -73,20 +81,20 @@ public class Fight {
                         + weapon.getDamage() + " Schaden.\n", 25);
         player.setHealth(player.getHealth() - weapon.getDamage());
 
-        checkHealth(player, enemy, wasEnemy);
-        requestFightInput(player);
+        checkHealth(enemy, wasEnemy);
+        requestFightInput();
     }
 
     //to request fight input
-    public void requestFightInput(Player player) {
+    private void requestFightInput() {
         Scanner sc = new Scanner(System.in);
         int input = sc.nextInt();
         //sc.close();
-        onInput(input, player);
+        onInput(input);
     }
 
     //checks player and enemy health and outputs it
-    public void checkHealth (Player player, Enemy enemy, boolean wasEnemy) {
+    private void checkHealth (Enemy enemy, boolean wasEnemy) {
         if (player.getHealth() > 0 && enemy.getHealth() > 0) {
             Main.animation("--------------------\n", 25);
             Main.animation("Deine Leben: " + player.getHealth() + "\n", 20);
@@ -94,7 +102,7 @@ public class Fight {
             Main.animation("--------------------\n", 25);
 
             if (wasEnemy == false) {
-                enemyAttack(player, enemy);
+                enemyAttack(enemy);
             }
         }
         else if (player.getHealth() <= 0) {
