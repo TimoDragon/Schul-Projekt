@@ -23,19 +23,16 @@ public class Game {
 
     //starts the game
     public void startGame(Game game) {
-        player = new Player();  
+        player = new Player();
 
-        Weapon weapon = new Weapon();
-        weapon.setDamage(5);
-        weapon.setName("Messer");
-        weapon.setType("knife");
-        player.addItem(weapon, 1);
+        //remove when project is done
+            fightsDone.add(0);
+            continue2();
 
-        continue2();
 
         //story begins here
-        
-        /*Main.animation(Texte.start1, 25);
+        /*
+        Main.animation(Texte.start1, 25);
         Main.animation(Texte.start2, 20);
         Main.animation(Texte.start1, 25);
         requestInput();
@@ -254,7 +251,6 @@ public class Game {
             Main.animation(Texte.storyF2, 25);
     
             boolean checker1 = false;
-    
             do {
                 if (requestInput() == 1) {
                     checker1 = true;
@@ -278,6 +274,52 @@ public class Game {
         }
         else {
             Main.animation(Texte.storyG2, 25);
+            Main.animation(Texte.choose, 25);
+            Main.animation(Texte.storyG3, 25);
+
+            boolean checker = false;
+            do {
+                if (requestInput() == 1) {
+                    checker = true;
+
+                    Main.animation(Texte.storyG4, 25);
+                    
+                    Weapon bow = new Weapon("Bogen", "bow", 10);
+                    player.getInventory().add(bow);
+
+                    Main.animation(Texte.choose, 25);
+                    Main.animation(Texte.storyG5, 25);
+
+                    boolean checker1 = false;
+                    do {
+                        if (requestInput() == 1) {
+                            checker1 = true;
+
+                            Main.animation(Texte.storyG6, 25);
+                            Main.animation(Texte.choose, 25);
+                            Main.animation(Texte.storyG7, 25);
+
+                            boolean checker2 = false;
+                            do {
+                                if (requestInput() == 1) {
+                                    Main.animation(Texte.storyG8, 25);
+                                    
+                                    Food apple = new Food();
+                                    apple.setHeal(true);
+                                    apple.setType("Apfel");
+                                    apple.setSaturation(10);
+                                    apple.setHealingFactor(20);
+                                    apple.setPrice(20);
+
+                                    Shop shop = new Shop();
+                                    shop.addItem(apple);
+                                    shop.startSelling(player);
+                                }
+                            } while(checker2 == false);
+                        }
+                    } while(checker1 == false);
+                }
+            } while(checker == false);
         }
     }
 }
