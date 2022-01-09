@@ -4,7 +4,8 @@ public  class Player {
     private ArrayList<Item> inventory = new ArrayList<Item>();
     private int health = 100;
     private int food = 100;
-    private int money = 0;
+    private int money = 100;
+    private int resitance = 0;
 
     //get the Player Inventory
     public ArrayList<Item> getInventory() {
@@ -63,8 +64,8 @@ public  class Player {
     }
 
     //set the Player Health
-    public void setHealth(int i) {
-        health = i;
+    public void setHealth(int health) {
+        this.health = health;
     }
 
     //get the Player food
@@ -73,7 +74,17 @@ public  class Player {
     }
 
     //set the Player food
-    public void setFood(int i) {
-        food = i;
+    public void setFood(int food) {
+        this.food = food;
+    }
+
+    //set the Player resitance
+    public void setResistance(int resistance) {
+        this.resitance = resistance;
+    }
+
+    //get the resistance
+    public int getRestistance() {
+        return resitance;
     }
 }
