@@ -24,6 +24,10 @@ public class Food extends Item {
         return canHeal;
     }
 
+    public void setHeal(boolean value) {
+        canHeal = value;
+    }
+
     //set the healing factor of the food
     public void setHealingFactor(int healingFactor) {
         this.healingFactor = healingFactor;
