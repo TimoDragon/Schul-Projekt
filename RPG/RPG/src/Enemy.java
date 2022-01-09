@@ -11,6 +11,10 @@ public class Enemy {
         this.health = health;
     }
 
+    public Enemy() {
+        
+    }
+
     //set the enemy Name
     public void setName(String in) {
         name = in;
