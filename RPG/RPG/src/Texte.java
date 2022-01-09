@@ -89,5 +89,18 @@ public class Texte {
 
     //der Kampf gegen den Mann
     static String storyG1 = "*Du nimmst ein Messer in die Hand und sprintest auf den Mann zu*\n";
-    static String storyG2 = "";
+    static String storyG2 = "*Plötlich kommt ein großer Mann, welcher den Mann verjagt. Er hilft dir aufzustehen.*\n";
+    static String storyG3 = "(1) Frage ihn, wer er ist\n";
+    static String storyG4 = "Du: Danke! Wer bist du?\n"
+                            + "Liam: Ich bin Liam. Mir wurde gesagt, dass ich dir helfen soll also komm mit kleine.\n"
+                            + "*10 Minuten später stehen du und Liam vor einem Haus, ihr geht rein\n*"
+                            + "Liam: Akdov hat einen Bogen für dich hier gelassen. *Liam gibt dir einen Bogen*\n";
+
+    static String storyG5 = "(1) Begutachte den Bogen\n";
+    static String storyG6 = "Du: Der ist Wunderschön. *Du spannst den Bogen und lässt los. Ein Pfeil erscheint aus dem Nichts und schießt quer durch den Raum\n*"
+                            + "Liam: Willst du micht jetzt schon umbringen? *lacht*\n";
+    static String storyG7 = "(1) Erzähle Liam von der Prophezeiung\n";
+    static String storyG8 = "Du: Akdov hat mir von einer Prophezeiung erzählt.\n"
+                            + "Liam: Er hat mir nichts darüber erzählt. Er sagte aber, dass ich mir dir zum nächsten Makierten berreicht auf der Karte hin gehen soll.\n"
+                            + "*Du gehst in einen Laden*\n";
 }
