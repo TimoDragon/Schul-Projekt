@@ -9,6 +9,8 @@ public class Fight {
     private String firstPronoun, secondPronoun = "";
     Player player;
 
+    public Fight() {
+    }
     public Fight(Player player, Enemy enemy, String firstPronoun, String secondPronoun) {
         this.enemy = enemy;
         this.firstPronoun = firstPronoun;
@@ -45,8 +47,8 @@ public class Fight {
     }
 
     //set the enemy
-    public void setEnemy(Enemy in) {
-        enemy = in;
+    public void setEnemy(Enemy enemy) {
+        this.enemy = enemy;
     }
 
     //get the enemy
@@ -122,8 +124,8 @@ public class Fight {
     }
 
     //change pronouns
-    public void setPronouns(String first, String second) {
-        firstPronoun = first;
-        secondPronoun = second;
+    public void setPronouns(String firstPronoun, String secondPronoun) {
+        this.firstPronoun = firstPronoun;
+        this.secondPronoun = secondPronoun;
     }
 }
