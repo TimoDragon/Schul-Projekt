@@ -354,10 +354,10 @@ Welcher Konstruktor aufgerufen wird, entscheidet sich beim Erzeugen eines neuen 
 
 Das Kernstück jeder objektorientierten Programmierung bildet das Objekt. Allgemein kann man sagen, dass Objekte Attribute und Methoden enthalten. Dabei sind Attribute nur Variablen und Konstanten, die Werte aufnehmen können, und beschreiben damit das statische Wesen des Objektes. Im Gegensatz dazu gibt es die Methoden, die das gesamte dynamische Verhalten des Objektes oder einer Klasse charakterisieren. Sie enthalten die algorithmische Essenz des Objektes. In der objektorientierten Programmierung sind Methoden Teil der Definition einer Klasse.
 
-Das folgende Beispiel in der Programmiersprache C# zeigt die Methoden berechneEinnahmen(...), gibPartei(), wähleVorsitzender(...) und gibAnzahlDerAbgeordneten(...), die von den Klassen Partei, Abgeordneter und Parlament definiert werden. Die Parameter werden in den Klammern hinter dem Namen der Methode deklariert. Der Datentyp steht jeweils vor dem Namen der Variablen. Der Rückgabetyp steht vor dem Namen der Methode. Bei Methoden ohne Rückgabewert wird der Rückgabetyp void angegeben.
+Das folgende Beispiel in der Programmiersprache C# zeigt die Methoden berechneEinnahmen(...), gibAbteilung(), wähleChef(...) und gibAnzahlDerChefs(...), die von den Klassen Abteilung, Chef und Firma definiert werden. Die Parameter werden in den Klammern hinter dem Namen der Methode deklariert. Der Datentyp steht jeweils vor dem Namen der Variablen. Der Rückgabetyp steht vor dem Namen der Methode. Bei Methoden ohne Rückgabewert wird der Rückgabetyp void angegeben.
 
 ```java
-class Partei
+class Abteilung
 {
     List<Person> mitglieder;
     double mitgliedsbeitrag;
@@ -369,36 +369,36 @@ class Partei
     }
 }
 
-class Abgeordneter
+class Chef
 {
-    Partei partei;
+    Abteilung abteilung;
     
     // Methode ohne Parameter und mit Rückgabewert
-    Partei gibPartei()
+    Abteilung gibApteilung()
     {
-        return partei;
+        return abteilung;
     }
 }
 
-class Parlament
+class Firma
 {
-    List<Abgeordneter> abgeordnete = new List<Abgeordneter>();
-    Abgeordneter vorsitzender;
+    List<Chef> chef = new List<Chef>();
+    Chef vorstand;
     int maximalGroesse;
     
     // Methode mit einem Parameter und ohne Rückgabewert
-    void wähleVorsitzender(Abgeordneter abgeordneter)
+    void wähleChef(Chef Chef)
     {
-        vorsitzender = abgeordneter;
+        vorstand = Chef;
     }
     
     // Methode mit einem Parameter und mit Rückgabewert
-    int gibAnzahlDerAbgeordneten(Partei partei)
+    int gibAnzahlDerChefs(Abteilung abteilung)
     {
         int anzahl = 0;
-        foreach (Abgeordneter abgeordneter in abgeordnete)
+        foreach (Chef Chef in Chef)
         {
-            if (abgeordneter.gibPartei() == partei)
+            if (Chef.gibAbteilung() == abteilung)
             {
                 anzahl++;
             }
