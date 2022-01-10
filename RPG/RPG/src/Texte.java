@@ -62,7 +62,7 @@ public class Texte {
     static String storyB12 = "(1) Verabschiede dich\n ";
     static String storyB13 = "Du: Danke und auf wiedersehen!\nGertrude: Auf wiedersehen und pass auf dich auf.\n";
 
-    //hier gehts nach dem Abhaueb/dem Gespräch weiter
+    //hier gehts nach dem Abhauen/dem Gespräch weiter
     static String storyC1 = "*Du kommst an einenem Pferdestall an, wo dein Pferd namens Troy auf dich wartet.*\n";
     static String storyC2 = "(1) Begrüße Troy\n";
     static String storyC3 = "Du: Hi, großer, hast du Lust auf ein Abenteuer?\n*Du schreichelst Troy und steigst auf ihn drauf, du schaust auf die Karte und reitest los.\n"
