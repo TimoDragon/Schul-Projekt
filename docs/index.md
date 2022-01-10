@@ -412,14 +412,22 @@ class Firma
 
  # Aufgaben Java Toturail 
 
+ ## Aufgabe 1
+
  Gebe folgende Struktorporgramm  als Code wieder.
 
 
-![Test](/docs/images/structorprogramm.PNG)
+![Test](/Schul-Projekt/images/structorprogramm.PNG)
 
-[Lösung](/docs/Lösung/LoesungAufgabe1.md)
+[Lösung](/Schul-Projekt/Lösung/LoesungAufgabe1.md)
 
+## Aufgabe 2 
 
-2. Erstelle den Int Hp und nutze schleifen um sie von 10 auf 100 hochlaufen zu lassen.
+ Erstelle den Int Hp und nutze schleifen um sie von 10 auf 100 hochlaufen zu lassen.
 
- [Lösung](docs/Lösung/LoesungAufgabe2.md)
+ [Lösung](Schul-Projekt/Lösung/LoesungAufgabe2.md)
+
+ [Lösung]([Schul-Projekt/Lösung/LoesungAufgabe2.md)
+ 
+ ## Aufgabe 3 
+
