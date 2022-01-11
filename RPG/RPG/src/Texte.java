@@ -11,34 +11,33 @@ public class Texte {
     //prologue
     static String prologue1 = "************************* Vorgeschichte *************************\n";
     static String prologue2 = "Schon seit mehreren hundert Jahren kämpfen die Menschen gegen eine bösartige\n"
-                            + "Macht, welche mit Orks, Trollen, Goblins und vielen anderen Schreklichen Kreaturen\n"
+                            + "Macht, welche mit Orks, Trollen, Goblins und vielen anderen schreklichen Kreaturen\n"
                             + "zusammen Arbeitet. Als du 7 Jahre alt warst wurde dein Dorf durch Orks angegriffen und\n"
                             + "deine Eltern starben bei diesem Angriff. Mit den restlichen Überlebenden bist du in den\n"
                             + "Süden in das nahe gelegene Königreich gezogen und wurdest von einer alten Frau aufgenommen.\n";
     static String story1 = "*Du gehst durch die Stadt, ein Mann hählt dich auf*\n"
                             + "Akdov: Eyyyy… Warte… Du bist doch Antoinette, oder?\n" + choose
                             + "(1) Frage ihn wer er ist\n";
-    static String story2 = "Du: Ja? Woher wissen Sie wie ich Heiße? Und wer sind Sie überhaupt?\n";
+    static String story2 = "Du: Ja? Woher wissen Sie wie ich heiße? Und wer sind Sie überhaupt?\n";
     static String story3 = "Akdov: Ach ja. Entschuldige mich. Ich bin Akdov. Ich komme aus Teya.\n"
                              + "       Wir können aber nicht hier stehen bleiben und reden. Die beobachten mich.\n";
     static String story4 = "(1) Frage ihn wer ihn beobachtet\n";
-    static String story4A = "Du: Wer beobachtet Sie?";
-    static String story5 = "Du: Wer beobachtet dich?"
+    static String story5 = "Du: Wer beobachtet Sie?\n"
                             + "Akdov: Ich erkläre dir gleich alles. Aber nicht hier. Kennst du ein Platz, wo es sicher ist?\n";
     static String story6 = "(1) Sage ihm er soll dir folgen\n";
-    static String story7 = "Du: Ja, kommen Sie mit.\n*Ihr geht zu dem sicheren Ort*\nDu: Jetzt können wir reden.\nAkdov: Wo soll ich anfangen?\n       Mhhh....\n       Weißt du wer deine Eltern waren?\n";
+    static String story7 = "Du: Ja, kommen Sie mit.\n*Ihr geht zu dem sicheren Ort*\nDu: Jetzt können wir reden.\nAkdov: Wo soll ich anfangen?\n       Mhhh....\n       ch erzähle dir was über deiner Eltern\n";
     static String story8 = "(1) Sag ihm, dass du dich nicht an sie erinnerst.\n";
-    static String story9 = "Du: Ich schätze normale Menschen. Ich kann mich aber nicht so gut an die erinnern.\n";
+    static String story9 = "Du: Ich kann mich an die nicht so gut erinnern.\n";
     static String story10 = "Akdov: Vor langer Zeit kannte ich dein Vater. Wir waren befreundet. Brandon war der beste\n       Bogenschütze in dem ganze Lande. Ich weiß, dass er dir Bogenschießen beigebracht hat. Ich hoffe,\n       dass du nach seinem Tod weiter übtest.\n"
                             + "Er hat mir viel über dich erzählt.\n       Und deine Mutter. Sie war die liebste Person, die ich je kannte. Es tut mir so leid. "
-                            + "       ...\n       Aa, ja ich wollte dir noch über die Prophezeiung erzählen.\n*Akdov hört schritte*\nAkdov: Los!\n       Hier, es hilft dir alle Antworten zu finden!\n       Jetzt lauf!\n"
-                            + "*Du nimmst die Karte, rennst weg und Akdov sagt einen Zauberspruch und verschwindet. Als du Zuhause ankommst öffnest du die Karte und schaust sie dir an.*\n";
+                            + "       ...\n       Aa, ja ich wollte dir noch über die Prophezeiung erzählen.\n*Akdov hört schritte*\nAkdov: Los!\n       Hier, es hilft dir alle Antworten zu finden!\n       Jetzt lauf! Schnell!\n"
+                            + "*Du nimmst die Karte und rennst weg. Akdov sagt einen Zauberspruch und verschwindet. Als du Zuhause ankommst öffnest du die Karte und schaust sie dir an. Ein Punkt erscheint dir.*\n";
     static String story11 = "(1) Gehe zum Makierten berreich auf der Karte\n(2) Erzähle Gertrude von dem Gespräch\n";
 
 
     //hau ab ohne Gertrude bescheid zu sagen
     static String storyA1 = "*Du packst die nötigsten Sachen ein und wartest bis es dunkel ist. Auf dem Weg nach draußen nimmst du noch ein Messer und eine Laterne mit*\n";
-    static String storyA2 = "*Du hörst schritte und läufst weg, Gertrude schreit.*\nGertrude: Wer ist da?\n*Du läufst weiter.*\n";
+    static String storyA2 = "*Du hörst schritte und läufst weg, Gertrude schreit.*\nGertrude: Wer ist da?\n*Du läufst aber weiter.*\n";
     
 
     //Rede mit Gertrude über die Begegnung
@@ -51,11 +50,11 @@ public class Texte {
                             + "Gertude: Liebe, du weißt aber schon, dass die Karte leer ist?\n";
     static String storyB4 = "(1) Sag ihr, dass auf der Karte ein Punkt ist\n";
     static String storyB5 = "Du: Nein, schau doch mal hier. Da ist ein Punkt makiert.\n"
-                            + "Gertrude: Ich sehe nichts auf der Karte aber ich glaube dir. Was willst jetzt damit machen?\n";
+                            + "Gertrude: Ich sehe nichts auf der Karte, aber ich glaube dir. Was willst jetzt damit machen?\n";
     static String storyB6 = "(1) Sag ihr, dass du zum Punkt gehen wirst\n";
     static String storyB7 = "Gertrude: Du weißt aber das es Gefährlich sein kann. Hast du keine Angst?\n";
     static String storyB8 = "(1) Sag ihr, dass du trotzdem hingehen wirst\n";
-    static String storyB9 = "Du: Ich habe nichts zu verlieren. Laut der Karte ist der makierte Berreich auch nicht weit weg. Ich kann Troy\n    und dahin reiten.\n"
+    static String storyB9 = "Du: Ich habe nichts zu verlieren. Laut der Karte ist der makierte Berreich auch nicht weit weg. Ich nehme Troy\n    und reite dahin.\n"
                             + "Gertude: Okay, mach das. Brauchst du noch was?\n";
     static String storyB10 = "(1) Sage ihr, dass du eine Laterne und ein Messer brauchst\n";
     static String storyB11 = "Du: Ich könnte noch eine Laterne und ein Messer brauchen.\n"
@@ -63,15 +62,15 @@ public class Texte {
     static String storyB12 = "(1) Verabschiede dich\n ";
     static String storyB13 = "Du: Danke und auf wiedersehen!\nGertrude: Auf wiedersehen und pass auf dich auf.\n";
 
-    //hier gehts nach dem Abhaueb/dem Gespräch weiter
+    //hier gehts nach dem Abhauen/dem Gespräch weiter
     static String storyC1 = "*Du kommst an einenem Pferdestall an, wo dein Pferd namens Troy auf dich wartet.*\n";
     static String storyC2 = "(1) Begrüße Troy\n";
     static String storyC3 = "Du: Hi, großer, hast du Lust auf ein Abenteuer?\n*Du schreichelst Troy und steigst auf ihn drauf, du schaust auf die Karte und reitest los.\n"
-                            + "Nach einer Welie errreichst du einen kleinen Wald. Plötzlich hörst du ein komisches Geräusch in den Büschen*\n";
+                            + "Nach einer Welie ereichst du einen kleinen Wald. Plötzlich hörst du ein komisches Geräusch in den Büschen*\n";
     static String storyC4 = "(1) Du schaust nach was in dem Busch ist.\n(2) Du reitest weiter.\n";
 
     //Nachdem Toni los geritten ist und schaut was im Busch ist
-    static String storyD1 = "*Du siehst einen Hund, welcher sich erschrickt und wegrent. Du reitest weiter.*\n";
+    static String storyD1 = "*Du siehst einen Hund, welcher sich erschreckt und wegrent. Du reitest weiter.*\n";
     static String storyD2 = "*Ein Hund springt auf dich zu und beißt dich. Du verlierst 5 HP. Du reitest weiter.*\n";
 
     //Nachdem Toni los geritten ist und NICHT schaut was im Busch ist
@@ -85,22 +84,66 @@ public class Texte {
                             + "Mann: Was versteckst du da?\n"
                             + "*Der Mann reißt dir deinen Rucksack von deinem Rücken und schmeißt alle Sachen auf den Boden\n"
                             + "Er sammelt heruntergefallene Gold Stücke auf*\n";
-    static String storyF2 = "(1) Greife den Mann an\n";
+    static String storyF2 = "(1) Greif den Mann an\n";
 
     //der Kampf gegen den Mann
     static String storyG1 = "*Du nimmst ein Messer in die Hand und sprintest auf den Mann zu*\n";
-    static String storyG2 = "*Plötlich kommt ein großer Mann, welcher den Mann verjagt. Er hilft dir aufzustehen.*\n";
-    static String storyG3 = "(1) Frage ihn, wer er ist\n";
+    static String storyG2 = "*Plötlich kommt ein großer Mann, welcher den Dieb verjagt. Er hilft dir aufzustehen.*\n";
+    static String storyG3 = "(1) Frag ihn, wer er ist\n";
     static String storyG4 = "Du: Danke! Wer bist du?\n"
-                            + "Liam: Ich bin Liam. Mir wurde gesagt, dass ich dir helfen soll also komm mit kleine.\n"
+                            + "...: Ich bin Liam. Mir wurde gesagt, dass ich dir helfen soll also komm mit kleine.\n"
+                            + "Du: Hi\n"
+                            + "Liam: Hi\n"
+                            + "Liam: Ich dachte, dass du ein Junge sein wirst. Bin aber positiv überrascht"
                             + "*10 Minuten später stehen du und Liam vor einem Haus, ihr geht rein\n*"
                             + "Liam: Akdov hat einen Bogen für dich hier gelassen. *Liam gibt dir einen Bogen*\n";
 
     static String storyG5 = "(1) Begutachte den Bogen\n";
-    static String storyG6 = "Du: Der ist Wunderschön. *Du spannst den Bogen und lässt los. Ein Pfeil erscheint aus dem Nichts und schießt quer durch den Raum\n*"
-                            + "Liam: Willst du micht jetzt schon umbringen? *lacht*\n";
-    static String storyG7 = "(1) Erzähle Liam von der Prophezeiung\n";
+    static String storyG6 = "Du: Der ist Wunderschön. *Du spannst den Bogen und lässt los. Ein Pfeil erscheint aus dem Nichts und schießt quer durch den Raum.\n*"
+                            + "Liam: Willst du micht umbringen? *lacht*\n";
+    static String storyG7 = "(1) Erzähle Liam von der Prophezeiung.\n";
     static String storyG8 = "Du: Akdov hat mir von einer Prophezeiung erzählt.\n"
-                            + "Liam: Er hat mir nichts darüber erzählt. Er sagte aber, dass ich mir dir zum nächsten Makierten berreicht auf der Karte hin gehen soll.\n"
-                            + "*Du gehst in einen Laden*\n";
+                            + "Liam: Er hat mir nichts darüber erzählt. Er sagte aber, dass ich mir dir zum nächsten makierten Berreicht auf der Karte hin gehen soll.\n"
+                            + "*Du gehst in einen Laden.*\n";
+//shoppen
+
+    static String storyG9 = "*Nächster Tag.*\n" 
+                            + "Liam: Aufstehen!\n";
+    static String storyG10 = "(1) Sag Liam, dass er dich in ruhe lassen soll.\n"
+                            + "Du: Gleich.\n"
+                            + "Liam: Wir mussen los laufen. Komm nach unten. Ich mach dir was zum Essen.\n"
+                            + "Du: Jaaa. Ich ziehe mich noch schnell um.\n"
+                            + "*Liam guckt Toni an.*\n"
+                            + "Du: Geh bitte raus! *lacht*\n"
+                            + "*Liam guckt dich böse an und geht raus.*\n";
+    static String storyH1 = "*10 minuten später.*\n"
+                            + "*Du gehst nach unten, isst dein Frühstück und ihr fährt los.*\n";
+    static String storyH2 = "*Nach 3 Stunden Weg, steht ihr vor einer See.*\n";
+    static String storyH3 = "(1) Frag wie ihr auf die Insel kommt.\n" 
+                            + "Du: Wollen wir durch der See schwimmen.\n"
+                            + "*Du läufst in Richtung des Wassers.*\n"
+                            + "Liam: NEIN!\n"
+                            + "*Aufeinmal fängt was dein Bein und zieht dich in das Wasser rein.*\n"
+                            + "*Liam läuft in deiner Richtung und schneidet die Hand ab.*\n";
+    static String storyH4 = "(1) Frag Liam, was das war.\n"
+                            + "Wa... Was war da?\n!"
+                            + "Liam: Eine Meerjungfrau. Die sind schrecklich.\n"
+                            + "Liam: Wir müssen ein Floß bauen.\n"
+                            + "*Ihr geht zum Wald und sammelt Stocke. Liam erzählt dir über seiner Kindheit. Das Floß ist fertig*\n";
+    static String storyH5 = "*Ihr schwimmt durch die See*\n";
+    //der Kampf gegen die Meerjungfrauen
+
+    static String storyI1 = "*Du umarmst Liam*\n"
+                            + "Toni: Wir haben uberlebt!\n"
+                            + "Liam: Komm kleine. Wir müssen weiterlaufen.\n"
+                            + "*Die beiden sehen ein großes, altes Haus.*\n"
+                            + "Du: Ich hoffe wir sind hier richtig.\n"
+                            + "*Liam öffnet lagsam die Tür. Sie durchsuchen zusammen das Haus.*\n"
+                            + "Du: Hier ist nichts.\n"
+                            + "Liam: Vielleicht ist hier ein Geheimraum.\n"
+                            + "Du: Wonach soll ich suchen?\n"
+                            + "Liam: Lass die Bücherregale durchsuchen.\n";
+    static String storyI2 = "(1) Fang an die Regalen durchzusuchen.\n"
+                            + "Du: Liam! Ich habe was gefunden! Hier. Das Buch kann man nicht Bewegen.\n"
+                            + "*Liam zieht das Buch. Ein Regal öffnet sich*\n";
 }
