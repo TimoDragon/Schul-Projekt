@@ -419,7 +419,7 @@ class Firma
 
 ![Test](/Schul-Projekt/images/structorprogramm.PNG)
 
-[Lösung](/docs/Lösung/LoesungAufgabe1.md)
+[Lösung](/Schul-Projekt/Lösung/LoesungAufgabe1.md)
 
 ## Aufgabe 2 
 
@@ -430,4 +430,6 @@ class Firma
  [Lösung]([Schul-Projekt/Lösung/LoesungAufgabe2.md)
  
  ## Aufgabe 3 
+
+ 
 
