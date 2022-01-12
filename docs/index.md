@@ -419,15 +419,33 @@ class Firma
 
 ![Test](/Schul-Projekt/images/structorprogramm.PNG)
 
-[Lösung](/docs/Lösung/LoesungAufgabe1.md)
+[Lösung](/Schul-Projekt/Lösung/LoesungAufgabe1.md)
 
 ## Aufgabe 2 
 
  Erstelle den Int Hp und nutze schleifen um sie von 10 auf 100 hochlaufen zu lassen.
 
  [Lösung](Schul-Projekt/Lösung/LoesungAufgabe2.md)
-
- [Lösung]([Schul-Projekt/Lösung/LoesungAufgabe2.md)
  
  ## Aufgabe 3 
+
+![Test](/Schul-Projekt/images/ObjektNeu.PNG)
+
+ A)
+
+ 1. Deklariere ein Objekt der Klasse Auto mit einen Namen deines Beliebens.
+ 2. Initialisieren eines Objektes der Klasse Auto.
+ 3. Erhöhe ein Gang auf den 4.
+ 4. Gebe den Namen des Auto aus.
+
+B) 
+
+Implementiere die Klasse inklusive der beiden Methoden.
+
+
+
+[Lösung](/Schul-Projekt/Lösung/LoesungAufgabe3.md)
+    
+
+ 
 
