@@ -93,8 +93,6 @@ public class Texte {
     static String storyG2 = "*Du guckst dem Mann an. Der Mann fängt an in Richtung Troy zu gehen*\n"
                             +"Dieb: Für dem kriege ich mindestens 50 Gold Stücke.\n"
                             + "*Du kriegst Angst und weiß nicht was du machen sollst. Du siehst deine Laterne . Gehst hinter dem Dieb und schalgst ihm. Er wird sauer.*\n";
-
-    static String storyG3 = "(1) Greif den Dieb an\n";
     
     //Nach dem Kampf
     static String storyG4 = "*Plötlich kommt ein großer Mann, welcher den Dieb verjagt. Er hilft dir aufzustehen.*\n";
@@ -127,7 +125,7 @@ public class Texte {
                             + "*Liam guckt dich böse an und geht raus.*\n";
     static String storyH1 = "*10 minuten später.*\n"
                             + "*Du gehst nach unten, isst dein Frühstück und ihr fährt los.*\n";
-    static String storyH2 = "*Nach 3 Stunden Weg, steht ihr vor einer See.*\n";
+    static String storyH2 = "*Nach 3 Stunden Weg, steht ihr vor einem See.*\n";
     static String storyH3 = "(1) Frag wie ihr auf die Insel kommt.\n" 
                             + "Du: Wollen wir durch der See schwimmen.\n"
                             + "*Du läufst in Richtung des Wassers.*\n"
