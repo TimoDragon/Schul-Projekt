@@ -336,9 +336,16 @@ public class Game {
                                         if (requestInput() == 1) {
                                             checker3 = true;
                                             Main.animation(Texte.storyH1, 25);
+                                            Main.animation(Texte.choose, 25);
                                             Main.animation(Texte.storyH2, 25);
 
-                                            
+                                            boolean checker4 = false;
+                                            do {
+                                                if (requestInput() == 1) {
+                                                    checker4 = true;
+                                                    Main.animation(Texte.storyH3, 25);
+                                                }
+                                            } while (checker4 == false);
                                         }
                                     } while(checker3 == false);
                                 }
