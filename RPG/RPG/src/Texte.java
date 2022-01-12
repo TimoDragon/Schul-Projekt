@@ -62,11 +62,11 @@ public class Texte {
     static String storyB12 = "(1) Verabschiede dich\n ";
     static String storyB13 = "Du: Danke und auf wiedersehen!\nGertrude: Auf wiedersehen und pass auf dich auf.\n";
 
-    //hier gehts nach dem Abhaueb/dem Gespräch weiter
+    //hier gehts nach dem Abhauen/dem Gespräch weiter
     static String storyC1 = "*Du kommst an einenem Pferdestall an, wo dein Pferd namens Troy auf dich wartet.*\n";
     static String storyC2 = "(1) Begrüße Troy\n";
     static String storyC3 = "Du: Hi, großer, hast du Lust auf ein Abenteuer?\n*Du schreichelst Troy und steigst auf ihn drauf, du schaust auf die Karte und reitest los.\n"
-                            + "Nach einer Welie errreichst du einen kleinen Wald. Plötzlich hörst du ein komisches Geräusch in den Büschen*\n";
+                            + "Nach einer Welie ereichst du einen kleinen Wald. Plötzlich hörst du ein komisches Geräusch in den Büschen*\n";
     static String storyC4 = "(1) Du schaust nach was in dem Busch ist.\n(2) Du reitest weiter.\n";
 
     //Nachdem Toni los geritten ist und schaut was im Busch ist
@@ -84,12 +84,12 @@ public class Texte {
                             + "Mann: Was versteckst du da?\n"
                             + "*Der Mann reißt dir deinen Rucksack von deinem Rücken und schmeißt alle Sachen auf den Boden\n"
                             + "Er sammelt heruntergefallene Gold Stücke auf*\n";
-    static String storyF2 = "(1) Greife den Mann an\n";
+    static String storyF2 = "(1) Greif den Mann an\n";
 
     //der Kampf gegen den Mann
     static String storyG1 = "*Du nimmst ein Messer in die Hand und sprintest auf den Mann zu*\n";
     static String storyG2 = "*Plötlich kommt ein großer Mann, welcher den Dieb verjagt. Er hilft dir aufzustehen.*\n";
-    static String storyG3 = "(1) Frage ihn, wer er ist\n";
+    static String storyG3 = "(1) Frag ihn, wer er ist\n";
     static String storyG4 = "Du: Danke! Wer bist du?\n"
                             + "...: Ich bin Liam. Mir wurde gesagt, dass ich dir helfen soll also komm mit kleine.\n"
                             + "Du: Hi\n"
@@ -128,7 +128,7 @@ public class Texte {
     static String storyH4 = "(1) Frag Liam, was das war.\n"
                             + "Wa... Was war da?\n!"
                             + "Liam: Eine Meerjungfrau. Die sind schrecklich.\n"
-                            + "Liam: Wir müssen ein Folß bauen.\n"
+                            + "Liam: Wir müssen ein Floß bauen.\n"
                             + "*Ihr geht zum Wald und sammelt Stocke. Liam erzählt dir über seiner Kindheit. Das Floß ist fertig*\n";
     static String storyH5 = "*Ihr schwimmt durch die See*\n";
     //der Kampf gegen die Meerjungfrauen
@@ -138,12 +138,15 @@ public class Texte {
                             + "Liam: Komm kleine. Wir müssen weiterlaufen.\n"
                             + "*Die beiden sehen ein großes, altes Haus.*\n"
                             + "Du: Ich hoffe wir sind hier richtig.\n"
-                            + "*Liam öffnet lagsam die Tür. Die suchen zusammen das Haus durch.*\n"
+                            + "*Liam öffnet lagsam die Tür. Sie durchsuchen zusammen das Haus.*\n"
                             + "Du: Hier ist nichts.\n"
                             + "Liam: Vielleicht ist hier ein Geheimraum.\n"
                             + "Du: Wonah soll ich suchen?\n"
                             + "Liam: Lass die Bücherregalen durchsuchen.\n";
     static String storyH7 = "(1) Fang an die Regalen durchzusuchen.\n"
+                            + "Du: Wonach soll ich suchen?\n"
+                            + "Liam: Lass die Bücherregale durchsuchen.\n";
+    static String storyI2 = "(1) Fang an die Regalen durchzusuchen.\n"
                             + "Du: Liam! Ich habe was gefunden! Hier. Das Buch kann man nicht Bewegen.\n"
                             + "*Liam zieht das Buch. Ein Regal öffnet sich.*\n";
     static String storyH8 = "(1) Geh gucken wo das Weg führt.\n"
