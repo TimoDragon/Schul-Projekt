@@ -125,20 +125,20 @@ public class Texte {
                             + "Du: Geh bitte raus! *lacht*\n"
                             + "*Liam guckt dich böse an und geht raus.*\n";
     static String storyH1 = "*10 minuten später.*\n"
-                            + "*Du gehst nach unten, isst dein Frühstück und ihr fährt los.*\n";
-    static String storyH2 = "*Nach 3 Stunden Weg, steht ihr vor einer See.*\n";
-    static String storyH3 = "(1) Frag wie ihr auf die Insel kommt.\n" 
-                            + "Du: Wollen wir durch der See schwimmen.\n"
+                            + "*Du gehst nach unten, isst dein Frühstück und ihr fährt los.*\n"
+                            + "*Nach 3 Stunden Weg, steht ihr vor einem See.*\n";
+    static String storyH2 = "(1) Frag wie ihr auf die Insel kommt.\n";
+    static String storyH3 = "Du: Wollen wir durch der See schwimmen.\n"
                             + "*Du läufst in Richtung des Wassers.*\n"
                             + "Liam: NEIN!\n"
                             + "*Aufeinmal fängt was dein Bein und zieht dich in das Wasser rein.*\n"
                             + "*Liam läuft in deiner Richtung und schneidet die Hand ab.*\n";
-    static String storyH4 = "(1) Frag Liam, was das war.\n"
-                            + "Wa... Was war da?\n!"
+    static String storyH4 = "(1) Frag Liam, was das war.\n";
+    static String storyH5 =  "Wa... Was war da?\n!"
                             + "Liam: Eine Meerjungfrau. Die sind schrecklich.\n"
                             + "Liam: Wir müssen ein Floß bauen.\n"
-                            + "*Ihr geht zum Wald und sammelt Stocke. Liam erzählt dir über seiner Kindheit. Das Floß ist fertig*\n";
-    static String storyH5 = "*Ihr schwimmt durch die See*\n";
+                            + "*Ihr geht zum Wald und sammelt Stocke. Liam erzählt dir über seiner Kindheit. Das Floß ist fertig*\n"
+                            + "*Ihr schwimmt durch den See*\n";
     //der Kampf gegen die Meerjungfrauen
 
     static String storyH6 = "*Du umarmst Liam*\n"

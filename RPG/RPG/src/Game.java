@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 import java.util.Scanner;
 
 public class Game {
@@ -25,10 +24,12 @@ public class Game {
     public void startGame(Game game) {
         player = new Player();
 
-        //remove when project is done
-            fightsDone.add(0);
-            continue2();
+        Weapon fist = new Weapon("Faust", "fist", 2);
+        player.getInventory().add(fist);
 
+        //remove when project is done
+            //fightsDone.add(0);
+            continue2();
 
         //story begins here
         /*
@@ -92,8 +93,6 @@ public class Game {
                                                     checker5 = true;
                                                     Main.animation(Texte.storyA1, 25);
                                                     
-                                                    Item lantern = new Item();
-                                                    lantern.setType("Laterne");
                                                     Weapon knife = new Weapon();
                                                     knife.setType("knife");
                                                     knife.setDamage(5);
@@ -193,7 +192,7 @@ public class Game {
                 } while(checker2 == false);
             }
         } while(checker1 == false);
-        */
+        //*/
     }
 
     public void continue1() {
@@ -214,14 +213,14 @@ public class Game {
                     int number = requestInput();
                     switch(number) {
                         case 1: {
-                            Random random = new Random();
-                            int randomNumber = random.nextInt(2);
                             checker2 = true;
+                            Item lantern = new Item();
+                            lantern.setType("Laterne");
 
-                            if (randomNumber == 0) {
+                            if (player.getInventory().contains(lantern)) {
                                 Main.animation(Texte.storyD1, 25);
                             }
-                            else if (randomNumber == 1) {
+                            else {
                                 Main.animation(Texte.storyD2, 25);
                                 player.setHealth(player.getHealth() - 5);
                             }
@@ -249,14 +248,26 @@ public class Game {
             Main.animation(Texte.storyF1, 25);
             Main.animation(Texte.choose, 25);
             Main.animation(Texte.storyF2, 25);
-    
+
             boolean checker1 = false;
             do {
                 if (requestInput() == 1) {
                     checker1 = true;
-                    fightsDone.add(0);
 
-                    Main.animation(Texte.storyG1, 25);
+                    boolean hasKnife = false;
+                    for (int i = 0; i < player.getInventory().size(); i++) {
+                        if (player.getInventory().get(i).getType().equals("knife")) {
+                            hasKnife = true;
+                            break;
+                        }
+                    }
+        
+                    if (hasKnife == true) {
+                        Main.animation(Texte.storyG1, 25);
+                    }
+                    else {
+                        Main.animation(Texte.storyG2, 25);
+                    }
 
                     Enemy mann = new Enemy("Mann", 25);
                     Fight fight = new Fight(player, mann, "dem", "der");
@@ -268,41 +279,42 @@ public class Game {
                     knife.setDamage(5);
                     mann.addWeapon(knife);
 
+                    fightsDone.add(0);
                     fight.startFight(this);
                 }
             } while(checker1 == false);
         }
         else {
-            Main.animation(Texte.storyG2, 25);
+            Main.animation(Texte.storyG4, 25);
             Main.animation(Texte.choose, 25);
-            Main.animation(Texte.storyG3, 25);
+            Main.animation(Texte.storyG5, 25);
 
             boolean checker = false;
             do {
                 if (requestInput() == 1) {
                     checker = true;
 
-                    Main.animation(Texte.storyG4, 25);
+                    Main.animation(Texte.storyG6, 25);
                     
                     Weapon bow = new Weapon("Bogen", "bow", 10);
                     player.getInventory().add(bow);
 
                     Main.animation(Texte.choose, 25);
-                    Main.animation(Texte.storyG5, 25);
+                    Main.animation(Texte.storyG7, 25);
 
                     boolean checker1 = false;
                     do {
                         if (requestInput() == 1) {
                             checker1 = true;
 
-                            Main.animation(Texte.storyG6, 25);
+                            Main.animation(Texte.storyG8, 25);
                             Main.animation(Texte.choose, 25);
-                            Main.animation(Texte.storyG7, 25);
+                            Main.animation(Texte.storyG9, 25);
 
                             boolean checker2 = false;
                             do {
                                 if (requestInput() == 1) {
-                                    Main.animation(Texte.storyG8, 25);
+                                    Main.animation(Texte.storyG10, 25);
                                     
                                     Food apple = new Food();
                                     apple.setHeal(true);
@@ -314,6 +326,21 @@ public class Game {
                                     Shop shop = new Shop();
                                     shop.addItem(apple);
                                     shop.startSelling(player);
+
+                                    Main.animation(Texte.storyG11, 25);
+                                    Main.animation(Texte.choose, 25);
+                                    Main.animation(Texte.storyG12, 25);
+
+                                    boolean checker3 = false;
+                                    do {
+                                        if (requestInput() == 1) {
+                                            checker3 = true;
+                                            Main.animation(Texte.storyH1, 25);
+                                            Main.animation(Texte.storyH2, 25);
+
+                                            
+                                        }
+                                    } while(checker3 == false);
                                 }
                             } while(checker2 == false);
                         }
