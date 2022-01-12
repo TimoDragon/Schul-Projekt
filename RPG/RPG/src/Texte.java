@@ -85,21 +85,20 @@ public class Texte {
                             + "Dieb: Was versteckst du da?\n"
                             + "*Der Dieb reißt dir deinen Rucksack von deinem Rücken und schmeißt alle Sachen auf den Boden\n"
                             + "Er sammelt heruntergefallene Gold Stücke auf.*\n";
-    static String storyF2 = "(1) Greif den Dieb an\n";
 
     //der Kampf gegen den Mann (Option 1)
     static String storyG1 = "*Du nimmst ein Messer in die Hand und sprintest auf den Mann zu.*\n";
+    static String storyG2 = "(1) Greif den Dieb an\n";
     //der Kampf gegen den Mann (Option 2)
-    static String storyG2 = "*Du guckst dem Mann an. Der Mann fängt an in Richtung Troy zu gehen*\n"
+    static String storyG3 = "*Du guckst dem Mann an. Der Mann fängt an in Richtung Troy zu gehen*\n"
                             +"Dieb: Für dem kriege ich mindestens 50 Gold Stücke.\n"
                             + "*Du kriegst Angst und weiß nicht was du machen sollst. Du siehst deine Laterne . Gehst hinter dem Dieb und schalgst ihm. Er wird sauer.*\n";
-
-    static String storyG3 = "(1) Greif den Dieb an\n";
+    static String storyG4 = "(1) Greif den Dieb an\n";
     
     //Nach dem Kampf
-    static String storyG4 = "*Plötlich kommt ein großer Mann, welcher den Dieb verjagt. Er hilft dir aufzustehen.*\n";
-    static String storyG5 = "(1) Frag ihn, wer er ist\n";
-    static String storyG6 = "Du: Danke! Wer bist du?\n"
+    static String storyG5 = "*Plötlich kommt ein großer Mann, welcher den Dieb verjagt. Er hilft dir aufzustehen.*\n";
+    static String storyG6 = "(1) Frag ihn, wer er ist\n";
+    static String storyG7 = "Du: Danke! Wer bist du?\n"
                             + "...: Ich bin Liam. Mir wurde gesagt, dass ich dir helfen soll also komm mit kleine.\n"
                             + "Du: Hi\n"
                             + "Liam: Hi\n"
@@ -107,19 +106,19 @@ public class Texte {
                             + "*10 Minuten später stehen du und Liam vor einem Haus, ihr geht rein\n*"
                             + "Liam: Akdov hat einen Bogen für dich hier gelassen. *Liam gibt dir einen Bogen*\n";
 
-    static String storyG7 = "(1) Begutachte den Bogen\n";
-    static String storyG8 = "Du: Der ist Wunderschön. *Du spannst den Bogen und lässt los. Ein Pfeil erscheint aus dem Nichts und schießt quer durch den Raum.\n*"
+    static String storyG8 = "(1) Begutachte den Bogen\n";
+    static String storyG9 = "Du: Der ist Wunderschön. *Du spannst den Bogen und lässt los. Ein Pfeil erscheint aus dem Nichts und schießt quer durch den Raum.\n*"
                             + "Liam: Willst du micht umbringen? *lacht*\n";
-    static String storyG9 = "(1) Erzähle Liam von der Prophezeiung.\n";
-    static String storyG10 = "Du: Akdov hat mir von einer Prophezeiung erzählt.\n"
+    static String storyG10 = "(1) Erzähle Liam von der Prophezeiung.\n";
+    static String storyG11 = "Du: Akdov hat mir von einer Prophezeiung erzählt.\n"
                             + "Liam: Er hat mir nichts darüber erzählt. Er sagte aber, dass ich mir dir zum nächsten makierten Berreicht auf der Karte hin gehen soll.\n"
                             + "*Du gehst in einen Laden.*\n";
 //shoppen
 
-    static String storyG11 = "*Nächster Tag.*\n" 
+    static String storyG12 = "*Nächster Tag.*\n" 
                             + "Liam: Aufstehen!\n";
-    static String storyG12 = "(1) Sag Liam, dass er dich in ruhe lassen soll.\n";
-    static String storyG13 = "Du: Gleich.\n"
+    static String storyG13 = "(1) Sag Liam, dass er dich in ruhe lassen soll.\n";
+    static String storyG14 = "Du: Gleich.\n"
                             + "Liam: Wir mussen los laufen. Komm nach unten. Ich mach dir was zum Essen.\n"
                             + "Du: Jaaa. Ich ziehe mich noch schnell um.\n"
                             + "*Liam guckt Toni an.*\n"
@@ -155,16 +154,54 @@ public class Texte {
     static String storyH7 = "(1) Fang an die Regalen durchzusuchen.\n"
                             + "Du: Wonach soll ich suchen?\n"
                             + "Liam: Lass die Bücherregale durchsuchen.\n";
-    static String storyI2 = "(1) Fang an die Regalen durchzusuchen.\n"
+    static String storyH8 = "(1) Fang an die Regalen durchzusuchen.\n"
                             + "Du: Liam! Ich habe was gefunden! Hier. Das Buch kann man nicht Bewegen.\n"
                             + "*Liam zieht das Buch. Ein Regal öffnet sich.*\n";
-    static String storyH8 = "(1) Geh gucken wo das Weg führt.\n"
+    static String storyH9 = "(1) Geh gucken wo das Weg führt.\n"
                             + "Du: Hier sind Treppen. Die führen nach unten.\n"
                             + "*Du gehst langsam nach unten. Das Regal schließt sich.*\n"
                             + "Du: Liam!! Hörst du mich!\n"
                             + "Liam: Ich kann es nicht öffnen! Du kannst aber weiter gehen! Ich komme so schnell wie es geht\n";
 //Toni geht die Treppen runter (Entweder fällt sie runter (ohne Laterne) oder nicht)
-                           
-    static String storyI1 = "*Sie ist in einem alten, staubigen Zimmer in einem Keller. Das Zimmer ist voll mit alten Büchern und in der Mitte ist ein Podium. Sie geht näher dran. Auf dem Podium liegt ein großes, altes Buch. Sie öffnet das Buch. Die Seiten bewegen sich. Durch dem Zimmer fliegen Bücher. Der Zeit stoppt. Eine Lichtquelle zeigt auf Toni. Sie hört auf einmal Stimmen.*\n"; 
-                            
+//Toni redet mit Stimmen                            
+    static String storyI1 = "*Du bist in einem alten, staubigen Zimmer in einem Keller. Das Zimmer ist voll mit alten Büchern und in der Mitte ist ein Podium. Du gehst näher dran. Auf dem Podium liegt ein großes, altes Buch.\n";
+    static String storyI2 = "(1) Öffne das Buch.\n"
+                            + "Die Seiten bewegen sich. Durch dem Zimmer fliegen Bücher. Der Zeit stoppt. Eine Lichtquelle zeigt auf dich. Du hörst auf einmal Stimmen.*\n"
+                            + "Stimme1:	Das ist unsere Heldin\n"
+                            + "Stimme2:	Die wird uns retten\n"
+                            + "Stimme3:	Glaube ich nicht\n"
+                            + "Stimme3:	Wie hast du, die Meerjungfrauen überlebt?\n"
+                            + "Stimme2:	Ist doch nicht so wichtig\n"
+                            + "Stimme1:	Zurück zu Sache. Du hast uns gefunden. Wir warteten 467 Jahren auf dich\n"
+                            + "Stimme3:	Zu viele Jahren\n"
+                            + "Stimme2:	Kannst du bitte deine Kommentare weglassen\n"
+                            + "Stimme3:	Uhh\n"
+                            + "Stimme1:	Wir sind hier, um dir die Prophezeiung zu erzählen.\n"
+                            + "Stimme1: Paar Jahre vor dem Krieg hatten wir eine Vision. Uns würde gezeigt, was passieren wird. Die bösartigen Mächte vermehrten sich langsam und fangen an das Land zu übernehmen. Viele gute Kreaturen werden in Kriegen sterben. Keiner könnte es verhindern. Wir haben aber auch gesehen, dass an einem gewitterigen Tag, unsere Heldin geboren wird. An dem Tag hat auch für kurz die Sonne geschient und für ein kleines Moment war alles wieder normal. Deine Eltern haben dich von dem bösen König versteckt. Er hat euch aber nach paar Jahren gefunden. Er wollte dich umbringen als du klein warst, damit du ihm später nicht umbringen kannst. Deine Eltern haben es aber nicht zugelassen und haben sich für dich geopfert. Dein Schicksal ist es, ihn zu töten.\n"
+                            + "Du: Ich weiß aber nicht, wie ich es machen soll und ob ich es schaffe.\n"
+                            + "Stimme2:	Akdov hat dir doch eine Karte gegeben. Die Punkte zeigen dir Plätze, wo du Leute findest, die dir helfen werden. \n"
+                            + "Stimme1: Es wird schwer, wir glauben aber an dich!\n"
+                            + "Stimme3: Wer glaubt, der glaubt!\n"
+                            + "Stimme1:	Hör nicht auf ihm.\n"
+                            + "Stimme2:	Bevor du gehst. Der Zeit ist bald um. Du musst ihm so schnell wie möglich töten. Sonst wird er zu stark. Seine Kräfte wachsen jeden Tag und seine Armee wird immer großer. Pass auf dich gut auf und achte auf deine Umgebung.\n"
+                            + "Stimme1:	Dein nächstes Ziel ist das Königreich Saurok. Dort musst du mit dem König reden und ihm überreden dir zu Hlfen.\n"
+                            + "Du: Danke für eure Hilfe. Ich hoffe ich enttäusche euch nicht.\n"
+                            + "Stimme3:	Wir werden es sehen\n";
+//Saurok
+     static String storyI3 = "*Die Zeit fängt wieder normal zu laufen. Du hörst wie Liam runter geht.*\n"  
+                             + "Liam: Gehst es dir gut?\n";
+     static String storyI4 = "(1) Sag Liam, dass es dir gut geht und, dass ihr nach Saurok reiten musst\n"
+                            + "Du: Mir geht es gut. Wir mussen nach Saurok reiten um uns dort mit dem König zu treffen.\n"
+                            + "Liam: Dann los geht´s\n";
+     static String storyJ1 = "*Paar Tage später sind sie endlich in Sarouk. Auf dem Weg erzählte Liam, dir viele Geschichten aus seinem Leben. In dieser Zeit nährt ihr euch einander sehr.*\n";                        
+     static String storyJ2 = "(1) frag Liam ob er die Stadt kennt.\n"                  
+                            + "Du: Kennst du die Stadt?\n"
+                            + "\n"
+                            + "\n"
+                            + "\n"
+                            + "\n"
+                            + "\n"
+                            + "\n"
+                            + "\n"
+
 }
