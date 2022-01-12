@@ -21,10 +21,13 @@ public class Shop {
 
     public void startSelling(Player player) {
         Main.animation("Dein Geld: " + player.getMoney() + "\n", 25);
-        for (int i = 0; i < items.size(); i++) {
-            Main.animation("(" + i + ") " + items.get(i).getType() + " | Preis: " + items.get(i).getPrice() + "\n", 25);
+        int itemsSize = items.size();
+        for (int i = 0; i < itemsSize; i++) {
+            Main.animation("(" + i + ") " + items.get(i).getType() + " | Preis: " + items.get(i).getPrice() + "\n", 10);
         }
-        Main.animation("(" + items.size() + ") zum Verlassen\n", 25);
+        Main.animation("(" + itemsSize + ") um die Angebote aufzulisten\n", 25);
+        itemsSize = itemsSize + 1;
+        Main.animation("(" + itemsSize + ") zum Verlassen\n", 25);
 
         sellStuff(player);
     }
@@ -34,6 +37,11 @@ public class Shop {
         do {
             int input = requestInput();
             if (input == items.size()) {
+                for (int i = 0; i < items.size(); i++) {
+                    Main.animation("(" + i + ") " + items.get(i).getType() + " | Preis: " + items.get(i).getPrice() + "\n", 5);
+                }
+            }
+            else if (input == items.size()+1) {
                 checker = true;
                 Main.animation("*Du verlässt den Laden*\n", 25);
             }
@@ -50,7 +58,7 @@ public class Shop {
                     }
                     else {
                         int missing = item.getPrice() - player.getMoney();
-                        Main.animation("Du hast nicht genug Geld dir " + item.getType() + " zu kaufen. Dir fehlen " + missing + " Gold.\n", 25);
+                        Main.animation("Du hast nicht genug Geld dir 1x " + item.getType() + " zu kaufen. Dir fehlen " + missing + " Gold.\n", 25);
                     }
                 }
             }

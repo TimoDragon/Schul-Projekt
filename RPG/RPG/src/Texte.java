@@ -93,10 +93,7 @@ public class Texte {
     static String storyG3 = "*Du guckst dem Mann an. Der Mann fängt an in Richtung Troy zu gehen*\n"
                             +"Dieb: Für dem kriege ich mindestens 50 Gold Stücke.\n"
                             + "*Du kriegst Angst und weiß nicht was du machen sollst. Du siehst deine Laterne . Gehst hinter dem Dieb und schalgst ihm. Er wird sauer.*\n";
-<<<<<<< HEAD
-=======
     static String storyG4 = "(1) Greif den Dieb an\n";
->>>>>>> 1431344f15cb00a067ba9ff290855d0e203546ec
     
     //Nach dem Kampf
     static String storyG5 = "*Plötlich kommt ein großer Mann, welcher den Dieb verjagt. Er hilft dir aufzustehen.*\n";
@@ -136,7 +133,7 @@ public class Texte {
                             + "Liam: NEIN!\n"
                             + "*Aufeinmal fängt was dein Bein und zieht dich in das Wasser rein.*\n"
                             + "*Liam läuft in deiner Richtung und schneidet die Hand ab.*\n";
-    static String storyH4 = "(1) Frag Liam, was das war.\n"
+    static String storyH4 = "(1) Frag Liam, was das war.\n";
     static String storyH5 =  "Wa... Was war da?\n!"
                             + "Liam: Eine Meerjungfrau. Die sind schrecklich.\n"
                             + "Liam: Wir müssen ein Floß bauen.\n"
