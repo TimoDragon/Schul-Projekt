@@ -428,16 +428,21 @@ class Firma
  [Lösung](Schul-Projekt/Lösung/LoesungAufgabe2.md)
  
  ## Aufgabe 3 
+
+![Test2](/Schul-Projekt/images/ObjektNeu.PNG)
+
  A)
 
- 1. Deklariere ein Objekt der Klasse Auto mit einen Namen deines Beliebens?
+ 1. Deklariere ein Objekt der Klasse Auto mit einen Namen deines Beliebens.
  2. Initialisieren eines Objektes der Klasse Auto.
  3. Erhöhe ein Gang auf den 4.
  4. Gebe den Namen des Auto aus.
 
 B) 
 
-Implementiere die Klasse inklusive der beiden Methoden
+Implementiere die Klasse inklusive der beiden Methoden.
+
+
 
 [Lösung](/Schul-Projekt/Lösung/LoesungAufgabe3.md)
     
