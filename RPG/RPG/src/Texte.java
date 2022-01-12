@@ -94,7 +94,7 @@ public class Texte {
                             + "...: Ich bin Liam. Mir wurde gesagt, dass ich dir helfen soll also komm mit kleine.\n"
                             + "Du: Hi\n"
                             + "Liam: Hi\n"
-                            + "Liam: Ich dachte, dass du ein Junge sein wirst. Bin aber positiv überrascht"
+                            + "Liam: Ich dachte, dass du ein Junge sein wirst. Bin aber positiv überrascht\n"
                             + "*10 Minuten später stehen du und Liam vor einem Haus, ihr geht rein\n*"
                             + "Liam: Akdov hat einen Bogen für dich hier gelassen. *Liam gibt dir einen Bogen*\n";
 
@@ -133,7 +133,7 @@ public class Texte {
     static String storyH5 = "*Ihr schwimmt durch die See*\n";
     //der Kampf gegen die Meerjungfrauen
 
-    static String storyI1 = "*Du umarmst Liam*\n"
+    static String storyH6 = "*Du umarmst Liam*\n"
                             + "Toni: Wir haben uberlebt!\n"
                             + "Liam: Komm kleine. Wir müssen weiterlaufen.\n"
                             + "*Die beiden sehen ein großes, altes Haus.*\n"
@@ -143,7 +143,16 @@ public class Texte {
                             + "Liam: Vielleicht ist hier ein Geheimraum.\n"
                             + "Du: Wonah soll ich suchen?\n"
                             + "Liam: Lass die Bücherregalen durchsuchen.\n";
-    static String storyI2 = "(1) Fang an die Regalen durchzusuchen.\n"
+    static String storyH7 = "(1) Fang an die Regalen durchzusuchen.\n"
                             + "Du: Liam! Ich habe was gefunden! Hier. Das Buch kann man nicht Bewegen.\n"
-                            + "*Liam zieht das Buch. Ein Regal öffnet sich*\n";
+                            + "*Liam zieht das Buch. Ein Regal öffnet sich.*\n";
+    static String storyH8 = "(1) Geh gucken wo das Weg führt.\n"
+                            + "Du: Hier sind Treppen. Die führen nach unten.\n"
+                            + "*Du gehst langsam nach unten. Das Regal schließt sich.*\n"
+                            + "Du: Liam!! Hörst du mich!\n"
+                            + "Liam: Ich kann es nicht öffnen! Du kannst aber weiter gehen! Ich komme so schnell wie es geht\n";
+//Toni geht die Treppen runter (Entweder fällt sie runter (ohne Laterne) oder nicht)
+                           
+    static String storyI1 = "*Sie ist in einem alten, staubigen Zimmer in einem Keller. Das Zimmer ist voll mit alten Büchern und in der Mitte ist ein Podium. Sie geht näher dran. Auf dem Podium liegt ein großes, altes Buch. Sie öffnet das Buch. Die Seiten bewegen sich. Durch dem Zimmer fliegen Bücher. Der Zeit stoppt. Eine Lichtquelle zeigt auf Toni. Sie hört auf einmal Stimmen.*\n"; 
+                            
 }
