@@ -165,8 +165,8 @@ public class Texte {
 //Toni geht die Treppen runter (Entweder fällt sie runter (ohne Laterne) oder nicht)
 //Toni redet mit Stimmen                            
     static String storyI1 = "*Du bist in einem alten, staubigen Zimmer in einem Keller. Das Zimmer ist voll mit alten Büchern und in der Mitte ist ein Podium. Du gehst näher dran. Auf dem Podium liegt ein großes, altes Buch.\n";
-    static String storyI2 = "(1) Öffne das Buch.\n"
-                            + "Die Seiten bewegen sich. Durch dem Zimmer fliegen Bücher. Der Zeit stoppt. Eine Lichtquelle zeigt auf dich. Du hörst auf einmal Stimmen.*\n"
+    static String storyI2 = "(1) Öffne das Buch.\n";
+    static String storyI3 = "Die Seiten bewegen sich. Durch dem Zimmer fliegen Bücher. Der Zeit stoppt. Eine Lichtquelle zeigt auf dich. Du hörst auf einmal Stimmen.*\n"
                             + "Stimme1:	Das ist unsere Heldin\n"
                             + "Stimme2:	Die wird uns retten\n"
                             + "Stimme3:	Glaube ich nicht\n"
@@ -188,20 +188,20 @@ public class Texte {
                             + "Du: Danke für eure Hilfe. Ich hoffe ich enttäusche euch nicht.\n"
                             + "Stimme3:	Wir werden es sehen\n";
 //Saurok
-     static String storyI3 = "*Die Zeit fängt wieder normal zu laufen. Du hörst wie Liam runter geht.*\n"  
+     static String storyI4 = "*Die Zeit fängt wieder normal zu laufen. Du hörst wie Liam runter geht.*\n"  
                              + "Liam: Gehst es dir gut?\n";
-     static String storyI4 = "(1) Sag Liam, dass es dir gut geht und, dass ihr nach Saurok reiten musst\n"
-                            + "Du: Mir geht es gut. Wir mussen nach Saurok reiten um uns dort mit dem König zu treffen.\n"
+     static String storyI5 = "(1) Sag Liam, dass es dir gut geht und, dass ihr nach Saurok reiten musst\n";
+     static String storyI6 = "Du: Mir geht es gut. Wir mussen nach Saurok reiten um uns dort mit dem König zu treffen.\n"
                             + "Liam: Dann los geht´s\n";
      static String storyJ1 = "*Paar Tage später sind sie endlich in Sarouk. Auf dem Weg erzählte Liam, dir viele Geschichten aus seinem Leben. In dieser Zeit nährt ihr euch einander sehr.*\n";                        
-     static String storyJ2 = "(1) frag Liam ob er die Stadt kennt.\n"                  
-                            + "Du: Kennst du die Stadt?\n"
-                            + "\n"
-                            + "\n"
-                            + "\n"
-                            + "\n"
-                            + "\n"
-                            + "\n"
-                            + "\n"
+     static String storyJ2 = "(1) frag Liam ob er die Stadt kennt.\n";                  
+     static String storyJ3 = "Du: Kennst du die Stadt?\n"
+                            + "Liam: Ja, ich war hier zwei- oder dreimal. Die Stadt ist sehr schön und romantisch *lacht*\n"
+                            + "...\n"
+                            + "Wächter Wachmann: Wer seid ihr? Und was wollt ihr?\n"
+                            + "Du: Hi. Mein Name ist Toni und das ist Liam. Wir müssen dringend mit dem König reden.\n"
+                            + "Wächter Wachmann: Wir lassen Fremde nicht rein!\n"
+                            + "Wächter Schlafmann: Liam? Mein alter Freund. Gut dich wieder zu sehen!\n"
+                            + "*Du guck*\n"
 
 }
