@@ -429,7 +429,7 @@ class Firma
  
  ## Aufgabe 3 
 
-![Test2](/Schul-Projekt/images/ObjektNeu.PNG)
+![Test](/Schul-Projekt/images/ObjektNeu.PNG)
 
  A)
 
