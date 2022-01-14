@@ -93,12 +93,11 @@ public class Texte {
     static String storyG3 = "*Du guckst dem Mann an. Der Mann fängt an in Richtung Troy zu gehen*\n"
                             +"Dieb: Für dem kriege ich mindestens 50 Gold Stücke.\n"
                             + "*Du kriegst Angst und weiß nicht was du machen sollst. Du siehst deine Laterne . Gehst hinter dem Dieb und schalgst ihm. Er wird sauer.*\n";
-    static String storyG4 = "(1) Greif den Dieb an\n";
     
     //Nach dem Kampf
-    static String storyG5 = "*Plötlich kommt ein großer Mann, welcher den Dieb verjagt. Er hilft dir aufzustehen.*\n";
-    static String storyG6 = "(1) Frag ihn, wer er ist\n";
-    static String storyG7 = "Du: Danke! Wer bist du?\n"
+    static String storyG4 = "*Plötlich kommt ein großer Mann, welcher den Dieb verjagt. Er hilft dir aufzustehen.*\n";
+    static String storyG5 = "(1) Frag ihn, wer er ist\n";
+    static String storyG6 = "Du: Danke! Wer bist du?\n"
                             + "...: Ich bin Liam. Mir wurde gesagt, dass ich dir helfen soll also komm mit kleine.\n"
                             + "Du: Hi\n"
                             + "Liam: Hi\n"
@@ -106,19 +105,19 @@ public class Texte {
                             + "*10 Minuten später stehen du und Liam vor einem Haus, ihr geht rein\n*"
                             + "Liam: Akdov hat einen Bogen für dich hier gelassen. *Liam gibt dir einen Bogen*\n";
 
-    static String storyG8 = "(1) Begutachte den Bogen\n";
-    static String storyG9 = "Du: Der ist Wunderschön. *Du spannst den Bogen und lässt los. Ein Pfeil erscheint aus dem Nichts und schießt quer durch den Raum.\n*"
+    static String storyG7 = "(1) Begutachte den Bogen\n";
+    static String storyG8 = "Du: Der ist Wunderschön. *Du spannst den Bogen und lässt los. Ein Pfeil erscheint aus dem Nichts und schießt quer durch den Raum.\n*"
                             + "Liam: Willst du micht umbringen? *lacht*\n";
-    static String storyG10 = "(1) Erzähle Liam von der Prophezeiung.\n";
-    static String storyG11 = "Du: Akdov hat mir von einer Prophezeiung erzählt.\n"
+    static String storyG9 = "(1) Erzähle Liam von der Prophezeiung.\n";
+    static String storyG10 = "Du: Akdov hat mir von einer Prophezeiung erzählt.\n"
                             + "Liam: Er hat mir nichts darüber erzählt. Er sagte aber, dass ich mir dir zum nächsten makierten Berreicht auf der Karte hin gehen soll.\n"
                             + "*Du gehst in einen Laden.*\n";
 //shoppen
 
-    static String storyG12 = "*Nächster Tag.*\n" 
+    static String storyG11 = "*Nächster Tag.*\n" 
                             + "Liam: Aufstehen!\n";
-    static String storyG13 = "(1) Sag Liam, dass er dich in ruhe lassen soll.\n";
-    static String storyG14 = "Du: Gleich.\n"
+    static String storyG12 = "(1) Sag Liam, dass er dich in ruhe lassen soll.\n";
+    static String storyG13 = "Du: Gleich.\n"
                             + "Liam: Wir mussen los laufen. Komm nach unten. Ich mach dir was zum Essen.\n"
                             + "Du: Jaaa. Ich ziehe mich noch schnell um.\n"
                             + "*Liam guckt Toni an.*\n"
@@ -202,6 +201,5 @@ public class Texte {
                             + "Du: Hi. Mein Name ist Toni und das ist Liam. Wir müssen dringend mit dem König reden.\n"
                             + "Wächter Wachmann: Wir lassen Fremde nicht rein!\n"
                             + "Wächter Schlafmann: Liam? Mein alter Freund. Gut dich wieder zu sehen!\n"
-                            + "*Du guck*\n"
-
+                            + "*Du guck*\n";
 }
