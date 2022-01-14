@@ -6,6 +6,7 @@ public  class Player {
     private int food = 100;
     private int money = 100;
     private int resitance = 0;
+    private String name;
 
     //get the Player Inventory
     public ArrayList<Item> getInventory() {
@@ -86,5 +87,14 @@ public  class Player {
     //get the resistance
     public int getRestistance() {
         return resitance;
+    }
+
+    //set the player name
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
     }
 }
