@@ -28,8 +28,8 @@ public class Game {
         player.getInventory().add(fist);
 
         //remove when project is done
-            //fightsDone.add(0);
-            continue2();
+            fightsDone.add(1);
+            continue3();
 
         //story begins here
         /*
@@ -247,7 +247,7 @@ public class Game {
         if (!fightsDone.contains(0)) {
             Main.animation(Texte.storyF1, 25);
             Main.animation(Texte.choose, 25);
-            Main.animation(Texte.storyF2, 25);
+            Main.animation(Texte.storyG2, 25);
 
             boolean checker1 = false;
             do {
@@ -344,8 +344,89 @@ public class Game {
                                                 if (requestInput() == 1) {
                                                     checker4 = true;
                                                     Main.animation(Texte.storyH3, 25);
+                                                    Main.animation(Texte.choose, 25);
+                                                    Main.animation(Texte.storyH4, 25);
+
+                                                    boolean checker5 = false;
+                                                    do {
+                                                        if (requestInput() == 1) {
+                                                            continue3();
+                                                        }
+                                                    } while (checker5 == false);
                                                 }
                                             } while (checker4 == false);
+                                        }
+                                    } while(checker3 == false);
+                                }
+                            } while(checker2 == false);
+                        }
+                    } while(checker1 == false);
+                }
+            } while(checker == false);
+        }
+    }
+
+    public void continue3() {
+        if (!fightsDone.contains(1)) {
+            Main.animation(Texte.storyH5, 25);
+
+            Enemy meerjungfrau = new Enemy("Meerjungfrau", 50);
+            Weapon dreizack = new Weapon("Dreizack", "trident", 10);
+            meerjungfrau.addWeapon(dreizack);
+    
+            fightsDone.add(1);
+            Fight fight = new Fight(player, meerjungfrau, "einer", "die");
+            fight.startFight(this);
+        }
+        else {
+            Main.animation(Texte.storyH6, 25);
+            Main.animation(Texte.choose, 25);
+            Main.animation(Texte.storyH7, 25);
+
+            boolean checker = false;
+            do {
+                if (requestInput() == 1) {
+                    checker = true;
+                    Main.animation(Texte.storyH8, 25);
+                    Main.animation(Texte.choose, 25);
+                    Main.animation(Texte.storyH9, 25);
+
+                    boolean checker1 = false;
+                    do {
+                        if (requestInput() == 1) {
+                            checker1 = true;
+                            Main.animation(Texte.storyH10, 25);
+                            Main.animation(Texte.choose, 25);
+                            Main.animation(Texte.storyH11, 25);
+
+                            boolean checker2 = false;
+                            do {
+                                if (requestInput() == 1) {
+                                    checker2 = true;
+                                    Main.animation(Texte.storyH12, 25);
+
+                                    boolean hasLantern = false;
+                                    for (int i = 0; i < player.getInventory().size(); i++) {
+                                        if (player.getInventory().get(i).getType().equals("Laterne")) {
+                                            hasLantern = true;
+                                        }
+                                    }
+                                    if (hasLantern == true) {
+                                        Main.animation(Texte.storyH13A, 25);
+                                        player.setHealth(player.getHealth() - 10);
+                                    }
+                                    else {
+                                        Main.animation(Texte.storyH13B, 25);
+                                    }
+
+                                    Main.animation(Texte.storyI1, 25);
+                                    Main.animation(Texte.choose, 25);
+                                    Main.animation(Texte.storyI2, 25);
+
+                                    boolean checker3 = false;
+                                    do {
+                                        if (requestInput() == 1) {
+                                            
                                         }
                                     } while(checker3 == false);
                                 }
