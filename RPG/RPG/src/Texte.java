@@ -153,11 +153,11 @@ public class Texte {
     static String storyH7 = "(1) Fang an die Regalen durchzusuchen.\n";
     static String storyH8 = "Du: Wonach soll ich suchen?\n"
                             + "Liam: Lass die Bücherregale durchsuchen.\n";
-    static String storyH9 = "(1) Fang an die Regalen durchzusuchen.\n"
-                            + "Du: Liam! Ich habe was gefunden! Hier. Das Buch kann man nicht Bewegen.\n"
+    static String storyH9 = "(1) Fang an die Regalen durchzusuchen.\n";
+    static String storyH10 = "Du: Liam! Ich habe was gefunden! Hier. Das Buch kann man nicht Bewegen.\n"
                             + "*Liam zieht das Buch. Ein Regal öffnet sich.*\n";
-    static String storyH10 = "(1) Geh gucken wo das Weg führt.\n";
-    static String storyH11 = "Du: Hier sind Treppen. Die führen nach unten.\n"
+    static String storyH11 = "(1) Geh gucken wo das Weg führt.\n";
+    static String storyH12 = "Du: Hier sind Treppen. Die führen nach unten.\n"
                             + "*Du gehst langsam nach unten. Das Regal schließt sich.*\n"
                             + "Du: Liam!! Hörst du mich!\n"
                             + "Liam: Ich kann es nicht öffnen! Du kannst aber weiter gehen! Ich komme so schnell wie es geht\n";
