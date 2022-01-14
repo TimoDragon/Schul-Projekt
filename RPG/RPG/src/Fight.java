@@ -79,9 +79,19 @@ public class Fight {
         int random = (int) Math.floor(Math.random()*(max-min+1));
         Weapon weapon = enemy.getWeapons().get(random);
 
+        int resistance = 0;
+        for (Item item : player.getInventory()) {
+            if (item.getType().equals("Armor") || item.getType().equals("Rüstung")) {
+                resistance = resistance + 5;
+            }
+        }
+        //Das ist eine Mathematische FOrmel die ich mir selbst ausgedacht habe um den neuen damage zu berrechnen aber 
+        //keine Ahnung habe wie die Funktioniert
+        int damage = weapon.getDamage() * (100 - resistance) / 100;
+
         Main.animation(secondPronoun + " " + enemy.getName() + " greift dich mit " + weapon.getName() + " an.\nDu erleidest "
-                        + weapon.getDamage() + " Schaden.\n", 25);
-        player.setHealth(player.getHealth() - weapon.getDamage());
+                        + damage + " Schaden.\n", 25);
+        player.setHealth(player.getHealth() - damage);
 
         checkHealth(enemy, wasEnemy);
         requestFightInput();
