@@ -162,6 +162,10 @@ public class Texte {
                             + "Du: Liam!! Hörst du mich!\n"
                             + "Liam: Ich kann es nicht öffnen! Du kannst aber weiter gehen! Ich komme so schnell wie es geht\n";
 //Toni geht die Treppen runter (Entweder fällt sie runter (ohne Laterne) oder nicht)
+    static String storyH13A = "*Du fällst die Treppe runter, da du nicht sehen kannst wohin du trittst*\n"
+                                + "*Du verlierst 10 Leben*";
+    static String storyH13B = "*Du packst deine Laterne aus und Läufst die Treppe runter*";
+
 //Toni redet mit Stimmen                            
     static String storyI1 = "*Du bist in einem alten, staubigen Zimmer in einem Keller. Das Zimmer ist voll mit alten Büchern und in der Mitte ist ein Podium. Du gehst näher dran. Auf dem Podium liegt ein großes, altes Buch.\n";
     static String storyI2 = "(1) Öffne das Buch.\n";
