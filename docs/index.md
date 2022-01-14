@@ -442,8 +442,6 @@ B)
 
 Implementiere die Klasse inklusive der beiden Methoden.
 
-
-
 [Lösung](/Schul-Projekt/Lösung/LoesungAufgabe3.md)
     
 
