@@ -30,11 +30,11 @@ public class Game {
         player.getInventory().add(fist);
 
         //remove when project is done
-            //fightsDone.add(1);
-            //continue3();
+            fightsDone.add(1);
+            continue3();
 
         //story begins here
-        
+        /*
         Main.animation(texte.start1, 25);
         Main.animation(texte.start2, 20);
         Main.animation(texte.start1, 25);
@@ -98,6 +98,15 @@ public class Game {
                                                 case "1" :{
                                                     checker5 = true;
                                                     Main.animation(texte.storyA1, 25);
+
+                                                    //kol = knife or lantern
+                                                    String kol = requestInput();
+                                                    if (kol.equals("1")) {
+
+                                                    }
+                                                    else if (kol.equals("2")) {
+                                                        
+                                                    }
                                                     
                                                     Weapon knife = new Weapon();
                                                     knife.setType("knife");
@@ -163,6 +172,9 @@ public class Game {
                                                                                             knife.setType("knfie");
                                                                                             knife.setDamage(5);
                                                                                             knife.setName("Messer");
+
+                                                                                            player.getInventory().add(lantern);
+                                                                                            player.getInventory().add(knife);
                                 
                                                                                             Main.animation(texte.choose, 25);
                                                                                             Main.animation(texte.storyB12, 25);

@@ -14,7 +14,7 @@ public class Texte {
     //Story
     String story1, story2, story3, story4, story5, story6, story7, story8, story9, story10, story11;
     //hau ab ohne Gertrude bescheid zu sagen. Kannst entweder ein Messer oder eine Laterne wählen 
-    String storyA1, storyA2;
+    String storyA1, storyA2, storyA1A;
     //Rede mit Gertrude über die Begegnung
     String storyB1, storyB2, storyB3, storyB4, storyB5, storyB6, storyB7, storyB8, storyB9, storyB10, storyB11, storyB12, storyB13;
     //hier gehts nach dem Abhauen/dem Gespräch weiter
@@ -77,12 +77,15 @@ public class Texte {
     
     
         //hau ab ohne Gertrude bescheid zu sagen. Kannst entweder ein Messer oder eine Laterne wählen 
-        storyA1 = "*Du packst die nötigsten Sachen ein und wartest bis es dunkel ist. Auf dem Weg nach draußen nimmst du noch ein Messer und eine Laterne mit*\n";
+        storyA1 = "*Du packst die nötigsten Sachen ein und wartest bis es dunkel ist. Auf dem Weg nach draußen siehst du noch ein Messer und eine Laterne*\n"
+                + "Was nimmst du mit?";
+        storyA1A = "(1) Messer\n"
+                    + "(2) Laterne\n";
         storyA2 = "*Du hörst schritte und läufst weg, Gertrude schreit.*\nGertrude: Wer ist da?\n*Du läufst aber weiter.*\n";
         
     
         //Rede mit Gertrude über die Begegnung
-        storyB1 = player.getName() + ": Gertrude, ich muss mit dir reden.\nGertrude: Warte einen Moment liebe. Ich bin gleich da.\n*Du packst die nötigsten Sachen ein und hörst aufeinmal ein Klopfen.*\n"
+        storyB1 = player.getName() + ": Gertrude, ich muss mit dir reden.\nGertrude: Warte einen Moment. Ich bin gleich da.\n*Du packst die nötigsten Sachen ein und hörst aufeinmal ein Klopfen.*\n"
                                 + "Gertrude: Ich bin jetzt da. Was wolltest du mir erzählen?\n";
         storyB2 = "(1) Erzähle Gertrude von der Begegnung\n";
         storyB3 = player.getName() + ": Wo soll ich anfangen... Als ich auf dem Marktplatz war begegnete ich einen Mann.\n    Er erzählte mir, dass "
@@ -235,7 +238,7 @@ public class Texte {
                                  + "Liam: Gehst es dir gut?\n";
          storyI5 = "(1) Sag Liam, dass es dir gut geht und, dass ihr nach Saurok reiten musst\n";
          storyI6 = player.getName() + ": Mir geht es gut. Wir mussen nach Saurok reiten um uns dort mit dem König zu treffen.\n"
-                                + "Liam: Dann los geht´s\n";
+                                + "Liam: Dann los geht's\n";
          storyJ1 = "*Paar Tage später sind sie endlich in Sarouk. Auf dem Weg erzählte Liam, dir viele Geschichten aus seinem Leben. In dieser Zeit nährt ihr euch einander sehr.*\n";                        
          storyJ2 = "(1) frag Liam ob er die Stadt kennt.\n";                  
          storyJ3 = player.getName() + ": Kennst du die Stadt?\n"
