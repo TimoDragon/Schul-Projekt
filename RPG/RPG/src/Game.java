@@ -25,6 +25,7 @@ public class Game {
     public void startGame(Game game) {
         player = new Player();
         texte = new Texte();
+        texte.setPlayer(player);
 
         Weapon fist = new Weapon("Faust", "fist", 2);
         player.getInventory().add(fist);
@@ -424,17 +425,17 @@ public class Game {
                                     Main.animation(texte.storyH12, 25);
 
                                     boolean hasLantern = false;
-                                    for (int i = 0; i < player.getInventory().size(); i++) {
-                                        if (player.getInventory().get(i).getType().equals("Laterne")) {
+                                    for (Item item : player.getInventory()) {
+                                        if (item.getType().equals("Laterne")) {
                                             hasLantern = true;
                                         }
                                     }
                                     if (hasLantern == true) {
-                                        Main.animation(texte.storyH13A, 25);
-                                        player.setHealth(player.getHealth() - 10);
+                                        Main.animation(texte.storyH13B, 25);
                                     }
                                     else {
-                                        Main.animation(texte.storyH13B, 25);
+                                        Main.animation(texte.storyH13A, 25);
+                                        player.setHealth(player.getHealth() - 10);
                                     }
 
                                     Main.animation(texte.storyI1, 25);
@@ -444,7 +445,28 @@ public class Game {
                                     boolean checker3 = false;
                                     do {
                                         if (requestInput().equals("1")) {
-                                            
+                                            checker3 = true;
+                                            Main.animation(texte.storyI3, 25);
+                                            Main.animation(texte.storyI4, 25);
+                                            Main.animation(texte.choose, 25);
+                                            Main.animation(texte.storyI5, 25);
+
+                                            boolean checker4 = false;
+                                            do {
+                                                if (requestInput().equals("1")) {
+                                                    Main.animation(texte.storyI6, 25);
+                                                    Main.animation(texte.storyJ1, 25);
+                                                    Main.animation(texte.choose, 25);
+                                                    Main.animation(texte.storyJ2, 25);
+
+                                                    boolean checker5 = false;
+                                                    do {
+                                                        if (requestInput().equals("1")) {
+                                                            Main.animation(texte.storyJ3, 25);
+                                                        }
+                                                    } while (checker5 == false);
+                                                }
+                                            } while (checker4 == false);
                                         }
                                     } while(checker3 == false);
                                 }
