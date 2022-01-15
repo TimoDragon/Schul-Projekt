@@ -14,7 +14,7 @@ public class Texte {
     //Story
     String story1, story2, story3, story4, story5, story6, story7, story8, story9, story10, story11;
     //hau ab ohne Gertrude bescheid zu sagen. Kannst entweder ein Messer oder eine Laterne wählen 
-    String storyA1, storyA2, storyA1A;
+    String storyA1, storyA2;
     //Rede mit Gertrude über die Begegnung
     String storyB1, storyB2, storyB3, storyB4, storyB5, storyB6, storyB7, storyB8, storyB9, storyB10, storyB11, storyB12, storyB13;
     //hier gehts nach dem Abhauen/dem Gespräch weiter
@@ -63,10 +63,10 @@ public class Texte {
         story3 = "Akdov: Ach ja. Entschuldige mich. Ich bin Akdov. Ich komme aus Teya.\n"
                                  + "       Wir können aber nicht hier stehen bleiben und reden. Die beobachten mich.\n";
         story4 = "(1) Frage ihn wer ihn beobachtet\n";
-        story5 = "Du: Wer beobachtet Sie?\n"
+        story5 = player.getName() + ": Wer beobachtet Sie?\n"
                                 + "Akdov: Ich erkläre dir gleich alles. Aber nicht hier. Kennst du ein Platz, wo es sicher ist?\n";
         story6 = "(1) Sage ihm er soll dir folgen\n";
-        story7 = player.getName() + ": Ja, kommen Sie mit.\n*Ihr geht zu dem sicheren Ort*\nDu: Jetzt können wir reden.\nAkdov: Wo soll ich anfangen?\n       Mhhh....\n       ch erzähle dir was über deiner Eltern\n";
+        story7 = player.getName() + ": Ja, kommen Sie mit.\n*Ihr geht zu dem sicheren Ort*\n" + player.getName() + ": Jetzt können wir reden.\nAkdov: Wo soll ich anfangen?\n       Mhhh....\n       ch erzähle dir was über deiner Eltern\n";
         story8 = "(1) Sag ihm, dass du dich nicht an sie erinnerst.\n";
         story9 = player.getName() + ": Ich kann mich an die nicht so gut erinnern.\n";
         story10 = "Akdov: Vor langer Zeit kannte ich dein Vater. Wir waren befreundet. Brandon war der beste\n       Bogenschütze in dem ganze Lande. Ich weiß, dass er dir Bogenschießen beigebracht hat. Ich hoffe,\n       dass du nach seinem Tod weiter übtest.\n"
@@ -77,15 +77,12 @@ public class Texte {
     
     
         //hau ab ohne Gertrude bescheid zu sagen. Kannst entweder ein Messer oder eine Laterne wählen 
-        storyA1 = "*Du packst die nötigsten Sachen ein und wartest bis es dunkel ist. Auf dem Weg nach draußen siehst du noch ein Messer und eine Laterne*\n"
-                + "Was nimmst du mit?";
-        storyA1A = "(1) Messer\n"
-                    + "(2) Laterne\n";
+        storyA1 = "*Du packst die nötigsten Sachen ein und wartest bis es dunkel ist. Auf dem Weg nach draußen nimmst du noch ein Messer und eine Laterne mit*\n";
         storyA2 = "*Du hörst schritte und läufst weg, Gertrude schreit.*\nGertrude: Wer ist da?\n*Du läufst aber weiter.*\n";
         
     
         //Rede mit Gertrude über die Begegnung
-        storyB1 = player.getName() + ": Gertrude, ich muss mit dir reden.\nGertrude: Warte einen Moment. Ich bin gleich da.\n*Du packst die nötigsten Sachen ein und hörst aufeinmal ein Klopfen.*\n"
+        storyB1 = player.getName() + ": Gertrude, ich muss mit dir reden.\nGertrude: Warte einen Moment liebe. Ich bin gleich da.\n*Du packst die nötigsten Sachen ein und hörst aufeinmal ein Klopfen.*\n"
                                 + "Gertrude: Ich bin jetzt da. Was wolltest du mir erzählen?\n";
         storyB2 = "(1) Erzähle Gertrude von der Begegnung\n";
         storyB3 = player.getName() + ": Wo soll ich anfangen... Als ich auf dem Marktplatz war begegnete ich einen Mann.\n    Er erzählte mir, dass "
@@ -143,7 +140,7 @@ public class Texte {
         storyG5 = "(1) Frag ihn, wer er ist\n";
         storyG6 = player.getName() + ": Danke! Wer bist du?\n"
                                 + "...: Ich bin Liam. Mir wurde gesagt, dass ich dir helfen soll also komm mit kleine.\n"
-                                + "Du: Hi\n"
+                                + player.getName() + ": Hi\n"
                                 + "Liam: Hi\n"
                                 + "*10 Minuten später stehen du und Liam vor einem Haus, ihr geht rein\n*"
                                 + "Liam: Akdov hat einen Bogen für dich hier gelassen. *Liam gibt dir einen Bogen*\n";
@@ -191,10 +188,10 @@ public class Texte {
                                 + "*Liam öffnet lagsam die Tür. Sie durchsuchen zusammen das Haus.*\n"
                                 + player.getName() + ": Hier ist nichts.\n"
                                 + "Liam: Vielleicht ist hier ein Geheimraum.\n"
-                                + "Du: Wonah soll ich suchen?\n"
+                                + player.getName() + ": Wonah soll ich suchen?\n"
                                 + "Liam: Lass die Bücherregalen durchsuchen.\n";
         storyH7 = "(1) Fang an die Regalen durchzusuchen.\n";
-        storyH8 = "Du: Wonach soll ich suchen?\n"
+        storyH8 = player.getName() + ": Wonach soll ich suchen?\n"
                                 + "Liam: Lass die Bücherregale durchsuchen.\n";
         storyH9 = "(1) Fang an die Regalen durchzusuchen.\n";
         storyH10 = player.getName() + ": Liam! Ich habe was gefunden! Hier. Das Buch kann man nicht Bewegen.\n"
@@ -238,7 +235,7 @@ public class Texte {
                                  + "Liam: Gehst es dir gut?\n";
          storyI5 = "(1) Sag Liam, dass es dir gut geht und, dass ihr nach Saurok reiten musst\n";
          storyI6 = player.getName() + ": Mir geht es gut. Wir mussen nach Saurok reiten um uns dort mit dem König zu treffen.\n"
-                                + "Liam: Dann los geht's\n";
+                                + "Liam: Dann los geht´s\n";
          storyJ1 = "*Paar Tage später sind sie endlich in Sarouk. Auf dem Weg erzählte Liam, dir viele Geschichten aus seinem Leben. In dieser Zeit nährt ihr euch einander sehr.*\n";                        
          storyJ2 = "(1) frag Liam ob er die Stadt kennt.\n";                  
          storyJ3 = player.getName() + ": Kennst du die Stadt?\n"
