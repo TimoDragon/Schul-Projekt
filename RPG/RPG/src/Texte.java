@@ -44,7 +44,8 @@ public class Texte {
     String storyI1, storyI2, storyI3;
     //Saurok
     String storyI4, storyI5, storyI6;
-    String storyJ1, storyJ2, storyJ3, storyJ4, storyJ5, storyJ6, storyJ7, storyJ8, storyJ9;
+    String storyJ1, storyJ2, storyJ3, storyJ4, storyJ5, storyJ6, storyJ7, storyJ8, storyJ9, storyJ10, storyJ11, storyJ12A, storyJ12B,
+            storyJ13, storyJ14, storyJ15, storyJ16, storyJ17;
 
     public void setPlayer(Player player) {
         this.player = player;
@@ -275,5 +276,26 @@ public class Texte {
         storyJ9 = player.getName() + ": Wie sollen wir die betäuben?\n"
                 + "Liam: Mach mir nach.\n"
                 + "*Liam läuft leise hinter einen Diener und erwürgt ihn. " + player.getName() + " will das gleiche machen aber der Diener bemerkt " + player.getName() + " und greift an*\n";
+        storyJ10 = "Liam: Geht es dir gut?\n";
+        storyJ11 = "(1) Sag das es dir Gut geht\n"
+                    + "(2) Sag das es dir nicht Gut geht\n";
+        storyJ12A = player.getName() + ": Ja, mir geht es gut.\n"
+                    + "Liam: Okay, gut.\n";
+        storyJ12B = player.getName() + ": Nein, mir geht es nicht gut.\n"
+                    + "*Liam Verarztet " + player.getName() + ". Du erhälst 25 Leben. Liam und " + player.getName() + " ziehen\n"
+                    + "deren Diener Klamotten an und gehen in das Schloss*\n";
+        storyJ13 = "(1) Frag wo es lang geht";
+        storyJ14 = player.getName() + ": Wo lang jetzt? Das Schloss ist sehr groß. Weißt du, wo wir ihm finden?\n"
+                    + "Liam: Ich werde in sein Zimmer gehen und du könntest auf dem Trainings Platz nachschauen.\n";
+        storyJ15 = "(1) Begib dich auf den Weg\n";
+        storyJ16 = player.getName() + ": Ok, mach ich.\n"
+                + "*" + player.getName() + " sucht einen Weg nach draußen. Auf dem weg hört " + player.getName() + " ein Gespräch*\n"
+                + "Frauen Stimme: Denkst du das er es nicht bemerkt\n"
+                + "Männer Stimme: Nein. Er ist zu blöd. Außerdem kriegt er nur ein paar Tropfen von der Mixtur. Glaub mir, er bemerkt es nicht.\n"
+                + "Frauen Stimme: Ich habe dich leib Kail. Lass uns morgen hier wieder treffen.\n"
+                + "Kail: Ich dich auch. Bis Morgen.\n"
+                + "*Der Mann geht aus der Küche raus*\n"
+                + "Kail: Wieso stehst du hier so? Hast du was gehört?";
+        storyJ17 = "";
     }
 }

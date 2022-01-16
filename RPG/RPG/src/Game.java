@@ -35,7 +35,7 @@ public class Game {
             continue3();
 
         //story begins here
-        
+
         Main.animation(texte.start1, 25);
         Main.animation(texte.start2, 20);
         Main.animation(texte.start1, 25);
@@ -496,6 +496,46 @@ public class Game {
                                                                                     diener.addWeapon(fist);
                                                                                     Fight fight = new Fight(player, diener, "der", "der");
                                                                                     fight.startFight(this);
+
+                                                                                    Main.animation(texte.storyJ10, 25);
+                                                                                    Main.animation(texte.choose, 25);
+                                                                                    Main.animation(texte.storyJ11, 25);
+
+                                                                                    boolean checker9 = false;
+                                                                                    do {
+                                                                                        String input = requestInput();
+
+                                                                                        if (input.equals("1")) {
+                                                                                            checker9 = true;
+                                                                                            Main.animation(texte.storyJ12A, 25);
+                                                                                        }
+                                                                                        else if (input.equals("2")) {
+                                                                                            checker9 = true;
+                                                                                            Main.animation(texte.storyJ12B, 25);
+                                                                                            player.setHealth(player.getHealth() + 25);
+                                                                                        }
+                                                                                        Main.animation(texte.choose, 25);
+                                                                                        Main.animation(texte.storyJ13, 25);
+
+                                                                                        boolean checker10 = false;
+                                                                                        do {
+                                                                                            if (requestInput().equals("1")) {
+                                                                                                checker10 = true;
+                                                                                                Main.animation(texte.storyJ14, 25);
+                                                                                                Main.animation(texte.choose, 25);
+                                                                                                Main.animation(texte.storyJ15, 25);
+
+                                                                                                boolean checker11 = false;
+                                                                                                do {
+                                                                                                    if (requestInput().equals("1")) {
+                                                                                                        checker11 = true;
+                                                                                                        Main.animation(texte.storyJ16, 25);
+                                                                                                    }
+                                                                                                } while(checker11 == false);
+                                                                                            }
+                                                                                        } while(checker10 == false);
+
+                                                                                    } while(checker9 == false);
                                                                                 }
                                                                             } while(checker8 == false);
                                                                         }
