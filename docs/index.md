@@ -344,7 +344,7 @@ public calss Schueler{
     String name; 
     int alter;
     int klasse;
-    int groesse; 
+    double groesse; 
 
     //Konstruktor 
     Schueler(String n, int a, int k, int g){
