@@ -1,4 +1,4 @@
-# Java Tutorial
+    # Java Tutorial
 
 ## Allgemein
 
@@ -378,52 +378,8 @@ Schueler eins = new Schueler("Jan",16,10,1.75);
 Welcher Konstruktor aufgerufen wird, entscheidet sich beim Erzeugen eines neuen Exemplars.
 ## Methoden
 
-Methoden sind eine der wichtigsten bestandteile der programierung, da ohne methoden das programm wesentlich unübersichtlicher und schwerer zu verstehen wäre.
-Bei Methoden handelt es sich grundsätzlich nur um ein Stück vorpogramirten code welcher immer wieder ausgeführt werden kann, ohne dass er neu geschrieben werden muss.
-Eine Methode zu verwenden ist im allgemeinen eigentlich relativ einfach, denn man muss nur wie im unten stehenden beispiel die methode auserhalb der Main methode aufschreiben und in der Main methode wie unten stehend auf sie zugreifen.
-Im unteren Beispiel wird einmal eine Methode ohne Parameter und eine mit parametern in der Methode als beispiel genutzt.
+Das Kernstück jeder objektorientierten Programmierung bildet das Objekt. Allgemein kann man sagen, dass Objekte Attribute und Methoden enthalten. Dabei sind Attribute nur Variablen und Konstanten, die Werte aufnehmen können, und beschreiben damit das statische Wesen des Objektes. Im Gegensatz dazu gibt es die Methoden, die das gesamte dynamische Verhalten des Objektes oder einer Klasse charakterisieren. Sie enthalten die algorithmische Essenz des Objektes. In der objektorientierten Programmierung sind Methoden Teil der Definition einer Klasse.
 
-
-<<<<<<< HEAD
-
-```java
-public class App {
-
-    public static void main(String[] args) {
-
-        System.out.println("Vor der methode ohne Parametern!");
-
-        Hello();  // Es wird zu der methode namens Hello Gewechselt, wenn diese fertig ist geht es hier weiter.
-
-        System.out.println("Nach der methode ohne Parametern!");
-
-        System.out.println("Vor der methode mit Parametern!");
-
-        //Mit den werten 10 & 20 werden den ints in den klammern unten die werte gegeben.
-        Hello2(10, 20);
-
-        System.out.println("Nach der methode mit Parametern!");
-
-
-    }
-
-    public static void Hello() {
-
-        int a = 30;
-        int b = 20;
-        int c = a + b;
-        System.out.println(c);  // Hier wird das ergebnis der rechnung von a + b ausgegeben.
-    }
-
-    //Wenn man in die klammern variablen einsetzt können die vorher bestimmt und dann hier benutzt werden.
-    public static void Hello2(int number1, int number2) {
-
-        int x = number1;
-        int y = number2;
-        int z = x + y;
-        System.out.println(z);  // Hier wird das ergebnis der rechnung von x + y (number1 + number2) ausgegeben.
-    }
-=======
 ```java
 //Festlegen der Mehode
 public class EasyMethode{
@@ -440,20 +396,21 @@ public static void max(int a, int b){
         System.out.println(b);
     }
 }
-
 //Aufrufen der Methode in der Klasse Main 
 public static void main(String[] arges){
     easy();
     max(25,10);
->>>>>>> 26635b2d396fce1aba4cfb6d01a13676133fbdf4
 }
 ```
+
+Parameter: Übergebene Werte müssen vom korrekten Datentyp sein 
+
 Parameter: Übergebene Werte müssen vom korrekten Datentyp sein 
 
 
- # Aufgaben Java Toturail 
+# Java Tutorial
 
- ## Aufgabe 1
+## Aufgabe 1
 
  Gebe folgende Struktorporgramm  als Code wieder.
 
@@ -484,7 +441,3 @@ B)
 Implementiere die Klasse inklusive der beiden Methoden.
 
 [Lösung](/Schul-Projekt/Lösung/LoesungAufgabe3.md)
-    
-
- 
-
