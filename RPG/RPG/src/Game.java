@@ -35,7 +35,7 @@ public class Game {
             continue3();
 
         //story begins here
-        /*
+        
         Main.animation(texte.start1, 25);
         Main.animation(texte.start2, 20);
         Main.animation(texte.start1, 25);
@@ -99,20 +99,23 @@ public class Game {
                                                 case "1" :{
                                                     checker5 = true;
                                                     Main.animation(texte.storyA1, 25);
+                                                    Main.animation(texte.choose, 25);
+                                                    Main.animation(texte.storyA1A, 25);
 
                                                     //kol = knife or lantern
                                                     String kol = requestInput();
                                                     if (kol.equals("1")) {
+                                                        Weapon knife = new Weapon("Messer", "knife", 5);
+                                                        player.getInventory().add(knife);
 
+                                                        Main.animation(texte.storyA1B, 25);
                                                     }
                                                     else if (kol.equals("2")) {
-                                                        
+                                                        Item lantern = new Item("Laterne");
+                                                        player.getInventory().add(lantern);
+
+                                                        Main.animation(texte.storyA1C, 25);
                                                     }
-                                                    
-                                                    Weapon knife = new Weapon();
-                                                    knife.setType("knife");
-                                                    knife.setDamage(5);
-                                                    knife.setName("Messer");
                                 
                                                     Main.animation(texte.storyA2, 25);
                                                     continue1();
@@ -463,6 +466,42 @@ public class Game {
                                                     do {
                                                         if (requestInput().equals("1")) {
                                                             Main.animation(texte.storyJ3, 25);
+                                                            Main.animation(texte.choose, 25);
+                                                            Main.animation(texte.storyJ4, 25);
+
+                                                            boolean checker6 = false;
+                                                            do {
+                                                                if (requestInput().equals("1")) {
+                                                                    checker6 = true;
+                                                                    Main.animation(texte.storyJ5, 25);
+                                                                    Main.animation(texte.choose, 25);
+                                                                    Main.animation(texte.storyJ6, 25);
+
+                                                                    boolean checker7 = false;
+                                                                    do {
+                                                                        if (requestInput().equals("1")) {
+                                                                            checker7 = true;
+                                                                            Main.animation(texte.storyJ7, 25);
+                                                                            Main.animation(texte.choose, 25);
+                                                                            Main.animation(texte.storyJ8, 25);
+
+                                                                            boolean checker8 = false;
+                                                                            do {
+                                                                                if (requestInput().equals("1")) {
+                                                                                    checker8 = true;
+                                                                                    Main.animation(texte.storyJ9, 25);
+
+                                                                                    Enemy diener = new Enemy("Diener", 30);
+                                                                                    Weapon fist = new Weapon("Faust", "fist", 4);
+                                                                                    diener.addWeapon(fist);
+                                                                                    Fight fight = new Fight(player, diener, "der", "der");
+                                                                                    fight.startFight(this);
+                                                                                }
+                                                                            } while(checker8 == false);
+                                                                        }
+                                                                    } while(checker7 == false);
+                                                                }
+                                                            } while(checker6 == false);
                                                         }
                                                     } while (checker5 == false);
                                                 }

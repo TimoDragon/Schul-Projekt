@@ -44,7 +44,7 @@ public class Texte {
     String storyI1, storyI2, storyI3;
     //Saurok
     String storyI4, storyI5, storyI6;
-    String storyJ1, storyJ2, storyJ3, storyJ4, storyJ5, storyJ6;
+    String storyJ1, storyJ2, storyJ3, storyJ4, storyJ5, storyJ6, storyJ7, storyJ8, storyJ9;
 
     public void setPlayer(Player player) {
         this.player = player;
@@ -264,10 +264,16 @@ public class Texte {
                                 + "Opa Bauland: KOMMT ZURÜCK!\n"
                                 + "Liam: Wir haben es geschaft *lacht*";
         storyJ4 = "(1) Sag ihm, dass wir weiter laufen sollten\n";
-        storyJ5 = player.getName() + "Lass uns weiter gehen. Wir müssen uns beeilen\n"
+        storyJ5 = player.getName() + ": Lass uns weiter gehen. Wir müssen uns beeilen\n"
                 + "    Wie schaffen wir es in das Schloss reinzukommen? Es stehen überall Wachen.\n"
                 + "Liam: Wir müssen uns als Diener verkleiden. Wenn wir drin sind, müssen wir den Prinzen finden.\n"
                 + "      Er kann uns sicher helfen.\n";
         storyJ6 = "(1) Sag ihm, dass du gerade 2 Diener siehst\n";
+        storyJ7 = player.getName() + " Ich sehe zwei Diener dort. *du zeigst auf die Diener*\n"
+                + "Liam: Wir müssen sie betäuben.\n";
+        storyJ8 = "(1) Frag ihn, wie ihr die Diener betäuben sollt\n";
+        storyJ9 = player.getName() + ": Wie sollen wir die betäuben?\n"
+                + "Liam: Mach mir nach.\n"
+                + "*Liam läuft leise hinter einen Diener und erwürgt ihn. " + player.getName() + " will das gleiche machen aber der Diener bemerkt " + player.getName() + " und greift an*\n";
     }
 }
