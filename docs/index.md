@@ -352,58 +352,49 @@ Welcher Konstruktor aufgerufen wird, entscheidet sich beim Erzeugen eines neuen 
 
 ## Methoden
 
-Das Kernstück jeder objektorientierten Programmierung bildet das Objekt. Allgemein kann man sagen, dass Objekte Attribute und Methoden enthalten. Dabei sind Attribute nur Variablen und Konstanten, die Werte aufnehmen können, und beschreiben damit das statische Wesen des Objektes. Im Gegensatz dazu gibt es die Methoden, die das gesamte dynamische Verhalten des Objektes oder einer Klasse charakterisieren. Sie enthalten die algorithmische Essenz des Objektes. In der objektorientierten Programmierung sind Methoden Teil der Definition einer Klasse.
+Methoden sind eine der wichtigsten bestandteile der programierung, da ohne methoden das programm wesentlich unübersichtlicher und schwerer zu verstehen wäre.
+Bei Methoden handelt es sich grundsätzlich nur um ein Stück vorpogramirten code welcher immer wieder ausgeführt werden kann, ohne dass er neu geschrieben werden muss.
+Eine Methode zu verwenden ist im allgemeinen eigentlich relativ einfach, denn man muss nur wie im unten stehenden beispiel die methode auserhalb der Main methode aufschreiben und in der Main methode wie unten stehend auf si zugreifen.
+Im unteren Beispiel wird einmal eine Methode ohne Parameter und eine mit parametern in der Methode als beispiel genutzt.
 
-Das folgende Beispiel in der Programmiersprache C# zeigt die Methoden berechneEinnahmen(...), gibAbteilung(), wähleChef(...) und gibAnzahlDerChefs(...), die von den Klassen Abteilung, Chef und Firma definiert werden. Die Parameter werden in den Klammern hinter dem Namen der Methode deklariert. Der Datentyp steht jeweils vor dem Namen der Variablen. Der Rückgabetyp steht vor dem Namen der Methode. Bei Methoden ohne Rückgabewert wird der Rückgabetyp void angegeben.
+
 
 ```java
-class Abteilung
-{
-    List<Person> mitglieder;
-    double mitgliedsbeitrag;
-    
-    // Methode mit zwei Parametern und mit Rückgabewert
-    double berechneEinnahmen(double spenden, double sonstigeEinnahmen)
-    {
-        return mitglieder.Count * mitgliedsbeitrag + spenden + sonstigeEinnahmen;
-    }
-}
+public class App {
 
-class Chef
-{
-    Abteilung abteilung;
-    
-    // Methode ohne Parameter und mit Rückgabewert
-    Abteilung gibApteilung()
-    {
-        return abteilung;
-    }
-}
+    public static void main(String[] args) {
 
-class Firma
-{
-    List<Chef> chef = new List<Chef>();
-    Chef vorstand;
-    int maximalGroesse;
-    
-    // Methode mit einem Parameter und ohne Rückgabewert
-    void wähleChef(Chef Chef)
-    {
-        vorstand = Chef;
+        System.out.println("Vor der methode ohne Parametern!");
+
+        Hello();  // Es wird zu der methode namens Hello Gewechselt, wenn diese fertig ist geht es hier weiter.
+
+        System.out.println("Nach der methode ohne Parametern!");
+
+        System.out.println("Vor der methode mit Parametern!");
+
+        //Mit den werten 10 & 20 werden den ints in den klammern unten die werte gegeben.
+        Hello2(10, 20);
+
+        System.out.println("Nach der methode mit Parametern!");
+
+
     }
-    
-    // Methode mit einem Parameter und mit Rückgabewert
-    int gibAnzahlDerChefs(Abteilung abteilung)
-    {
-        int anzahl = 0;
-        foreach (Chef Chef in Chef)
-        {
-            if (Chef.gibAbteilung() == abteilung)
-            {
-                anzahl++;
-            }
-        }
-        return anzahl;
+
+    public static void Hello() {
+
+        int a = 30;
+        int b = 20;
+        int c = a + b;
+        System.out.println(c);  // Hier wird das ergebnis der rechnung von a + b ausgegeben.
+    }
+
+    //Wenn man in die klammern variablen einsetzt können die vorher bestimmt und dann hier benutzt werden.
+    public static void Hello2(int number1, int number2) {
+
+        int x = number1;
+        int y = number2;
+        int z = x + y;
+        System.out.println(z);  // Hier wird das ergebnis der rechnung von x + y (number1 + number2) ausgegeben.
     }
 }
 ```
