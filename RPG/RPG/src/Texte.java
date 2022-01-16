@@ -14,7 +14,7 @@ public class Texte {
     //Story
     String story1, story2, story3, story4, story5, story6, story7, story8, story9, story10, story11;
     //hau ab ohne Gertrude bescheid zu sagen. Kannst entweder ein Messer oder eine Laterne wählen 
-    String storyA1, storyA2;
+    String storyA1, storyA2, storyA1A, storyA1B, storyA1C;
     //Rede mit Gertrude über die Begegnung
     String storyB1, storyB2, storyB3, storyB4, storyB5, storyB6, storyB7, storyB8, storyB9, storyB10, storyB11, storyB12, storyB13;
     //hier gehts nach dem Abhauen/dem Gespräch weiter
@@ -44,7 +44,7 @@ public class Texte {
     String storyI1, storyI2, storyI3;
     //Saurok
     String storyI4, storyI5, storyI6;
-    String storyJ1, storyJ2, storyJ3;
+    String storyJ1, storyJ2, storyJ3, storyJ4, storyJ5, storyJ6;
 
     public void setPlayer(Player player) {
         this.player = player;
@@ -77,7 +77,11 @@ public class Texte {
     
     
         //hau ab ohne Gertrude bescheid zu sagen. Kannst entweder ein Messer oder eine Laterne wählen 
-        storyA1 = "*Du packst die nötigsten Sachen ein und wartest bis es dunkel ist. Auf dem Weg nach draußen nimmst du noch ein Messer und eine Laterne mit*\n";
+        storyA1 = "*Du packst die nötigsten Sachen ein und wartest bis es dunkel ist. Auf dem Weg nach siehst du noch ein Messer und eine Laterne* Was nimmst du mit?\n";
+        storyA1A = "(1) Messer\n"
+                    + "(2) Laterne\n";
+        storyA1B = "*Du packst das Messer ein*\n";
+        storyA1C = "*Du packst die Laterne ein*\n";
         storyA2 = "*Du hörst schritte und läufst weg, Gertrude schreit.*\nGertrude: Wer ist da?\n*Du läufst aber weiter.*\n";
         
     
@@ -245,6 +249,25 @@ public class Texte {
                                 + player.getName() + ": Hi. Mein Name ist " + player.getName() + " und das ist Liam. Wir müssen dringend mit dem König reden.\n"
                                 + "Wächter Wachmann: Wir lassen Fremde nicht rein!\n"
                                 + "Wächter Schlafmann: Liam? Mein alter Freund. Gut dich wieder zu sehen!\n"
-                                + "*Du guck*\n";
+                                + "*Die beiden umarmen sich*\n"
+                                + "Wächter Schlafmann: Tom. Lass die rein. Mit dem habe ich früher verrückten Dinge gemacht.\n"
+                                + "                    Erinnerst du dich noch an diese Nacht in Pub? *lacht*\n"
+                                + "Liam: Ja, ja...\n"
+                                + "Wächter Schlafmann: Lass ihn und seinen Begleiter rein. Ich schwöre dir, die kommen zu guten Zwecken\n"
+                                + "                    Geht rein, aber falls jemand fragt, kennt ihr mich nicht.\n"
+                                + "Liam: Klar!\n"
+                                + "*Liam und " + player.getName() + " gehen in die Stadt. Auf den weg zum Schloss stößt dich ein alter Opa ausversehen um*\n"
+                                + "Opa Bauland: PASS AUF WOHIN DU LÄUFST! MEINE GANZEN SACHEN LIEGEN AUF DEM BODEN!\n"
+                                + "Liam: Sch...\n"
+                                + "Opa Bauland: NICHT SCHULDIGUNG! DU WIRST FÜR ALLES BEZAHLEN!\n"
+                                + "*Liam nimmt " + player.getName() + "'s Hand und rennt weg*\n"
+                                + "Opa Bauland: KOMMT ZURÜCK!\n"
+                                + "Liam: Wir haben es geschaft *lacht*";
+        storyJ4 = "(1) Sag ihm, dass wir weiter laufen sollten\n";
+        storyJ5 = player.getName() + "Lass uns weiter gehen. Wir müssen uns beeilen\n"
+                + "    Wie schaffen wir es in das Schloss reinzukommen? Es stehen überall Wachen.\n"
+                + "Liam: Wir müssen uns als Diener verkleiden. Wenn wir drin sind, müssen wir den Prinzen finden.\n"
+                + "      Er kann uns sicher helfen.\n";
+        storyJ6 = "(1) Sag ihm, dass du gerade 2 Diener siehst\n";
     }
 }
