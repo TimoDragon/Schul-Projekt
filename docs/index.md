@@ -325,7 +325,11 @@ Operationen (was das Objekt kann)
  [![Objektdiagramme](https://img.youtube.com/vi/oaykwg2_TG8/0.jpg)](https://www.youtube.com/watch?v=oaykwg2_TG8)
 
  ## Konstruktoren
- 
+
+ Konstruktoren sind eine Voraussetzung das ein Klasse erschaffen werden kann.
+ Dabei kann eine Klasse keinen oder mehrere Konstrucktoren haben, wenn kein Konstruktor
+ festgelegt ist dann erschafft die Klasse einen von selbst, wird somit selber automatisch erschaffen.
+ Dieser Konstruktor muss den Namen der Klasse haben und beseitz keinen Rückgabewert.
  Konstruktoren sind spezielle Methoden zur Erzeugung und Initialisierung neuer Objekte.
  Die Initialisierung erfolgt normalerweise mit Werten, die dem Konstruktor als Parameter übergeben werden.
  Im Gegensatz zu einfachen Methoden, die über eine Objektreferenz aufgerufen werden müssen, können Konstruktoren sowohl über Klassen- als auch über Objektreferenzen aktiviert werden.
@@ -342,72 +346,35 @@ Als einfacher Methodenaufruf für ein schon existierendes Objekt :
 ```java
 Person.Init('Otto', 'Meier');
 ```
-Benutzt man den vom System bereitgestellten Konstruktor Create, dann werden dem erzeugten Exemplar keine Werte zugewiesen. (s. Delphi Hilfe)
-
-
-Wegen der Polymorphie kann eine Klasse mehrere Konstruktoren haben, die sich im Bezeichner unterscheiden müssen.
-
 Welcher Konstruktor aufgerufen wird, entscheidet sich beim Erzeugen eines neuen Exemplars.
-(Einige Programmiersprachen erlauben auch die Benutzung desselben Bezeichners mit unterschiedlichen Parametern. Dann ist eventuell eine spezielle Compiler-Direktive zu verwenden).
-
 ## Methoden
 
 Das Kernstück jeder objektorientierten Programmierung bildet das Objekt. Allgemein kann man sagen, dass Objekte Attribute und Methoden enthalten. Dabei sind Attribute nur Variablen und Konstanten, die Werte aufnehmen können, und beschreiben damit das statische Wesen des Objektes. Im Gegensatz dazu gibt es die Methoden, die das gesamte dynamische Verhalten des Objektes oder einer Klasse charakterisieren. Sie enthalten die algorithmische Essenz des Objektes. In der objektorientierten Programmierung sind Methoden Teil der Definition einer Klasse.
 
-Das folgende Beispiel in der Programmiersprache C# zeigt die Methoden berechneEinnahmen(...), gibAbteilung(), wähleChef(...) und gibAnzahlDerChefs(...), die von den Klassen Abteilung, Chef und Firma definiert werden. Die Parameter werden in den Klammern hinter dem Namen der Methode deklariert. Der Datentyp steht jeweils vor dem Namen der Variablen. Der Rückgabetyp steht vor dem Namen der Methode. Bei Methoden ohne Rückgabewert wird der Rückgabetyp void angegeben.
-
 ```java
-class Abteilung
-{
-    List<Person> mitglieder;
-    double mitgliedsbeitrag;
-    
-    // Methode mit zwei Parametern und mit Rückgabewert
-    double berechneEinnahmen(double spenden, double sonstigeEinnahmen)
-    {
-        return mitglieder.Count * mitgliedsbeitrag + spenden + sonstigeEinnahmen;
+//Festlegen der Mehode
+public class EasyMethode{
+public static void easy(){
+    System.out.println("Guten Tag");
+}
+}
+//Festlegen der Methode mit Parameter 
+public static void max(int a, int b){
+    if(a>b){
+        System.out.println(a);
+    }
+    else{
+        System.out.println(b);
     }
 }
 
-class Chef
-{
-    Abteilung abteilung;
-    
-    // Methode ohne Parameter und mit Rückgabewert
-    Abteilung gibApteilung()
-    {
-        return abteilung;
-    }
-}
-
-class Firma
-{
-    List<Chef> chef = new List<Chef>();
-    Chef vorstand;
-    int maximalGroesse;
-    
-    // Methode mit einem Parameter und ohne Rückgabewert
-    void wähleChef(Chef Chef)
-    {
-        vorstand = Chef;
-    }
-    
-    // Methode mit einem Parameter und mit Rückgabewert
-    int gibAnzahlDerChefs(Abteilung abteilung)
-    {
-        int anzahl = 0;
-        foreach (Chef Chef in Chef)
-        {
-            if (Chef.gibAbteilung() == abteilung)
-            {
-                anzahl++;
-            }
-        }
-        return anzahl;
-    }
+//Aufrufen der Methode in der Klasse Main 
+public static void main(String[] arges){
+    easy();
+    max(25,10);
 }
 ```
-
+Parameter: Übergebene Werte müssen vom korrekten Datentyp sein 
 
 
  # Aufgaben Java Toturail 
