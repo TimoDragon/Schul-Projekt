@@ -337,14 +337,43 @@ Operationen (was das Objekt kann)
 Um ein neues Objekt zu erzeugen, muss ein Konstruktor über eine Klassenreferenz aufgerufen werden:
 
 ```java
-Person := TPerson.Create;   oder
-Person := TPerson.Init('Otto', 'Meier');
+//Klasse Konstruktor 
+
+public calss Schueler{
+    //Atribute 
+    String name; 
+    int alter;
+    int klasse;
+    int groesse; 
+
+    //Konstruktor 
+    Schueler(String n, int a, int k, int g){
+        name = n;
+        alter = a; 
+        klasse = k;
+        groesse = g; 
+
+
+    }
+}
+// Klasse Main 
+
+public class Klasse{
+    public static void main(String[] arges){
+        Schueler eins= new Schueler();
+
+        eins.name = "Jan";
+        eins.alter= 16 
+        eins.klasse= 10
+        eins.groesse= 1.75 //in Meter 
+    }
+}
 ```
 
 Als einfacher Methodenaufruf für ein schon existierendes Objekt :
 
 ```java
-Person.Init('Otto', 'Meier');
+Schueler eins = new Schueler("Jan",16,10,1.75);
 ```
 Welcher Konstruktor aufgerufen wird, entscheidet sich beim Erzeugen eines neuen Exemplars.
 ## Methoden
