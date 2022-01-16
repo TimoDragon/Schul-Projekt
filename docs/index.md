@@ -325,7 +325,11 @@ Operationen (was das Objekt kann)
  [![Objektdiagramme](https://img.youtube.com/vi/oaykwg2_TG8/0.jpg)](https://www.youtube.com/watch?v=oaykwg2_TG8)
 
  ## Konstruktoren
- 
+
+ Konstruktoren sind eine Voraussetzung das ein Klasse erschaffen werden kann.
+ Dabei kann eine Klasse keinen oder mehrere Konstrucktoren haben, wenn kein Konstruktor
+ festgelegt ist dann erschafft die Klasse einen von selbst, wird somit selber automatisch erschaffen.
+ Dieser Konstruktor muss den Namen der Klasse haben und beseitz keinen Rückgabewert.
  Konstruktoren sind spezielle Methoden zur Erzeugung und Initialisierung neuer Objekte.
  Die Initialisierung erfolgt normalerweise mit Werten, die dem Konstruktor als Parameter übergeben werden.
  Im Gegensatz zu einfachen Methoden, die über eine Objektreferenz aufgerufen werden müssen, können Konstruktoren sowohl über Klassen- als auch über Objektreferenzen aktiviert werden.
@@ -333,31 +337,54 @@ Operationen (was das Objekt kann)
 Um ein neues Objekt zu erzeugen, muss ein Konstruktor über eine Klassenreferenz aufgerufen werden:
 
 ```java
-Person := TPerson.Create;   oder
-Person := TPerson.Init('Otto', 'Meier');
+//Klasse Konstruktor 
+
+public calss Schueler{
+    //Atribute 
+    String name; 
+    int alter;
+    int klasse;
+    int groesse; 
+
+    //Konstruktor 
+    Schueler(String n, int a, int k, int g){
+        name = n;
+        alter = a; 
+        klasse = k;
+        groesse = g; 
+
+
+    }
+}
+// Klasse Main 
+
+public class Klasse{
+    public static void main(String[] arges){
+        Schueler eins= new Schueler();
+
+        eins.name = "Jan";
+        eins.alter= 16 
+        eins.klasse= 10
+        eins.groesse= 1.75 //in Meter 
+    }
+}
 ```
 
 Als einfacher Methodenaufruf für ein schon existierendes Objekt :
 
 ```java
-Person.Init('Otto', 'Meier');
+Schueler eins = new Schueler("Jan",16,10,1.75);
 ```
-Benutzt man den vom System bereitgestellten Konstruktor Create, dann werden dem erzeugten Exemplar keine Werte zugewiesen. (s. Delphi Hilfe)
-
-
-Wegen der Polymorphie kann eine Klasse mehrere Konstruktoren haben, die sich im Bezeichner unterscheiden müssen.
-
 Welcher Konstruktor aufgerufen wird, entscheidet sich beim Erzeugen eines neuen Exemplars.
-(Einige Programmiersprachen erlauben auch die Benutzung desselben Bezeichners mit unterschiedlichen Parametern. Dann ist eventuell eine spezielle Compiler-Direktive zu verwenden).
-
 ## Methoden
 
 Methoden sind eine der wichtigsten bestandteile der programierung, da ohne methoden das programm wesentlich unübersichtlicher und schwerer zu verstehen wäre.
 Bei Methoden handelt es sich grundsätzlich nur um ein Stück vorpogramirten code welcher immer wieder ausgeführt werden kann, ohne dass er neu geschrieben werden muss.
-Eine Methode zu verwenden ist im allgemeinen eigentlich relativ einfach, denn man muss nur wie im unten stehenden beispiel die methode auserhalb der Main methode aufschreiben und in der Main methode wie unten stehend auf si zugreifen.
+Eine Methode zu verwenden ist im allgemeinen eigentlich relativ einfach, denn man muss nur wie im unten stehenden beispiel die methode auserhalb der Main methode aufschreiben und in der Main methode wie unten stehend auf sie zugreifen.
 Im unteren Beispiel wird einmal eine Methode ohne Parameter und eine mit parametern in der Methode als beispiel genutzt.
 
 
+<<<<<<< HEAD
 
 ```java
 public class App {
@@ -396,9 +423,32 @@ public class App {
         int z = x + y;
         System.out.println(z);  // Hier wird das ergebnis der rechnung von x + y (number1 + number2) ausgegeben.
     }
+=======
+```java
+//Festlegen der Mehode
+public class EasyMethode{
+public static void easy(){
+    System.out.println("Guten Tag");
+}
+}
+//Festlegen der Methode mit Parameter 
+public static void max(int a, int b){
+    if(a>b){
+        System.out.println(a);
+    }
+    else{
+        System.out.println(b);
+    }
+}
+
+//Aufrufen der Methode in der Klasse Main 
+public static void main(String[] arges){
+    easy();
+    max(25,10);
+>>>>>>> 26635b2d396fce1aba4cfb6d01a13676133fbdf4
 }
 ```
-
+Parameter: Übergebene Werte müssen vom korrekten Datentyp sein 
 
 
  # Aufgaben Java Toturail 
@@ -420,7 +470,7 @@ public class App {
  
  ## Aufgabe 3 
 
-![Test2](/Schul-Projekt/images/ObjektNeu.PNG)
+![Test](/Schul-Projekt/images/ObjektNeu.PNG)
 
  A)
 
@@ -432,8 +482,6 @@ public class App {
 B) 
 
 Implementiere die Klasse inklusive der beiden Methoden.
-
-
 
 [Lösung](/Schul-Projekt/Lösung/LoesungAufgabe3.md)
     
