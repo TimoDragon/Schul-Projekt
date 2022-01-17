@@ -10,11 +10,11 @@ public class Game {
     private List<Integer> fightsDone = new ArrayList<Integer>();
 
     //to get input from the player
-    public String requestInput() {
+    public int requestInput() {
         Scanner sc = new Scanner(System.in);
-        String input = sc.nextLine();
+        int input = sc.nextInt();
 
-        if (input.equals("69")) {
+        if (input == 69) {
             Main.animation("Nice\n", 69);
         }
 
@@ -31,8 +31,8 @@ public class Game {
         player.getInventory().add(fist);
 
         //remove when project is done
-            fightsDone.add(1);
-            continue3();
+            //fightsDone.add(1);
+            continue2();
 
         //story begins here
 
@@ -40,7 +40,8 @@ public class Game {
         Main.animation(texte.start2, 20);
         Main.animation(texte.start1, 25);
         
-        String name = requestInput();
+        Scanner nameSc = new Scanner(System.in);
+        String name = nameSc.next();
         player.setName(name);
         texte.setPlayer(player);
 
@@ -54,7 +55,7 @@ public class Game {
         Main.animation(texte.story1, 20);
         boolean checker1 = false;
         do {
-            if (requestInput().equals("1")) {
+            if (requestInput() == 1) {
                 checker1 = true;
                 boolean checker2 = false;
 
@@ -64,8 +65,8 @@ public class Game {
                 Main.animation(texte.story4, 25);
                 
                 do {
-                    String in = requestInput();
-                    if (in.equals("1")) {
+                    int in = requestInput();
+                    if (in == 1) {
                         checker2 = true;
                         boolean checker3 = false;
 
@@ -74,7 +75,7 @@ public class Game {
                         Main.animation(texte.story6, 25);
 
                         do {
-                            if (requestInput().equals("1")) {
+                            if (requestInput() == 1) {
                                 checker3 = true;
 
                                 Main.animation(texte.story7, 25);
@@ -83,7 +84,7 @@ public class Game {
 
                                 boolean checker4 = true;
                                 do {
-                                    if (requestInput().equals("1")) {
+                                    if (requestInput() == 1) {
                                         checker4 = true;
 
                                         Main.animation(texte.story9, 25);
@@ -93,24 +94,24 @@ public class Game {
                                 
                                         boolean checker5 = true;
                                         do {
-                                            String number = requestInput();
+                                            int number = requestInput();
                                 
                                             switch(number) {
-                                                case "1" :{
+                                                case 1 :{
                                                     checker5 = true;
                                                     Main.animation(texte.storyA1, 25);
                                                     Main.animation(texte.choose, 25);
                                                     Main.animation(texte.storyA1A, 25);
 
                                                     //kol = knife or lantern
-                                                    String kol = requestInput();
-                                                    if (kol.equals("1")) {
+                                                    int kol = requestInput();
+                                                    if (kol == 1) {
                                                         Weapon knife = new Weapon("Messer", "knife", 5);
                                                         player.getInventory().add(knife);
 
                                                         Main.animation(texte.storyA1B, 25);
                                                     }
-                                                    else if (kol.equals("2")) {
+                                                    else if (kol == 2) {
                                                         Item lantern = new Item("Laterne");
                                                         player.getInventory().add(lantern);
 
@@ -122,7 +123,7 @@ public class Game {
                                 
                                                     break;
                                                 }
-                                                case "2": {
+                                                case 2: {
                                                     checker5 = true;
                                                     Main.animation(texte.storyB1, 25);
                                                     Main.animation(texte.choose, 25);
@@ -130,7 +131,7 @@ public class Game {
                                             
                                                     boolean checker6 = false;
                                                     do {
-                                                        if (requestInput().equals("1")) {
+                                                        if (requestInput() == 1) {
                                                             checker6 = true;
                                                             Main.animation(texte.storyB3, 25);
                                                             Main.animation(texte.choose, 25);
@@ -138,7 +139,7 @@ public class Game {
                                 
                                                             boolean checker7 = false;
                                                             do {
-                                                                if (requestInput().equals("1")) {
+                                                                if (requestInput() == 1) {
                                                                     checker7 = true;
                                                                     Main.animation(texte.storyB5, 25);
                                                                     Main.animation(texte.choose, 25);
@@ -146,7 +147,7 @@ public class Game {
                                 
                                                                     boolean checker8 = false;
                                                                     do {
-                                                                        if (requestInput().equals("1")) {
+                                                                        if (requestInput() == 1) {
                                                                             checker8 = true;
                                 
                                                                             Main.animation(texte.storyB7, 25);
@@ -156,7 +157,7 @@ public class Game {
                                                                             boolean checker9 = false;
                                                                             
                                                                             do {
-                                                                                if (requestInput().equals("1")) {
+                                                                                if (requestInput() == 1) {
                                                                                     checker9 = true;
                                                                                     Main.animation(texte.storyB9, 25);
                                                                                     Main.animation(texte.choose, 25);
@@ -165,7 +166,7 @@ public class Game {
                                                                                     boolean checker10 = false;
                                 
                                                                                     do {
-                                                                                        if (requestInput().equals("1")) {
+                                                                                        if (requestInput() == 1) {
                                                                                             checker10 = true;
                                 
                                                                                             Main.animation(texte.storyB11, 25);
@@ -186,7 +187,7 @@ public class Game {
                                                                                             boolean checker11 = false;
                                 
                                                                                             do {
-                                                                                                if (requestInput().equals("1")) {
+                                                                                                if (requestInput() == 1) {
                                                                                                     Main.animation(texte.storyB13, 25);
                                                                                                     continue1();
                                                                                                 }
@@ -224,7 +225,7 @@ public class Game {
 
         boolean checker1 = false;
         do {
-            if (requestInput().equals("1")) {
+            if (requestInput() == 1) {
                 Main.animation(texte.storyC3, 25);
                 Main.animation(texte.choose, 25);
                 Main.animation(texte.storyC4, 25);
@@ -232,9 +233,9 @@ public class Game {
                 boolean checker2 = false;
 
                 do {
-                    String number = requestInput();
+                    int number = requestInput();
                     switch(number) {
-                        case "1": {
+                        case 1: {
                             checker2 = true;
                             Item lantern = new Item();
                             lantern.setType("Laterne");
@@ -251,7 +252,7 @@ public class Game {
 
                             break;
                         }
-                        case "2": {
+                        case 2: {
                             checker2 = true;
                             Main.animation(texte.storyE1, 25);
 
@@ -273,7 +274,7 @@ public class Game {
 
             boolean checker1 = false;
             do {
-                if (requestInput().equals("1")) {
+                if (requestInput() == 1) {
                     checker1 = true;
 
                     boolean hasKnife = false;
@@ -313,7 +314,7 @@ public class Game {
 
             boolean checker = false;
             do {
-                if (requestInput().equals("1")) {
+                if (requestInput() == 1) {
                     checker = true;
 
                     Main.animation(texte.storyG6, 25);
@@ -326,7 +327,7 @@ public class Game {
 
                     boolean checker1 = false;
                     do {
-                        if (requestInput().equals("1")) {
+                        if (requestInput() == 1) {
                             checker1 = true;
 
                             Main.animation(texte.storyG8, 25);
@@ -335,7 +336,7 @@ public class Game {
 
                             boolean checker2 = false;
                             do {
-                                if (requestInput().equals("1")) {
+                                if (requestInput() == 1) {
                                     Main.animation(texte.storyG10, 25);
                                     
                                     Food apple = new Food();
@@ -355,7 +356,7 @@ public class Game {
 
                                     boolean checker3 = false;
                                     do {
-                                        if (requestInput().equals("1")) {
+                                        if (requestInput() == 1) {
                                             checker3 = true;
                                             Main.animation(texte.storyH1, 25);
                                             Main.animation(texte.choose, 25);
@@ -363,7 +364,7 @@ public class Game {
 
                                             boolean checker4 = false;
                                             do {
-                                                if (requestInput().equals("1")) {
+                                                if (requestInput() == 1) {
                                                     checker4 = true;
                                                     Main.animation(texte.storyH3, 25);
                                                     Main.animation(texte.choose, 25);
@@ -371,7 +372,7 @@ public class Game {
 
                                                     boolean checker5 = false;
                                                     do {
-                                                        if (requestInput().equals("1")) {
+                                                        if (requestInput() == 1) {
                                                             continue3();
                                                         }
                                                     } while (checker5 == false);
@@ -407,7 +408,7 @@ public class Game {
 
             boolean checker = false;
             do {
-                if (requestInput().equals("1")) {
+                if (requestInput() == 1) {
                     checker = true;
                     Main.animation(texte.storyH8, 25);
                     Main.animation(texte.choose, 25);
@@ -415,7 +416,7 @@ public class Game {
 
                     boolean checker1 = false;
                     do {
-                        if (requestInput().equals("1")) {
+                        if (requestInput() == 1) {
                             checker1 = true;
                             Main.animation(texte.storyH10, 25);
                             Main.animation(texte.choose, 25);
@@ -423,7 +424,7 @@ public class Game {
 
                             boolean checker2 = false;
                             do {
-                                if (requestInput().equals("1")) {
+                                if (requestInput() == 1) {
                                     checker2 = true;
                                     Main.animation(texte.storyH12, 25);
 
@@ -447,7 +448,7 @@ public class Game {
 
                                     boolean checker3 = false;
                                     do {
-                                        if (requestInput().equals("1")) {
+                                        if (requestInput() == 1) {
                                             checker3 = true;
                                             Main.animation(texte.storyI3, 25);
                                             Main.animation(texte.storyI4, 25);
@@ -456,7 +457,7 @@ public class Game {
 
                                             boolean checker4 = false;
                                             do {
-                                                if (requestInput().equals("1")) {
+                                                if (requestInput() == 1) {
                                                     Main.animation(texte.storyI6, 25);
                                                     Main.animation(texte.storyJ1, 25);
                                                     Main.animation(texte.choose, 25);
@@ -464,14 +465,14 @@ public class Game {
 
                                                     boolean checker5 = false;
                                                     do {
-                                                        if (requestInput().equals("1")) {
+                                                        if (requestInput() == 1) {
                                                             Main.animation(texte.storyJ3, 25);
                                                             Main.animation(texte.choose, 25);
                                                             Main.animation(texte.storyJ4, 25);
 
                                                             boolean checker6 = false;
                                                             do {
-                                                                if (requestInput().equals("1")) {
+                                                                if (requestInput() == 1) {
                                                                     checker6 = true;
                                                                     Main.animation(texte.storyJ5, 25);
                                                                     Main.animation(texte.choose, 25);
@@ -479,7 +480,7 @@ public class Game {
 
                                                                     boolean checker7 = false;
                                                                     do {
-                                                                        if (requestInput().equals("1")) {
+                                                                        if (requestInput() == 1) {
                                                                             checker7 = true;
                                                                             Main.animation(texte.storyJ7, 25);
                                                                             Main.animation(texte.choose, 25);
@@ -487,7 +488,7 @@ public class Game {
 
                                                                             boolean checker8 = false;
                                                                             do {
-                                                                                if (requestInput().equals("1")) {
+                                                                                if (requestInput() == 1) {
                                                                                     checker8 = true;
                                                                                     Main.animation(texte.storyJ9, 25);
 
@@ -503,13 +504,12 @@ public class Game {
 
                                                                                     boolean checker9 = false;
                                                                                     do {
-                                                                                        String input = requestInput();
-
-                                                                                        if (input.equals("1")) {
+                                                                                        int input = requestInput();
+                                                                                        if (input == 1) {
                                                                                             checker9 = true;
                                                                                             Main.animation(texte.storyJ12A, 25);
                                                                                         }
-                                                                                        else if (input.equals("2")) {
+                                                                                        else if (input == 2) {
                                                                                             checker9 = true;
                                                                                             Main.animation(texte.storyJ12B, 25);
                                                                                             player.setHealth(player.getHealth() + 25);
@@ -519,7 +519,7 @@ public class Game {
 
                                                                                         boolean checker10 = false;
                                                                                         do {
-                                                                                            if (requestInput().equals("1")) {
+                                                                                            if (requestInput() == 1) {
                                                                                                 checker10 = true;
                                                                                                 Main.animation(texte.storyJ14, 25);
                                                                                                 Main.animation(texte.choose, 25);
@@ -527,9 +527,29 @@ public class Game {
 
                                                                                                 boolean checker11 = false;
                                                                                                 do {
-                                                                                                    if (requestInput().equals("1")) {
+                                                                                                    if (requestInput() == 1) {
                                                                                                         checker11 = true;
                                                                                                         Main.animation(texte.storyJ16, 25);
+                                                                                                        Main.animation(texte.choose, 25);
+                                                                                                        Main.animation(texte.storyJ17, 25);
+
+                                                                                                        boolean checker12 = false;
+                                                                                                        do {
+                                                                                                            if (requestInput() == 1) {
+                                                                                                                checker12 = true;
+                                                                                                                Main.animation(texte.storyJ18, 25);
+                                                                                                                Main.animation(texte.choose, 25);
+                                                                                                                Main.animation(texte.storyJ19, 25);
+
+                                                                                                                boolean checker13 = false;
+                                                                                                                do {
+                                                                                                                    if (requestInput() == 1) {
+                                                                                                                        Main.animation(texte.storyJ20, 25);
+                                                                                                                        Main.animation(texte.choose, 25);
+                                                                                                                    }
+                                                                                                                } while(checker13 == false);
+                                                                                                            }
+                                                                                                        } while(checker12 == false);
                                                                                                     }
                                                                                                 } while(checker11 == false);
                                                                                             }
