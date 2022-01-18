@@ -1,4 +1,4 @@
-    # Java Tutorial
+# Java Tutorial
 
 ## Allgemein
 
@@ -406,9 +406,6 @@ public static void main(String[] arges){
 Parameter: Übergebene Werte müssen vom korrekten Datentyp sein 
 
 Parameter: Übergebene Werte müssen vom korrekten Datentyp sein 
-
-
-# Java Tutorial
 
 ## Aufgabe 1
 
