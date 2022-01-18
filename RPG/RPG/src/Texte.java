@@ -45,7 +45,8 @@ public class Texte {
     //Saurok
     String storyI4, storyI5, storyI6;
     String storyJ1, storyJ2, storyJ3, storyJ4, storyJ5, storyJ6, storyJ7, storyJ8, storyJ9, storyJ10, storyJ11, storyJ12A, storyJ12B,
-            storyJ13, storyJ14, storyJ15, storyJ16, storyJ17, storyJ18, storyJ19, storyJ20, storyJ21;
+            storyJ13, storyJ14, storyJ15, storyJ16, storyJ17, storyJ18, storyJ19, storyJ20, storyJ21, storyJ22, storyJ23, storyJ24,
+            storyJ25;
 
     public void setPlayer(Player player) {
         this.player = player;
@@ -303,6 +304,13 @@ public class Texte {
         storyJ19 = "(1) Frage ihn, ob ehr Marcus ist\n";
         storyJ20 = player.getName() + ": Bist du Marcus?\n"
                     + "Marcus: Prinz Marcus!\n";
-        storyJ21 = "(1)";
+        storyJ21 = "(1) Entschuldige dich\n";
+        storyJ22 = player.getName() + ": Es tut mir leid ihre Hoheit.\n"
+                + "Marcus: Entspann dich ein bisschen. *lacht*\n"
+                + "        Du kannst mich Marcus nennen und… wer bist du?\n";
+        storyJ23 = "(1) Sag ihm, wie du heißt\n";
+        storyJ24 = player.getName() + ": Ich heiße " + player.getName() + ". Ich bin hier mit Liam.\n"
+                + "Marcus: Liam, mein alter Freund. Ich freue mich ihm wieder zu sehen.";
+        storyJ25 = "";
     }
 }

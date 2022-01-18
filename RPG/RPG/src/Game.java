@@ -546,6 +546,27 @@ public class Game {
                                                                                                                     if (requestInput() == 1) {
                                                                                                                         Main.animation(texte.storyJ20, 25);
                                                                                                                         Main.animation(texte.choose, 25);
+                                                                                                                        Main.animation(texte.storyJ21, 25);
+
+                                                                                                                        boolean checker14 = false;
+                                                                                                                        do {
+                                                                                                                            if (requestInput() == 1) {
+                                                                                                                                checker14 = true;
+                                                                                                                                Main.animation(texte.storyJ22, 25);
+                                                                                                                                Main.animation(texte.choose, 25);
+                                                                                                                                Main.animation(texte.storyJ23, 25);
+
+                                                                                                                                boolean checker15 = false;
+                                                                                                                                do {
+                                                                                                                                    if (requestInput() == 1) {
+                                                                                                                                        checker15 = true;
+                                                                                                                                        Main.animation(texte.storyJ24, 25);
+                                                                                                                                        Main.animation(texte.choose, 25);
+                                                                                                                                        
+                                                                                                                                    }
+                                                                                                                                } while(checker15 == false);
+                                                                                                                            }
+                                                                                                                        } while(checker14 == false);
                                                                                                                     }
                                                                                                                 } while(checker13 == false);
                                                                                                             }
