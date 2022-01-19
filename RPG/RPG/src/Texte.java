@@ -46,7 +46,7 @@ public class Texte {
     String storyI4, storyI5, storyI6;
     String storyJ1, storyJ2, storyJ3, storyJ4, storyJ5, storyJ6, storyJ7, storyJ8, storyJ9, storyJ10, storyJ11, storyJ12A, storyJ12B,
             storyJ13, storyJ14, storyJ15, storyJ16, storyJ17, storyJ18, storyJ19, storyJ20, storyJ21, storyJ22, storyJ23, storyJ24,
-            storyJ25;
+            storyJ25, storyJ26, storyJ27, storyJ28, storyJ29, storyJ30, storyJ31, storyJ32, storyJ33;
 
     public void setPlayer(Player player) {
         this.player = player;
@@ -311,6 +311,18 @@ public class Texte {
         storyJ23 = "(1) Sag ihm, wie du heißt\n";
         storyJ24 = player.getName() + ": Ich heiße " + player.getName() + ". Ich bin hier mit Liam.\n"
                 + "Marcus: Liam, mein alter Freund. Ich freue mich ihm wieder zu sehen.";
-        storyJ25 = "";
+        storyJ25 = player.getName() + ": Ich sehe er hat hier viele Freunde. Und er meinte das er hier nur dreimal in sein Leben war";
+        storyJ26 = "Marcus : Woher kennst du Ihm?";
+        storyJ27 = player.getName() + " Es ist eine lange Geschichte.";
+        storyJ28 = "* Auf einmal kommt Liam ins Schloss * ";
+        storyJ29 = "Liam : Mein alter Freund.";
+        storyJ30 = "* Liam umarmt Marcus*";
+        storyJ31 = "Marcus : Was bringt euch hier?";
+        storyJ32 = player.getName() + "Wir müssen dringend mit dein Vater reden!";
+        storyJ33 = "Marcus : Das geht leider nicht. Mein Vater ist krank geworden." 
+                   + " Kein Arzt kann ihm helfen."
+                   + " Er redet immer von Elfen. Dass die Lügner sind."
+                   + " Er will eine Armee auf die schicken. "
+                   + " Ich weiß nicht, wie ich ihm aufhalten soll.";
     }
 }
