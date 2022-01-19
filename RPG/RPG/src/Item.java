@@ -33,4 +33,9 @@ public class Item {
         Weapon weapon = (Weapon) this;
         return weapon;
     }
+
+    public Food toFood() {
+        Food food = (Food) this;
+        return food;
+    }
 }
