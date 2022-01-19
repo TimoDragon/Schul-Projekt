@@ -2,16 +2,26 @@ public class Food extends Item {
     private int saturation = 0;
     private boolean canHeal = false;
     private int healingFactor = 0;
+    private String name = "";
 
     public Food() {
     }
-    public Food(int saturation) {
+    public Food(String name, int saturation) {
         this.saturation = saturation;
+        this.name = name;
     }
 
     //get the Food saturation
     public int getSaturation() {
         return saturation;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return this.name;
     }
 
     //set the Food saturation
