@@ -28,7 +28,24 @@ public class Game {
         texte.setPlayer(player);
 
         Weapon fist = new Weapon("Faust", "fist", 2);
-        player.getInventory().add(fist);
+        /*player.getInventory().add(fist);
+
+        Food apple = new Food("Apfel", 50);
+        apple.setHeal(true);
+        apple.setHealingFactor(100);
+        apple.setType("Apfel");
+
+        player.getInventory().add(apple);
+
+        Enemy dragon = new Enemy("Drache", 100);
+        Weapon claw = new Weapon();
+        claw.setDamage(10);
+        claw.setName("Klaue");
+        claw.setType("claw");
+        dragon.addWeapon(claw);
+
+        Fight fight = new Fight(player, dragon, "der", "der");
+        fight.startFight(this);*/
 
         //remove when project is done
             //fightsDone.add(1);

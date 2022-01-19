@@ -6,6 +6,7 @@ public class Fight {
     private Enemy enemy;
     private Game game;
     private List<Weapon> weapons = new ArrayList<Weapon>();
+    private List<Food> foodList = new ArrayList<Food>();
     private String firstPronoun, secondPronoun = "";
     Player player;
 
@@ -37,11 +38,15 @@ public class Fight {
             if (player.getInventory().get(i).getClass().getName().equals("Weapon")) {
                 weapons.add(player.getInventory().get(i).toWeapon());
             }
+            else if (player.getInventory().get(i).getClass().getName().equals("Food")) {
+                foodList.add(player.getInventory().get(i).toFood());
+            }
         }
 
         for (int i = 0; i < weapons.size(); i++) {
             Main.animation("("+ i +") " + weapons.get(i).getName() + "\n", 10);
         }
+        //Main.animation("(99) Um Essen auszuwählen\n", 25);
 
         requestFightInput();
     }
@@ -58,6 +63,11 @@ public class Fight {
 
     //input during a fight
     private void onInput(int in) {
+        if (in == 99) {
+            listFood();
+            return;
+        }
+
         if (in < weapons.size()) {
             Weapon weapon = weapons.get(in);
 
@@ -69,6 +79,16 @@ public class Fight {
         else {
             requestFightInput();
         }
+    }
+
+    public void listFood() {
+        for (int i = 0; i < foodList.size(); i++) {
+            Main.animation("("+ i +") " + foodList.get(i).getName() + "\n", 10);
+        }
+    }
+
+    public void foodInput() {
+        Scanner sc = new Scanner(System.in);
     }
 
     //enemy attack back
