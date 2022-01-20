@@ -48,7 +48,7 @@ public class Texte {
             storyJ13, storyJ14, storyJ15, storyJ16, storyJ17, storyJ18, storyJ19, storyJ20, storyJ21, storyJ22, storyJ23, storyJ24,
             storyJ25, storyJ26, storyJ27, storyJ28, storyJ29, storyJ30, storyJ31, storyJ32, storyJ33,storyJ34, storyJ35, storyJ36,
             storyJ37, storyJ38, storyJ39,storyJ40, storyJ41, storyJ42,storyJ43, storyJ44, storyJ45, storyJ46, storyJ47, storyJ48, storyJ49,
-            storyJ50, storyJ51, storyJ52;
+            storyJ50, storyJ51, storyJ51A, storyJ51B, storyJ52;
 
     public void setPlayer(Player player) {
         this.player = player;
@@ -314,69 +314,72 @@ public class Texte {
         storyJ24 = player.getName() + ": Ich heiße " + player.getName() + ". Ich bin hier mit Liam.\n"
                 + "Marcus: Liam, mein alter Freund. Ich freue mich ihm wieder zu sehen.\n";
         storyJ25 = player.getName() + ": Ich sehe er hat hier viele Freunde. Und er meinte das er hier nur dreimal in sein Leben war.\n";
-        storyJ26 = "Marcus : Woher kennst du Ihm?\n"
-                 + "(1) Antworte den Prinz auf seine Frage\n";
-        storyJ27 = player.getName() + " : Es ist eine lange Geschichte.\n";
-        storyJ28 = "* Auf einmal kommt Liam ins Schloss * \n";
-        storyJ29 = "Liam : Mein alter Freund.\n";
-        storyJ30 = "* Liam umarmt Marcus *\n";
-        storyJ31 = "Marcus : Was bringt euch hier?\n"
-                 + "(1) Erzähle Marcus dein anlegen.\n";
-        storyJ32 = player.getName() + ": Wir müssen dringend mit dein Vater reden!\n";
-        storyJ33 = "Marcus : Das geht leider nicht. Mein Vater ist krank geworden.\n" 
-                   + " Kein Arzt kann ihm helfen.\n"
-                   + " Er redet immer von Elfen. Dass die Lügner sind.\n"
-                   + " Er will eine Armee auf die schicken.\n "
-                   + " Ich weiß nicht, wie ich ihm aufhalten soll.\n"
-                   + "(1) Hast du etwas gehört?\n";
-        storyJ34 = player.getName() +  " : Ich habe was in der Küche gehört.\n"
-                   + "Ein Mann namens Keile hat mit einer Frau geredet.\n"
-                   + " Die sagten was über eine Mixtur und das einer das nicht bemerken will.\n";
-        storyJ35 = "Liam : Dein alter Brunder?\n";
-        storyJ36 = "Marcus : Hmmm... Wieso will er unseren Vater vergiften? \n"
-                    + "(1) Frag den Prinzen wer der das Reich den führen würde?\n";
-        storyJ37 = player.getName() + "Wer wird das Königreich leiten, nach dem Tod deines Vaters?\n"; 
-        storyJ38 = "Marcus : Keil.\n";
-        storyJ39 = "Liam : Er wollte schon immer ein König werden.\n"
-                    + "Aber dein Vater wollte es dir überlassen.\n" 
-                    + "Wie halten wir ihm auf?\n";
-        storyJ40 = "Marcus :Erstens müssen wir die Mixtur finden und mein Vater ein Heilmittel erstellen. \n";
-        storyJ41 = "Liam : Was machen wir mit Keil?\n";
-        storyJ42 = " Marcus : Wir gucken später erst müssen wir die Mixtur finden.\n"
-                   + "Ich kann euch aber nicht dabei helfen. Ich pass auf Keil auf,\n"
-                   + "damit er euch nicht stört.\n";
-                   +  
-        storyJ43 = player.getName() + " : Ja klar.\n";
-        storyJ44 = "* " + player.getName() + "und Liam gehen in die Küche *\n"
-                   +"(1) Durchesuche die Küche zusammen mit Liam.\n"
-                   + player.getName() + " : Wo können wir uns verstecken? \n"
-                   + "* " +  player.getName() + "fängt an den Raum nach einen Versteck zu druchsuchen *\n"
-                   + "Liam : Er ist nicht dumm. Wir finden es nicht so schnell. Vielleicht… \n"
-                   + "(1) Weiss Liam auf das Bild hin. \n"
-                   + player.getName() + "Guck mal. Das Bild da drüben hängt ein bisschen schief!\n"
-                   + "* Liam hebt das Bild hoch *\n"
-                   + "Liam : Ein geheim Versteck. Das ist sein Stil.\n"
-                   + "* Liam nimmt die Phiole und liest was da draufsteht *\n"
-                   + "Liam : Hyoscyamus. Die Symptome sind Unruhe, Halluzinationen, Bewusstlosigkeit.\n"
-                   + "(1) Frag liam was das Heilmittel ist. \n"
-                   + player.getName() + " : Was ist das Heilmittel? \n"
-                   + "Liam : Es gibt eine Pflanze, die helfen kann. Symphytum officinale. Du musst zu dem Wald gehen und die Wurzeln sammeln. Ich werde mit Marcus reden. \n"
-                   + player.getName() + " : Klar!\n";
-        storyJ45 = "* "+ player.getName() + " reitet zu dem Wald.  Als "+ player.getName()+" in der nähe ist fühlt "+ player.getName() +" sich beobachtet."+ player.getName() +" sieht die Pflanze und sammelt ein paar Wurzeln. Als " + player.getName() +" zurück gehen will sieht " + player.getName()+" drei Orks.\n"
-                   + "Der erste Ork : Hier ist jemand ich fühle es!\n"
-                   + "Der zweite Ork : Komm raus! Wir werden dich finden. Und später essen wir dich!(lacht) \n";
+        storyJ26 = "Marcus: Woher kennst du Ihm?\n";
+        storyJ27 = "(1) Antworte den Prinz auf seine Frage\n";
+        storyJ27 = player.getName() + ": Es ist eine lange Geschichte.\n"
+                + "* Auf einmal kommt Liam ins Schloss * \n"
+                + "Liam: Mein alter Freund.\n"
+                + "*Liam umarmt Marcus*\n"
+                + "Marcus : Was bringt euch hier?\n";
+        storyJ28 = "(1) Erzähle Marcus dein anlegen.\n";
+        storyJ29 = player.getName() + ": Wir müssen dringend mit dein Vater reden!\n"
+                + "Marcus: Das geht leider nicht. Mein Vater ist krank geworden.\n" 
+                + "        Kein Arzt kann ihm helfen.\n"
+                + "        Er redet immer von Elfen. Dass die Lügner sind.\n"
+                + "        Er will eine Armee auf die schicken.\n "
+                + "        Ich weiß nicht, wie ich ihm aufhalten soll.\n";
+        storyJ30 = "(1) Hast du etwas gehört?\n";
+        storyJ31 = player.getName() +  ": Ich habe was in der Küche gehört.\n"
+                   + "     Ein Mann namens Keile hat mit einer Frau geredet.\n"
+                   + "     Die sagten was über eine Mixtur und das einer das nicht bemerken will.\n";
+        storyJ32 = "Liam: Dein alter Brunder?\n"
+                + "Marcus: Hmmm... Wieso will er unseren Vater vergiften? \n";
+        storyJ33 = "(1) Frag den Prinzen wer der das Reich den führen würde?\n";
+        storyJ34 = player.getName() + ": Wer wird das Königreich leiten, nach dem Tod deines Vaters?\n"
+                + "Marcus: Keil.\n"
+                + "Liam: Er wollte schon immer ein König werden.\n"
+                + "      Aber dein Vater wollte es dir überlassen.\n" 
+                + "      Wie halten wir ihm auf?\n"
+                + "Marcus: Erstens müssen wir die Mixtur finden und mein Vater ein Heilmittel erstellen. \n"
+                + "Liam: Was machen wir mit Keil?\n"
+                + "Marcus: Wir gucken später erst müssen wir die Mixtur finden.\n"
+                + "        Ich kann euch aber nicht dabei helfen. Ich pass auf Keil auf,\n"
+                + "        damit er euch nicht stört.\n";
+        storyJ35 = "(1) Geh mit Liam in die Küche\n";
+        storyJ36 = player.getName() + ": Ja klar.\n"
+                + "*" + player.getName() + "und Liam gehen in die Küche*\n";
+        storyJ37 = "(1) Durchsuche die Küche zusammen mit Liam.\n";
+        storyJ38 = player.getName() + " : Wo können wir uns verstecken? \n"
+                + "* " +  player.getName() + "fängt an den Raum nach einen Versteck zu druchsuchen *\n"
+                + "Liam : Er ist nicht dumm. Wir finden es nicht so schnell. Vielleicht… \n";
+        storyJ39 = "(1) Weiss Liam auf das Bild hin.\n";
+        storyJ40 = player.getName() + "Guck mal. Das Bild da drüben hängt ein bisschen schief!\n"
+                + "* Liam hebt das Bild hoch *\n"
+                + "Liam : Ein geheim Versteck. Das ist sein Stil.\n"
+                + "* Liam nimmt die Phiole und liest was da draufsteht *\n"
+                + "Liam : Hyoscyamus. Die Symptome sind Unruhe, Halluzinationen, Bewusstlosigkeit.\n";
+        storyJ41 = "(1) Frag liam was das Heilmittel ist. \n";
+        storyJ42 = player.getName() + " : Was ist das Heilmittel? \n"
+                + "Liam : Es gibt eine Pflanze, die helfen kann. Symphytum officinale. Du musst zu dem Wald gehen und die Wurzeln sammeln. Ich werde mit Marcus reden. \n"
+                + player.getName() + " : Klar!\n";
+        storyJ43 = "(1) Reite zum Wald\n";
+        storyJ44 = "* "+ player.getName() + " reitet zu dem Wald. Als "+ player.getName()+" in der nähe ist fühlt "+ player.getName() +" sich beobachtet."+ player.getName() +" sieht die Pflanze und sammelt ein paar Wurzeln. Als " + player.getName() +" zurück gehen will sieht " + player.getName()+" drei Orks.\n"
+                + "Der erste Ork : Hier ist jemand ich fühle es!\n"
+                + "Der zweite Ork : Komm raus! Wir werden dich finden. Und später essen wir dich!(lacht) \n";
+        storyJ45 = "(1) Vertecke dich hinter einem Baum\n";
         storyJ46 = "* " + player.getName() + " fühlt sich umwohl und versteckt sich im Baum *\n"
-                   + " dritte Ork: Thorgk, Hurghaash, da lang! \n"
-                   + "* und zeigt in " + player.getName()+ " Richtung * \n "
-                   + "Thorgk : Komm raus, komm raus wo immer du bist! \n";
-        storyJ47 = "* " + player.getName()+ " spannt den Bogen *\n";
-        storyJ48 = "* " + player.getName()+ "hört annähernde sich Schritte. Deckt sich hinter dem Baum und schießt ins Thorgks Auge *\n";
-                   + "Thorgk : Ey eine Person hat mein Auge getroffen. Ich sehe nichts mehr!\n";
+                + " dritte Ork: Thorgk, Hurghaash, da lang! \n"
+                + "* und zeigt in " + player.getName()+ " Richtung * \n "
+                + "Thorgk : Komm raus, komm raus wo immer du bist! \n";
+        storyJ47 = "(1) Spann den Bogen\n";
+        storyJ48 = "* " + player.getName()+ " spannt den Bogen *\n"
+                + "* " + player.getName()+ "hört annähernde sich Schritte. Deckt sich hinter dem Baum und schießt ins Thorgks Auge *\n"
+                + "Thorgk : Ey eine Person hat mein Auge getroffen. Ich sehe nichts mehr!\n";
         storyJ49 = "*  Orks werden sauer und laufen in" + player.getName()+ " Richtung *\n";
         storyJ50 = "(1)" + player.getName() + "kämpft gegen die Orks.\n";
-                 + "* Hurghaash hebt dich hoch, zieht deine Zunge raus und hängt die in seiner Kollektion. Die Orks gucken wie du langsam verblutest und lachen dabei. *\n";
-        storyJ51 = "(2)" + player.getName() + "flieht und reitet weiter.\n ";
-        storyJ52 = "* " + player.getName() + "reitet mit dem Heilmittel in richtung der Schloss und flieht von dem Orks */n"
+        storyJ51A = "* Hurghaash hebt dich hoch, zieht deine Zunge raus und hängt die in seiner Kollektion. Die Orks gucken wie du langsam verblutest und lachen dabei. *\n";
+        storyJ51B = "(2)" + player.getName() + " flieh und reite weriter\n ";
+        storyJ52 = "* " + player.getName() + "reitet mit dem Heilmittel in richtung der Schloss und flieht von dem Orks *\n"
                  + "(1) Du siehst Liam. \n"
                  + player.getName()+ " : Liam !/n"
                  + "* " + player.getName() + " umarmt ihn *\n"
