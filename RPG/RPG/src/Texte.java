@@ -48,7 +48,7 @@ public class Texte {
             storyJ13, storyJ14, storyJ15, storyJ16, storyJ17, storyJ18, storyJ19, storyJ20, storyJ21, storyJ22, storyJ23, storyJ24,
             storyJ25, storyJ26, storyJ27, storyJ28, storyJ29, storyJ30, storyJ31, storyJ32, storyJ33,storyJ34, storyJ35, storyJ36,
             storyJ37, storyJ38, storyJ39,storyJ40, storyJ41, storyJ42,storyJ43, storyJ44, storyJ45, storyJ46, storyJ47, storyJ48, storyJ49,
-            storyJ50, storyJ51, storyJ51A, storyJ51B, storyJ52;
+            storyJ50, storyJ51, storyJ51A, storyJ51B, storyJ52, storyJ53, storyJ54;
 
     public void setPlayer(Player player) {
         this.player = player;
@@ -375,7 +375,7 @@ public class Texte {
         storyJ48 = "* " + player.getName()+ " spannt den Bogen *\n"
                 + "* " + player.getName()+ "hört annähernde sich Schritte. Deckt sich hinter dem Baum und schießt ins Thorgks Auge *\n"
                 + "Thorgk : Ey eine Person hat mein Auge getroffen. Ich sehe nichts mehr!\n";
-        storyJ49 = "*  Orks werden sauer und laufen in" + player.getName()+ " Richtung *\n";
+        storyJ49 = "*  Orks werden sauer und laufen in" + player.getName()+ "s"+ " Richtung *\n";
         storyJ50 = "(1)" + player.getName() + "kämpft gegen die Orks.\n";
         storyJ51A = "* Hurghaash hebt dich hoch, zieht deine Zunge raus und hängt die in seiner Kollektion. Die Orks gucken wie du langsam verblutest und lachen dabei. *\n";
         storyJ51B = "(2)" + player.getName() + " flieh und reite weriter\n ";
@@ -389,16 +389,56 @@ public class Texte {
                  + player.getName() + " : 3 Stück.\n "
                  + "Einen habe ich ins Auge geschossen, dann bin ich geflohen.\n"
                  + "Liam : Es kann sein, dass noch mehr kommen. Wir müssen Marcus bescheid sagen.\n"
+                 +"(1) Gebe Liam die Wurzel.\n"
                  + player.getName()+ " : Hier.\n"
                  + "* " + player.getName() + " gibt Liam das Heilmittel *\n"
                  + "Liam : Danke, ich bin stolz auf dich.\n"
-                 + "* " + player.getName() + " lächelt *\n";
-
-
-
-
-                    
-
+                 + "* " + player.getName() + " lächelt *\n"
+                 + "* Später am Tag*\n"
+                 + "* Liam trifft endlich auf Prinz Marcus *\n"
+                 + "Marcus: Wir haben jetzt ein Heilmittel. Lass so schnell wie möglich zu meinem Vater gehe.\n"
+                 + "Keil : Nicht so schnell!\n"
+                 + "*Keil lacht *\n"
+                 + "Keil : Hat euch das Essen geschmeckt?\n"
+                 + "* Marcus und Liam gucken sich verblüft an *\n"
+                 + "* Liam und Marcus drehen sich um *\n"
+                 + "Liam : Was hast du uns gegeben?\n"
+                 + "Keil : Das Mittel paralysiert langsam dein Körper, ihr könnt euch gleich nicht mehr bewegen, reden nur zuschauen wie der König stirb.\n"
+                 + "Marcus : Das ist unser Va... \n"
+                 + "* " + player.getName() + " tauch plötzlich auf *\n"
+                 +"(1) Mach auf dich Aufmerksam\n"
+                 + player.getName() + " : Was hat du gemacht Keil !? \n"
+                 + "Keil : Oh. Du lebst noch. Ich dachte meine Orks haben dich getötet.\n"
+                 +"(1) Antworte Keil\n"
+                 + player.getName() + "(lacht) Man kann mich nicht leicht umbringen!\n"
+                 + "* " + player.getName() + " nimmt das Schwert in die Hand und setzt zum Angriff an *\n"
+                 + "* Keil schmeist "+ player.getName() + " zu Boden *\n"
+                 + "Keil : Komm schon steh auf und Kämpf.\n"
+                 + "(1) steh auf\n"
+                 + player.getName()+ " probiert es nochmal.\n";
+        storyJ53 = "(1) Du greifst Keil unüberlegt an\n"
+                 + "Keil ist stärker als du. Langsam hast du kein Kraft mehr. Er sieht es und als du nicht mehr aufmerksam bist schneidet er dein Kopf ab. Du siehst noch, wie er Liam und Marcus töte.\n";
+        storyJ54 = "(2) Du denkst dir eine Strategie aus, du greifst Keil mit einer guten Taktik an \n"
+                 + "* "+ player.getName()+ " besiegt Keil\n"
+                 + "* Keil gibt auf *\n"
+                 + "(1) droh Keil"
+                 + player.getName() + " Bleib da. Keine Bewegung mehr.\n"
+                 + "* Marcus und Liam fangen an langsam zu reden * \n "
+                 + "Marcus : Ich dachte, dass man dich nicht beseitigen kann, Keil. Du warst immer der bester, aber hast min einem Mädchen verloren.\n"
+                 + "* Auf einmal kommt ein schwarzer dampf in das Zimmer rein. *\n"
+                 + "Eine geheimnisvolle Stimme: Du hast meinem besten Kämpf er beseitigt. Ich bin beeindruckt.Jetzt muss ich aber weg.\n"
+                 + "* Der Dampf verschwindet und Keil mit ihm *\n"
+                 + "Liam : Wo ist er hin? \n"
+                 + player.getName() + " : Die frage ist, was war das für eine Stimme?\n"
+                 + "Marcus : Lass das später besprechen. Erst müssen wir mein Vater retten. \n"
+                 + "* Alle laufen in das Königliche Schlafzimmer *\n"
+                 + "Marcus : Vater hier trink das. \n"
+                 + "* Der König trinkt den Heiltrank * \n"
+                 + "(1) sprech mit Marcus \n "
+                 + player.getName() + " : Ich hoffe, dass ihm wieder besser geht. Ich habe aber noch eine Sache, die ich mit dir besprechen muss, Marcus.\n"
+                 + "Marcus : Ich höre.\n"
+                 + "(1) Bitte Marcus um Hilfe \n"
+                 + player.getName() + " : Wir sind hier gekommen, um euch zu sagen, dass wir Hilfe brauchen.\n";
 
         
     }
