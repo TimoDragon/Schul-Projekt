@@ -2,6 +2,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import javax.swing.text.html.HTMLDocument.RunElement;
+
 public class Game {
     Fight fight;
     Player player;
@@ -28,28 +30,11 @@ public class Game {
         texte.setPlayer(player);
 
         Weapon fist = new Weapon("Faust", "fist", 2);
-        /*player.getInventory().add(fist);
-
-        Food apple = new Food("Apfel", 50);
-        apple.setHeal(true);
-        apple.setHealingFactor(100);
-        apple.setType("Apfel");
-
-        player.getInventory().add(apple);
-
-        Enemy dragon = new Enemy("Drache", 100);
-        Weapon claw = new Weapon();
-        claw.setDamage(10);
-        claw.setName("Klaue");
-        claw.setType("claw");
-        dragon.addWeapon(claw);
-
-        Fight fight = new Fight(player, dragon, "der", "der");
-        fight.startFight(this);*/
+        player.getInventory().add(fist);
 
         //remove when project is done
             //fightsDone.add(1);
-            continue2();
+            //continue2();
 
         //story begins here
 
@@ -578,8 +563,46 @@ public class Game {
                                                                                                                                     if (requestInput() == 1) {
                                                                                                                                         checker15 = true;
                                                                                                                                         Main.animation(texte.storyJ24, 25);
+                                                                                                                                        Main.animation(texte.storyJ25, 25);
                                                                                                                                         Main.animation(texte.choose, 25);
-                                                                                                                                        
+                                                                                                                                        Main.animation(texte.storyJ26, 25);
+
+                                                                                                                                        boolean checker16 = false;
+                                                                                                                                        do {
+                                                                                                                                            if (requestInput() == 1) {
+                                                                                                                                                checker16 = true;
+                                                                                                                                                Main.animation(texte.storyJ27, 25);
+                                                                                                                                                Main.animation(texte.choose, 25);
+                                                                                                                                                Main.animation(texte.storyJ28, 25);
+        
+                                                                                                                                                boolean checker17 = false;
+                                                                                                                                                do {
+                                                                                                                                                    if (requestInput() == 1) {
+                                                                                                                                                        checker17 = true;
+                                                                                                                                                        Main.animation(texte.storyJ29, 25);
+                                                                                                                                                        Main.animation(texte.choose, 25);
+                                                                                                                                                        Main.animation(texte.storyJ30, 25);
+                
+                                                                                                                                                        boolean checker18 = false;
+                                                                                                                                                        do {
+                                                                                                                                                            if (requestInput() == 1) {
+                                                                                                                                                                checker18 = true;
+                                                                                                                                                                Main.animation(texte.storyJ31, 25);
+                                                                                                                                                                Main.animation(texte.storyJ32, 25);
+                                                                                                                                                                Main.animation(texte.choose, 25);
+                                                                                                                                                                Main.animation(texte.storyJ33, 26);
+
+                                                                                                                                                                boolean checker19 = false;
+                                                                                                                                                                do {
+                                                                                                                                                                    if (requestInput() == 1) {
+                                                                                                                                                                        continue4();
+                                                                                                                                                                    }
+                                                                                                                                                                } while(checker19 == false);                                                                                                                                                            }
+                                                                                                                                                        } while(checker18 == false);
+                                                                                                                                                    }
+                                                                                                                                                } while(checker17 == false);
+                                                                                                                                            }
+                                                                                                                                        } while(checker16 == false);
                                                                                                                                     }
                                                                                                                                 } while(checker15 == false);
                                                                                                                             }
@@ -613,5 +636,211 @@ public class Game {
                 }
             } while(checker == false);
         }
+    }
+
+    public void continue4() {
+        Main.animation(texte.storyJ34, 25);
+        Main.animation(texte.choose, 25);
+        Main.animation(texte.storyJ35, 25);
+
+        boolean checker = false;
+        do {
+            if (requestInput() == 1) {
+                checker = true;
+                Main.animation(texte.storyJ36, 25);
+                Main.animation(texte.choose, 25);
+                Main.animation(texte.storyJ37, 25);
+
+                boolean checker1 = false;
+                do {
+                    if (requestInput() == 1) {
+                        checker1 = true;
+                        Main.animation(texte.storyJ38, 25);
+                        Main.animation(texte.choose, 25);
+                        Main.animation(texte.storyJ39, 25);
+
+                        boolean checker2 = false;
+                        do {
+                            if (requestInput() == 1) {
+                                checker2 = true;
+                                Main.animation(texte.storyJ40, 25);
+                                Main.animation(texte.choose, 25);
+                                Main.animation(texte.storyJ41, 25);
+
+                                boolean checker3 = false;
+                                do {
+                                    if (requestInput() == 1) {
+                                        checker3 = true;
+                                        Main.animation(texte.storyJ42, 25);
+                                        Main.animation(texte.choose, 25);
+                                        Main.animation(texte.storyJ43, 25);
+
+                                        boolean checker4 = false;
+                                        do {
+                                            if (requestInput() == 1) {
+                                                checker4 = true;
+                                                Main.animation(texte.storyJ44, 25);
+                                                Main.animation(texte.choose, 25);
+                                                Main.animation(texte.storyJ45, 25);
+
+                                                boolean checker5 = false;
+                                                do {
+                                                    if (requestInput() == 1) {
+                                                        checker5 = true;
+                                                        Main.animation(texte.storyJ46, 25);
+                                                        Main.animation(texte.choose, 25);
+                                                        Main.animation(texte.storyJ47, 25);
+                                                        
+                                                        boolean checker6 = false;
+                                                        do {
+                                                            if (requestInput() == 1) {
+                                                                checker6 = true;
+                                                                Main.animation(texte.storyJ48, 25);
+                                                                Main.animation(texte.storyJ49, 25);
+                                                                Main.animation(texte.choose, 25);
+                                                                Main.animation(texte.storyJ50, 25);
+                                                                Main.animation(texte.storyJ50B, 25);
+
+                                                                boolean checker7 = false;
+                                                                do {
+                                                                    int input = requestInput();
+                                                                    if (input == 1) {
+                                                                        Main.animation(texte.storyJ51A, 25);
+                                                                    } else if (input == 2) {
+                                                                        Main.animation(texte.storyJ52, 25);
+                                                                        checker7 = true;
+
+                                                                        Main.animation(texte.storyJ53, 25);
+                                                                        Main.animation(texte.choose, 25);
+                                                                        Main.animation(texte.storyJ54, 25);
+
+                                                                        boolean checker8 = false;
+                                                                        do {
+                                                                            if (requestInput() == 1) {
+                                                                                checker8 = true;
+                                                                                Main.animation(texte.storyJ55, 25);
+                                                                                Main.animation(texte.choose, 25);
+                                                                                Main.animation(texte.storyJ56, 25);
+
+                                                                                boolean checker9 = false;
+                                                                                do {
+                                                                                    if (requestInput() == 1) {
+                                                                                        Main.animation(texte.storyJ57, 25);
+                                                                                        Main.animation(texte.storyJ58, 25);
+                                                                                        Main.animation(texte.choose, 25);
+                                                                                        Main.animation(texte.storyJ59, 25);
+
+                                                                                        boolean checker10 = false;
+                                                                                        do {
+                                                                                            if (requestInput() == 1) {
+                                                                                                checker10 = true;
+                                                                                                Main.animation(texte.storyJ60, 25);
+                                                                                                Main.animation(texte.choose, 25);
+                                                                                                Main.animation(texte.storyJ61, 25);
+
+                                                                                                boolean checker11 = false;
+                                                                                                do {
+                                                                                                    if (requestInput() == 1) {
+                                                                                                        checker11 = true;
+                                                                                                        Main.animation(texte.storyJ62, 25);
+                                                                                                        Main.animation(texte.choose, 25);
+                                                                                                        Main.animation(texte.storyJ63, 25);
+
+                                                                                                        boolean checker12 = false;
+                                                                                                        do {
+                                                                                                            if (requestInput() == 1) {
+                                                                                                                checker12 = true;
+                                                                                                                Main.animation(texte.storyJ63B, 25);
+                                                                                                                Main.animation(texte.choose, 25);
+                                                                                                                Main.animation(texte.storyJ64, 25);
+
+                                                                                                                boolean checker13 = false;
+                                                                                                                do {
+                                                                                                                    if (requestInput() == 1) {
+                                                                                                                        Main.animation(texte.storyJ65, 25);
+                                                                                                                        Main.animation(texte.choose, 25);
+                                                                                                                        Main.animation(texte.storyJ65A, 25);
+                                                                                                                        Main.animation(texte.storyJ65B, 25);
+
+                                                                                                                        boolean checker14 = false;
+                                                                                                                        do {
+                                                                                                                            int input2 = requestInput();
+                                                                                                                            if (input2 == 1) {
+                                                                                                                                checker14 = true;
+                                                                                                                                Main.animation(texte.storyJ66A, 25);
+                                                                                                                            }
+                                                                                                                            else if (input2 == 2) {
+                                                                                                                                checker14 = true;
+                                                                                                                                Main.animation(texte.storyJ66B, 25);
+                                                                                                                                Main.animation(texte.choose, 25);
+                                                                                                                                Main.animation(texte.storyJ66B1, 25);
+
+                                                                                                                                boolean checker15 = false;
+                                                                                                                                do {
+                                                                                                                                    if (requestInput() == 1) {
+                                                                                                                                        checker15 = true;
+                                                                                                                                        Main.animation(texte.storyJ66B2, 25);
+                                                                                                                                        Main.animation(texte.choose, 25);
+                                                                                                                                        Main.animation(texte.storyJ66B3, 25);
+
+                                                                                                                                        boolean checker16 = false;
+                                                                                                                                        do {
+                                                                                                                                            if (requestInput() == 1) {
+                                                                                                                                                checker16 = true;
+                                                                                                                                                Main.animation(texte.storyJ66B4, 25);
+                                                                                                                                                Main.animation(texte.choose, 25);
+                                                                                                                                                Main.animation(texte.storyJ67, 25);
+
+                                                                                                                                                boolean checker17 = false;
+                                                                                                                                                do {
+                                                                                                                                                    if (requestInput() == 1) {
+                                                                                                                                                        checker17 = true;
+                                                                                                                                                        Main.animation(texte.storyJ68, 25);
+                                                                                                                                                        Main.animation(texte.choose, 25);
+                                                                                                                                                        Main.animation(texte.storyJ69, 25);
+
+                                                                                                                                                        boolean checker18 = false;
+                                                                                                                                                        do {
+                                                                                                                                                            if (requestInput() == 1) {
+                                                                                                                                                                checker18 = true;
+                                                                                                                                                                Main.animation(texte.storyJ70, 25);
+                                                                                                                                                            }
+                                                                                                                                                        } while(checker18 == false);
+                                                                                                                                                    }
+                                                                                                                                                } while(checker17 == false);
+                                                                                                                                            }
+                                                                                                                                        } while(checker16 == false);
+                                                                                                                                    }
+                                                                                                                                } while(checker15 == false);
+                                                                                                                            }
+                                                                                                                        } while(checker14 == false);
+                                                                                                                    }
+                                                                                                                } while(checker13 == false);
+                                                                                                            }
+                                                                                                        } while(checker12 == false);
+                                                                                                    }
+                                                                                                } while(checker11 == false);
+                                                                                            }
+                                                                                        } while(checker10 == false);
+                                                                                    }
+                                                                                } while(checker9 == false);
+                                                                            }
+                                                                        } while(checker8 == false);
+                                                                    }
+                                                                } while(checker7 == false);
+                                                            }
+                                                        } while(checker6 == false);
+                                                    }
+                                                } while (checker5 == false);
+                                            }
+                                        } while(checker4 == false);
+                                    }
+                                } while(checker3 == false);
+                            }
+                        } while(checker2 == false);
+                    }
+                } while(checker1 == false);
+            }
+        } while(checker == false);
     }
 }

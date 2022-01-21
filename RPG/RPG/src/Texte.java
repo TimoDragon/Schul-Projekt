@@ -48,8 +48,8 @@ public class Texte {
             storyJ13, storyJ14, storyJ15, storyJ16, storyJ17, storyJ18, storyJ19, storyJ20, storyJ21, storyJ22, storyJ23, storyJ24,
             storyJ25, storyJ26, storyJ27, storyJ28, storyJ29, storyJ30, storyJ31, storyJ32, storyJ33,storyJ34, storyJ35, storyJ36,
             storyJ37, storyJ38, storyJ39,storyJ40, storyJ41, storyJ42,storyJ43, storyJ44, storyJ45, storyJ46, storyJ47, storyJ48, storyJ49,
-            storyJ50, storyJ51, storyJ51A, storyJ51B, storyJ52, storyJ53, storyJ54, storyJ55, storyJ56, storyJ57, storyJ58, storyJ59, storyJ60,
-            storyJ61, storyJ62, storyJ63, storyJ64, storyJ65, storyJ65A, storyJ65B, storyJ66, storyJ66A, storyJ66B, storyJ66B1, storyJ66B2,
+            storyJ50, storyJ51, storyJ51A, storyJ50B, storyJ52, storyJ53, storyJ54, storyJ55, storyJ56, storyJ57, storyJ58, storyJ59, storyJ60,
+            storyJ61, storyJ62, storyJ63, storyJ63B, storyJ64, storyJ65, storyJ65A, storyJ65B, storyJ66, storyJ66A, storyJ66B, storyJ66B1, storyJ66B2,
             storyJ66B3, storyJ66B4, storyJ67, storyJ68, storyJ69, storyJ70, storyJ71;
 
     public void setPlayer(Player player) {
@@ -315,9 +315,9 @@ public class Texte {
         storyJ23 = "(1) Sag ihm, wie du heißt\n";
         storyJ24 = player.getName() + ": Ich heiße " + player.getName() + ". Ich bin hier mit Liam.\n"
                 + "Marcus: Liam, mein alter Freund. Ich freue mich ihm wieder zu sehen.\n";
-        storyJ25 = player.getName() + ": Ich sehe er hat hier viele Freunde. Und er meinte das er hier nur dreimal in sein Leben war.\n";
-        storyJ26 = "Marcus: Woher kennst du Ihm?\n";
-        storyJ27 = "(1) Antworte den Prinz auf seine Frage\n";
+        storyJ25 = player.getName() + ": Ich sehe er hat hier viele Freunde. Und er meinte das er hier nur dreimal in sein Leben war.\n"
+                + "Marcus: Woher kennst du Ihm?\n";
+        storyJ26 = "(1) Antworte den Prinz auf seine Frage\n";
         storyJ27 = player.getName() + ": Es ist eine lange Geschichte.\n"
                 + "* Auf einmal kommt Liam ins Schloss * \n"
                 + "Liam: Mein alter Freund.\n"
@@ -379,13 +379,15 @@ public class Texte {
                 + "Thorgk : Ey eine Person hat mein Auge getroffen. Ich sehe nichts mehr!\n";
         storyJ49 = "*  Orks werden sauer und laufen in" + player.getName()+ "s"+ " Richtung *\n";
         storyJ50 = "(1)" + player.getName() + "kämpft gegen die Orks.\n";
-        storyJ51A = "* Hurghaash hebt dich hoch, zieht deine Zunge raus und hängt die in seiner Kollektion. Die Orks gucken wie du langsam verblutest und lachen dabei. *\n";
-        storyJ51B = "(2)" + player.getName() + " flieh und reite weriter\n ";
+        //spieler stribt hier
+        storyJ51A = "* Hurghaash hebt dich hoch, zieht deine Zunge raus und hängt die in seiner Kollektion. Die Orks gucken wie du langsam verblutest und lachen dabei.*\n";
+        //spieler stribt hier nicht
+        storyJ50B = "(2)" + player.getName() + " flieh und reite weriter\n ";
         storyJ52 = "* " + player.getName() + "reitet mit dem Heilmittel in richtung der Schloss und flieht von dem Orks. Du siehst Liam *\n";
-        storyJ54 = player.getName()+ " : Liam !/n"
+        storyJ53 = player.getName()+ " : Liam !/n"
                  + "* " + player.getName() + " umarmt ihn *\n"
                  + "Liam : Was ist passiert \n?";
-        storyJ53 = "(1) Sag, dass du von Orks angegriffen wurdest\n";
+        storyJ54 = "(1) Sag, dass du von Orks angegriffen wurdest\n";
         storyJ55 = player.getName() + " : Die Orks .... Sie waren da, im Wald.\n " 
                  + "Liam : Wie viele waren es ?\n";
         storyJ56 = "(1) Sag, dass es 3 waren";
@@ -412,13 +414,13 @@ public class Texte {
         storyJ61 = "(1) Mach auf dich Aufmerksam\n";
         storyJ62 = player.getName() + " : Was hat du gemacht Keil !? \n"
                  + "Keil : Oh. Du lebst noch. Ich dachte meine Orks haben dich getötet.\n";
-        storyJ63 = "(1) Antworte Keil\n"
-                 + player.getName() + "(lacht) Man kann mich nicht leicht umbringen!\n"
+        storyJ63 = "(1) Antworte Keil\n";
+        storyJ63B = player.getName() + "(lacht) Man kann mich nicht leicht umbringen!\n"
                  + "* " + player.getName() + " nimmt das Schwert in die Hand und setzt zum Angriff an *\n"
                  + "* Keil schmeist "+ player.getName() + " zu Boden *\n"
                  + "Keil : Komm schon steh auf und Kämpf.\n";
-        storyJ64 = "(1) steh auf\n"
-                 + player.getName()+ " probiert es nochmal.\n";
+        storyJ64 = "(1) steh auf\n";
+        storyJ65 = player.getName()+ " probiert es nochmal.\n";
         storyJ65A = "(1) Du greifst Keil unüberlegt an\n";
         storyJ66A = "Keil ist stärker als du. Langsam hast du kein Kraft mehr. Er sieht es und als du nicht mehr aufmerksam bist schneidet er dein Kopf ab. Du siehst noch, wie er Liam und Marcus töte.\n";
         storyJ65B = "(2) Du denkst dir eine Strategie aus, du greifst Keil mit einer guten Taktik an \n";
@@ -439,10 +441,10 @@ public class Texte {
                  + "Marcus : Vater hier trink das. \n"
                  + "* Der König trinkt den Heiltrank * \n";
         storyJ67 = "(1) sprech mit Marcus \n ";
-        storyJ69 = player.getName() + " : Ich hoffe, dass ihm wieder besser geht. Ich habe aber noch eine Sache, die ich mit dir besprechen muss, Marcus.\n"
+        storyJ68 = player.getName() + " : Ich hoffe, dass ihm wieder besser geht. Ich habe aber noch eine Sache, die ich mit dir besprechen muss, Marcus.\n"
                  + "Marcus : Ich höre.\n";
-        storyJ70 = "(1) Bitte Marcus um Hilfe \n";
-        storyJ71 = player.getName() + " : Wir sind hier gekommen, um euch zu sagen, dass wir Hilfe brauchen.\n";
+        storyJ69 = "(1) Bitte Marcus um Hilfe \n";
+        storyJ70 = player.getName() + " : Wir sind hier gekommen, um euch zu sagen, dass wir Hilfe brauchen.\n";
 
         
     }
