@@ -46,7 +46,7 @@ public class Fight {
         for (int i = 0; i < weapons.size(); i++) {
             Main.animation("("+ i +") " + weapons.get(i).getName() + "\n", 10);
         }
-        //Main.animation("(99) Um Essen auszuwählen\n", 25);
+        Main.animation("(99) Um Essen auszuwählen\n", 25);
 
         requestFightInput();
     }
@@ -85,10 +85,30 @@ public class Fight {
         for (int i = 0; i < foodList.size(); i++) {
             Main.animation("("+ i +") " + foodList.get(i).getName() + "\n", 10);
         }
+        Main.animation("(99) Zurück zum Kampf\n", 25);
+        foodInput();
     }
 
     public void foodInput() {
         Scanner sc = new Scanner(System.in);
+        int input = sc.nextInt();
+
+        if (input == 99) {
+            requestFightInput();
+            return;
+        }
+
+        if (input <= foodList.size()) {
+            Food food = foodList.get(input);
+            player.setHealth(player.getHealth() + food.getHealingFactor());
+            foodList.remove(input);
+            Main.animation("Du hast " + food.getHealingFactor() + " Leben erhalten\n", 25);
+            requestFightInput();
+        }
+        else {
+            Main.animation("Gebe bitte eine Gültige Zahl ein\n", 25);
+            foodInput();
+        }
     }
 
     //enemy attack back
