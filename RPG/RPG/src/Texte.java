@@ -50,7 +50,8 @@ public class Texte {
             storyJ37, storyJ38, storyJ39,storyJ40, storyJ41, storyJ42,storyJ43, storyJ44, storyJ45, storyJ46, storyJ47, storyJ48, storyJ49,
             storyJ50, storyJ51, storyJ51A, storyJ50B, storyJ52, storyJ53, storyJ54, storyJ55, storyJ56, storyJ57, storyJ58, storyJ59, storyJ60,
             storyJ61, storyJ62, storyJ63, storyJ63B, storyJ64, storyJ65, storyJ65A, storyJ65B, storyJ66, storyJ66A, storyJ66B, storyJ66B1, storyJ66B2,
-            storyJ66B3, storyJ66B4, storyJ67, storyJ68, storyJ69, storyJ70, storyJ71;
+            storyJ66B3, storyJ66B4, storyJ66B5, storyJ66B6, storyJ66B7, storyJ66B8, storyJ66B9, storyJ66B10, storyJ66B11, storyJ66B12, storyJ67, storyJ68, storyJ69,
+            storyJ70, storyJ71;
 
     public void setPlayer(Player player) {
         this.player = player;
@@ -439,31 +440,24 @@ public class Texte {
                  + "Marcus : Lass das später besprechen. Erst müssen wir mein Vater retten. \n"
                  + "* Alle laufen in das Königliche Schlafzimmer *\n"
                  + "Marcus : Vater hier trink das. \n"
-<<<<<<< HEAD
-                 + "* Der König trinkt den Heiltrank * \n"
-                 + "(1) sprech mit Marcus \n "
-                 + player.getName() + " : Ich hoffe, dass ihm wieder besser geht. Ich habe aber noch eine Sache, die ich mit dir besprechen muss, Marcus.\n"
-                 + "Marcus : Ich höre.\n"
-                 + "(1) Bitte Marcus um Hilfe \n"
+                 + "* Der König trinkt den Heiltrank * \n";
+        storyJ66B5 = "(1) sprech mit Marcus \n";
+        storyJ66B6 = player.getName() + " : Ich hoffe, dass ihm wieder besser geht. Ich habe aber noch eine Sache, die ich mit dir besprechen muss, Marcus.\n"
+                 + "Marcus : Ich höre.\n";
+        storyJ66B7 = "(1) Bitte Marcus um Hilfe \n"
                  + player.getName() + " : Wir sind hier gekommen, um euch zu sagen, dass wir Hilfe brauchen.Die bösen Mächte waschen. Orks, Goblins, Trolls… alle vermehren sich.\n"
                  + "Wir brauchen eine Armee, um die zu beseitigen und die Frage ist, ob ihr mit uns Kämpfen wird?\n"
-                 + "Marcus : Das was du für mein Vater gemacht hast, für mich. Wir werden euch sicher Helfen. Ich bereite eine Armee vor.\n"
-                 + "(1) Bedank dich bei Marcus\n"
-                 + player.getName() + " : Danke, dass bedeutet sehr viel für mich. Wir werden dir bald mehr Informationen schicken.\n"
-                 + "Marcus : Was wollt ihr jetzt machen?\n"
-                 + "(1) Erzähle Marcus was du vor hast \n"
-                 + player.getName() + " : Wir besuchen die Elfen. \n"
-                 
-       
-=======
+                 + "Marcus : Das was du für mein Vater gemacht hast, für mich. Wir werden euch sicher Helfen. Ich bereite eine Armee vor.\n";
+        storyJ66B9 = "(1) Bedank dich bei Marcus\n";
+        storyJ66B10 = player.getName() + " : Danke, dass bedeutet sehr viel für mich. Wir werden dir bald mehr Informationen schicken.\n"
+                 + "Marcus : Was wollt ihr jetzt machen?\n";
+        storyJ66B11 = "(1) Erzähle Marcus was du vor hast \n";
+        storyJ66B12 = player.getName() + " : Wir besuchen die Elfen. \n"
                  + "* Der König trinkt den Heiltrank * \n";
         storyJ67 = "(1) sprech mit Marcus \n ";
         storyJ68 = player.getName() + " : Ich hoffe, dass ihm wieder besser geht. Ich habe aber noch eine Sache, die ich mit dir besprechen muss, Marcus.\n"
                  + "Marcus : Ich höre.\n";
         storyJ69 = "(1) Bitte Marcus um Hilfe \n";
         storyJ70 = player.getName() + " : Wir sind hier gekommen, um euch zu sagen, dass wir Hilfe brauchen.\n";
-
-        
->>>>>>> ef0c4050aa8630016dd7ed242a226101320bb697
     }
 }
