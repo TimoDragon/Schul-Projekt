@@ -1,9 +1,6 @@
-import java.lang.annotation.Annotation;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
-import javax.swing.text.html.HTMLDocument.RunElement;
 
 public class Game {
     Fight fight;
@@ -32,10 +29,6 @@ public class Game {
 
         Weapon fist = new Weapon("Faust", "fist", 2);
         player.getInventory().add(fist);
-
-        //remove when project is done
-            //fightsDone.add(1);
-            //continue2();
 
         //story begins here
 

@@ -57,7 +57,7 @@ public class Main {
         for (char c : text.toCharArray()) {
             System.out.print(c);
 
-            /*if (c == '.' || c == '!' || c == '?') {
+            if (c == '.' || c == '!' || c == '?') {
                 try {
                     sleep(1000);
                 } catch (InterruptedException e) {
@@ -70,7 +70,7 @@ public class Main {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-            }*/
+            }
         }
     }
 }
