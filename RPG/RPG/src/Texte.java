@@ -438,8 +438,15 @@ public class Texte {
                  + player.getName() + " : Ich hoffe, dass ihm wieder besser geht. Ich habe aber noch eine Sache, die ich mit dir besprechen muss, Marcus.\n"
                  + "Marcus : Ich höre.\n"
                  + "(1) Bitte Marcus um Hilfe \n"
-                 + player.getName() + " : Wir sind hier gekommen, um euch zu sagen, dass wir Hilfe brauchen.\n";
-
-        
+                 + player.getName() + " : Wir sind hier gekommen, um euch zu sagen, dass wir Hilfe brauchen.Die bösen Mächte waschen. Orks, Goblins, Trolls… alle vermehren sich.\n"
+                 + "Wir brauchen eine Armee, um die zu beseitigen und die Frage ist, ob ihr mit uns Kämpfen wird?\n"
+                 + "Marcus : Das was du für mein Vater gemacht hast, für mich. Wir werden euch sicher Helfen. Ich bereite eine Armee vor.\n"
+                 + "(1) Bedank dich bei Marcus\n"
+                 + player.getName() + " : Danke, dass bedeutet sehr viel für mich. Wir werden dir bald mehr Informationen schicken.\n"
+                 + "Marcus : Was wollt ihr jetzt machen?\n"
+                 + "(1) Erzähle Marcus was du vor hast \n"
+                 + player.getName() + " : Wir besuchen die Elfen. \n"
+                 
+       
     }
 }
